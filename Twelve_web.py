@@ -24,7 +24,7 @@ def pull(matchup_period):
         games[1] = Teams(mw=matchup_period, player=team_matchups.index(games), place="away", league=league, scoreboard=scoreboard, score=score)
         score_list.append(games[0])
         score_list.append(games[1])
-pull(15)    
+pull(20)    
 
 custom_matchups = [["Team(Redfern City Hoopfish)", "Team(Newtown Sugma)"], ["Team(Kobe Wan Ginobi)", "Team(Coomtown  Creambacks )"], ["Team(Orlando Tragic)", "Team(Harden The Fuck Up)"], ["Team(Dallas Luka Deez Nuts)", "Team(New York Dumpsterfires)"]]
 new_matchups = []
