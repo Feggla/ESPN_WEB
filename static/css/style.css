@@ -1,0 +1,125 @@
+/* Reset margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2C3E50;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+select {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2C3E50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #34495E;
+}
+
+.table {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #2C3E50;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table {
+  margin: 0 auto; /* This will center the table */
+  width: 80%;     /* This will set the table width to 80% of its container */
+}
+
+.table th, .table td {
+  text-align: center;
+}
+
+.table thead {
+  background-color: #003366;  /* A dark shade for the background */
+  color: #ffffff;             /* White text color for contrast */
+}
+
+.table thead th {
+  border-bottom: 2px solid #ffffff;  /* Add a border to give separation */
+  padding: 10px 5px;                 /* Some padding for spacing */
+  font-size: 1.2em;                 /* Slightly bigger font for emphasis */
+  text-transform: uppercase;        /* Make the text uppercase */
+}
+
+/* Hover effect for the table headers (optional) */
+.table thead th:hover {
+  background-color: #004477;  /* A slightly lighter shade on hover */
+}
+
+.table th, .table td {
+  width: 150px; /* Example width. Adjust as needed. */
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* You can also specify widths for specific columns if needed. For example, if the team name column needs to be wider: */
+.table th:nth-child(2), .table td:nth-child(2) {
+  width: 200px;
+  max-width: 200px;
+}
+
+#header-image {
+  width: 80%;  /* Adjust this value based on how wide you want the image */
+  height: 500px;  /* Adjust this value to set your desired height */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}

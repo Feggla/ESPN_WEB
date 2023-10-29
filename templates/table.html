@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<h1></h1>
+<img src="{{ url_for('static', filename='images/ball-page-copy.jpg') }}" alt="Your Image Description" id="header-image">
+<form method="post" action="/">
+    <select name="team1">
+        {% for item in list_options %}
+            <option value="{{ item.name }}"
+                {% for matchups in battles if item.name|string == matchups[0].name|string %}selected{% endfor %}>
+                {{ item.name }}
+            </option>
+        {% endfor %}
+    </select>
+
+    <select name="team2">
+        {% for item in list_options %}
+        <option value="{{ item.name }}"
+            {% for matchups in battles if item.name|string == matchups[1].name|string or item.name|string == matchups[1].name|string %}selected{% endfor %}>
+            {{ item.name }}
+        </option>        
+        {% endfor %}
+    </select>
+    <input type="submit" value="Submit">
+</form>
+
 <body>
     {% for matchups in battles %}
     <table class="table table-striped">
@@ -189,7 +210,7 @@
                 {% endif %} 
           </tr>
           <tr>
-            <th scope="row"></th>
+            <td scope="row"></td>
             <td>{{a}} - {{c}} - {{b}}</td>
             <td></td>
           </tr>

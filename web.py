@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for, redirect, request
 from espn_api.basketball import League
 import pandas as pd
 from Team_web import Teams
@@ -74,7 +74,7 @@ def pull(matchup_period, leagues):
     for association in leagues:
         team_matchups = []
         score_list = []
-        league = League(league_id=leagues[association]['id'], year=2023, espn_s2=leagues[association]['s2'], swid=leagues[association]['swid'])
+        league = League(league_id=leagues[association]['id'], year=2024, espn_s2=leagues[association]['s2'], swid=leagues[association]['swid'])
         scoreboard = league.box_scores(matchup_period=matchup_period, scoring_period=1, matchup_total=True)
         scoreboards_dic[association] = scoreboard
         score = league.scoreboard(matchupPeriod=matchup_period)
@@ -91,10 +91,17 @@ def pull(matchup_period, leagues):
             score_list.append(games[0])
             score_list.append(games[1])
 
-pull(15, leagues)    
+pull(1, leagues)    
 
-custom_matchups = [["Team(Scottie Pippings)", "Team(Dort  Stop Believin)"], ["Team(New Orleans Zionlyfans)", "Team(Mos Eisley Banthas)"], ["Team(Mos Eisley Banthas)", "Team(Dort  Stop Believin)"], ["Team(Dort  Stop Believin)", "Team(New Orleans Zionlyfans)"]]
+custom_matchups = [["Scottie Pippings", "Dort  Stop Believin"], ["New Orleans Zionlyfans", "Mos Eisley Banthas"], ["Team(Mos Eisley Banthas)", "Team(Dort  Stop Believin)"], ["Team(Dort  Stop Believin)", "Team(New Orleans Zionlyfans)"]]
 new_matchups = []
+clean_list = []
+
+for team in overall_list:
+    team.name = str(team.name).replace("Team(", "").replace(")", "")
+    clean_list.append(team)
+
+clean_list = sorted(clean_list, key=lambda team: team.name)
 
 for teamA in overall_list:
     for teamB in overall_list:
@@ -107,11 +114,24 @@ for teamA in overall_list:
                     new_matchups.append([teamB, teamA])
 
 
+
 app = Flask(__name__)
 
-@app.route("/")
+proper_matchup = []
+
+@app.route("/", methods=['GET', 'POST'])
 def table():
-    return render_template('table.html', battles=new_matchups)
+    if request.method == 'POST':
+        proper_matchup.clear()
+        team1 = next((p for p in overall_list if str(p.name) == str(request.form.get("team1"))), None)
+        team2 = next((p for p in overall_list if str(p.name) == str(request.form.get("team2"))), None)
+        proper_matchup.append([team1, team2])
+        return redirect(url_for("matchup_table"))     
+    return render_template('table.html', battles=proper_matchup, list_options=clean_list)
+
+@app.route("/matchup", methods=['GET', 'POST'])
+def matchup_table():
+    return render_template('table.html', battles=proper_matchup, list_options=clean_list)
 
 if __name__ == '__main__':
     app.run(debug=True)
