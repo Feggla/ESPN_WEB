@@ -161,12 +161,39 @@ table tbody tr:last-child td {
   font-size: 16px; /* Keep font size consistent with the select */
 }
 
-@media (max-width: 768px) {
-  .select2-container--default {
-    font-size: 16px; /* larger font size for better readability */
-    padding: 10px; /* larger padding for a bigger touch area */
-    width: 100%; /* full width for better use of available space */
-    -webkit-appearance: none; /* removes default iOS styling */
-    appearance: none;
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  /* Make the select box larger for easier interaction on touch devices */
+  .select2-container--default .select2-selection--single {
+    margin: 5px; /* Reduce margin to save space */
+    padding: 12px; /* Increase padding for larger touch area */
+    font-size: 18px; /* Increase font size for better readability */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 48px; /* Increase height for larger touch area */
+    background-color: #fff;
+  }
+
+  /* Adjust the text line height within the Select2 box for the new padding and height */
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 30px; /* Adjust line-height for vertical centering */
+  }
+
+  /* Adjust the dropdown arrow size to be proportionate to the larger select box */
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 46px; /* Adjust arrow size */
+  }
+
+  /* Style the dropdown to be full-width to take advantage of the screen space and for ease of selection */
+  .select2-dropdown {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 10px); /* Full width minus the margin on both sides */
+  }
+
+  /* Style the dropdown items for easy selection on touch devices */
+  .select2-results__option {
+    padding: 15px; /* Increase padding for larger touch area */
+    font-size: 18px; /* Increase font size for better readability */
   }
 }
