@@ -160,3 +160,13 @@ table tbody tr:last-child td {
   padding: 10px; /* This will style the padding for each result */
   font-size: 16px; /* Keep font size consistent with the select */
 }
+
+@media (max-width: 768px) {
+  .select2-container--default {
+    font-size: 16px; /* larger font size for better readability */
+    padding: 10px; /* larger padding for a bigger touch area */
+    width: 100%; /* full width for better use of available space */
+    -webkit-appearance: none; /* removes default iOS styling */
+    appearance: none;
+  }
+}
