@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for, redirect, request, session
 from espn_api.basketball import League
 import pandas as pd
 from Team_web import Teams
+import re
 
 
 leagues = {
@@ -96,7 +97,7 @@ def pull(matchup_period, leagues):
             score_list.append(games[0])
             score_list.append(games[1])
 
-pull(1, leagues)    
+pull(2, leagues)    
 
 custom_matchups = [["Scottie Pippings", "Dort  Stop Believin"], ["New Orleans Zionlyfans", "Mos Eisley Banthas"], ["Team(Mos Eisley Banthas)", "Team(Dort  Stop Believin)"], ["Team(Dort  Stop Believin)", "Team(New Orleans Zionlyfans)"]]
 new_matchups = []
@@ -118,7 +119,20 @@ for teamA in overall_list:
                 if [teamA, teamB] not in new_matchups and [teamB, teamA] not in new_matchups:
                     new_matchups.append([teamB, teamA])
 
+df = pd.read_excel("./round1.xlsx", sheet_name='ROUND1-WK2', engine='openpyxl', header=None)
+pairings = df[1].dropna().tolist()
+pairs = [(pairings[i], pairings[i+1]) for i in range(0, len(pairings), 2)]
+round_1_matchups = []
+for pair in pairs:
+    team1 = pair[0].rsplit('(', 2)[0].strip()
+    team1 = re.sub(r'^\d+\.\s+', '', team1)
+    team1 = ' '.join(team1.rsplit(' ', 2)[:-2])
+    team2 = pair[1].rsplit('(', 2)[0].strip()
+    team2 = re.sub(r'^\d+\.\s+', '', team2)
+    team2 = ' '.join(team2.rsplit(' ', 2)[:-2])
+    round_1_matchups.append([team1, team2])
 
+print(len(round_1_matchups))
 
 app = Flask(__name__)
 app.secret_key = "AKL95Pegasus"
@@ -140,6 +154,10 @@ def table():
 @app.route("/matchup", methods=['GET', 'POST'])
 def matchup_table():
     return render_template('table.html', battles=proper_matchup, list_options=clean_list)
+
+@app.route("/schedule", methods=['GET', 'POST'])
+def schedule_page():
+    return render_template('schedule.html', matchups=round_1_matchups)
 
 if __name__ == '__main__':
     app.run(debug=True)

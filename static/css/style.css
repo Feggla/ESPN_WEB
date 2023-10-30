@@ -36,6 +36,22 @@ select {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.schedule-button-container {
+  text-align: center;  /* Center the button horizontally */
+  padding: 20px;       /* Some space around the button */
+}
+
+.schedule-button {
+  display: inline-block;  /* To apply padding */
+  background-color: #333;  /* Dark gray background */
+  color: #FFF;             /* White text color */
+  text-decoration: none;   /* No underline */
+  padding: 10px 30px;      /* Top-Bottom, Left-Right padding */
+  border-radius: 25px;     /* Rounded corners */
+  font-weight: bold;       /* Bold text */
+  transition: 0.3s;        /* Smooth transition for hover effects */
+}
+
 input[type="submit"] {
   margin: 10px;
   padding: 10px 20px;
@@ -110,8 +126,30 @@ table tbody tr:last-child td {
   white-space: nowrap;
 }
 
+.schedule-table-striped {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.schedule-table-striped td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.schedule-table-striped th {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.schedule-table-striped tbody tr:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+
 /* You can also specify widths for specific columns if needed. For example, if the team name column needs to be wider: */
-.table th:nth-child(2), .table td:nth-child(2) {
+.table tr:nth-child(2), .table tr:nth-child(2) {
   width: 200px;
   max-width: 200px;
 }

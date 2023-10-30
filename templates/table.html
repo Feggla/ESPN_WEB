@@ -31,6 +31,9 @@
     </select>
     <input type="submit" value="Submit">
 </form>
+<form class="schedule-button-container", action="{{ url_for('schedule_page') }}" method="get">
+    <button class="schedule-button" type="submit">Schedule Page</button>
+</form>
 
 <body>
     {% for matchups in battles %}
