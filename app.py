@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, redirect, request
+from flask import Flask, render_template, url_for, redirect, request, session
 from espn_api.basketball import League
 import pandas as pd
 from Team_web import Teams
@@ -116,6 +116,7 @@ for teamA in overall_list:
 
 
 app = Flask(__name__)
+app.secret_key = "AKL95Pegasus"
 
 proper_matchup = []
 
@@ -123,6 +124,8 @@ proper_matchup = []
 def table():
     if request.method == 'POST':
         proper_matchup.clear()
+        session['team1'] = request.form['team1']
+        session['team2'] = request.form['team2']
         team1 = next((p for p in overall_list if str(p.name) == str(request.form.get("team1"))), None)
         team2 = next((p for p in overall_list if str(p.name) == str(request.form.get("team2"))), None)
         proper_matchup.append([team1, team2])

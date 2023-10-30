@@ -123,3 +123,40 @@ table tbody tr:last-child td {
   display: block;
   margin: 0 auto;
 }
+
+.select2-container--default .select2-selection--single {
+  margin: 10px;
+  padding: 10px; /* This will not have the exact same effect since the internal structure is different */
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  height: 38px; /* Adjust as needed to align with your design */
+  background-color: #fff; /* Set the background color as needed */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 27px; /* Adjust line-height to vertically center the text, considering padding */
+  padding-left: 0; /* Override the padding here if necessary */
+  color: #333; /* Your default text color */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 36px; /* Make sure the arrow size matches your design */
+}
+
+.select2-container--default.select2-container--focus .select2-selection--single {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Example focus box-shadow */
+}
+
+.select2-dropdown {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.select2-results__option {
+  padding: 10px; /* This will style the padding for each result */
+  font-size: 16px; /* Keep font size consistent with the select */
+}
