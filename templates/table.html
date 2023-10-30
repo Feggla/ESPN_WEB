@@ -261,8 +261,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script>
         $(document).ready(function() {
+            var selectWidth = $(window).width() <= 768 ? '100%' : '20%'; // Adjust the 768 breakpoint if needed
             $('select').select2({
-                width: '20%' // Adjust as needed
+                width: selectWidth // Adjust as needed
             });
         });
     </script>
