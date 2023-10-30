@@ -124,6 +124,13 @@ table tbody tr:last-child td {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) { /* Adjust the breakpoint (768px) based on your needs */
+  #header-image {
+    width: 100%; /* Full width on mobile */
+    height: auto; /* Auto height to maintain aspect ratio */
+  }
+}
+
 .select2-container--default .select2-selection--single {
   margin: 10px;
   padding: 10px; /* This will not have the exact same effect since the internal structure is different */
