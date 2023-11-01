@@ -160,7 +160,7 @@ def schedule_page():
 def refresh_page():
     received_key = request.form.get('secret_key', None)
     if received_key == os.environ.get("SECRET_KEY"):
-        update(1, leagues)
+        update(2, leagues)
         return jsonify({"message": "Data updated successfully"}), 200
     else:
         return jsonify({"error": "Invalid secret key"}), 403
