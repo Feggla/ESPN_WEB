@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Schedule Page</title>
 </head>
 <body>
     <form class="schedule-button-container", action="{{ url_for('matchup_table') }}" method="get">
@@ -16,12 +16,19 @@
     <thead>
         <th scope="col">Team1</th>
         <th scope="col">Team2</th>
+        <th scope="col">Links</th>
     </thead>
     {% for battles in matchups %}
     <tbody>
         <tr>
             <td>{{battles[0]}}</td>
             <td>{{battles[1]}}</td>
+            <td>
+            <form class="links-button-container" action="{{ url_for('matchup_table') }}" method="get">
+                <input type="hidden" name="hidden_data" value="{{ battles[0] + ',' + battles[1] }}">
+                <button class="links-button" type="submit">Link to Matchup</button>
+            </form>            
+            </td>
         </tr>
     </tbody>
     {% endfor %}

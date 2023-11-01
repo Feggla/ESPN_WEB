@@ -50,6 +50,38 @@ select {
   border-radius: 25px;     /* Rounded corners */
   font-weight: bold;       /* Bold text */
   transition: 0.3s;        /* Smooth transition for hover effects */
+  cursor: pointer;          /* Cursor changes to a hand when hovering */
+}
+
+.schedule-button:hover {
+  /* Styling when button is hovered */
+  background-color: #555; /* Darker blue */
+  /* Add any other styles for hover effect here */
+}
+
+.links-button {
+  display: inline-block;  /* To apply padding */
+  background-color: #333;  /* Dark gray background */
+  color: #FFF;             /* White text color */
+  text-decoration: none;   /* No underline */
+  padding: 10px 30px;      /* Top-Bottom, Left-Right padding */
+  border-radius: 25px;     /* Rounded corners */
+  font-weight: bold;       /* Bold text */
+  transition: 0.3s;        /* Smooth transition for hover effects */
+  cursor: pointer;          /* Cursor changes to a hand when hovering */
+  align-items: center;  /* Vertically center content */
+}
+
+.links-button:hover {
+  /* Styling when button is hovered */
+  background-color: #555; /* Darker blue */
+  /* Add any other styles for hover effect here */
+}
+
+.links-button-container {
+  text-align: center;  /* Center the button horizontally */
+  padding: 10px;       /* Some space around the button */
+  align-items: center;  /* Vertically center content */
 }
 
 input[type="submit"] {
@@ -135,13 +167,13 @@ table tbody tr:last-child td {
 .schedule-table-striped td {
   padding: 8px;
   border: 1px solid #ddd;
-  text-align: left;
+  text-align: center;
 }
 
 .schedule-table-striped th {
   padding: 8px;
   border: 1px solid #ddd;
-  text-align: left;
+  text-align: center;
 }
 
 .schedule-table-striped tbody tr:nth-of-type(even) {

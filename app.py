@@ -1,10 +1,12 @@
-from flask import Flask, render_template, url_for, redirect, request, session
+from flask import Flask, render_template, url_for, redirect, request, session, jsonify
 from espn_api.basketball import League
 import pandas as pd
 from Team_web import Teams
 import re
+from dotenv import load_dotenv
+import os
 
-
+load_dotenv()
 leagues = {
     'aleague': {
         'id': 16786,
@@ -72,11 +74,11 @@ leagues = {
     'swid': '{0AF1C993-43AE-4A5A-A6AB-0E7D125A2C96}'
     }
 }
-
-scoreboards_dic = {}
 overall_list = []
 
 def pull(matchup_period, leagues):
+    overall_list.clear()
+    scoreboards_dic = {}
     for association in leagues:
         team_matchups = []
         score_list = []
@@ -97,27 +99,19 @@ def pull(matchup_period, leagues):
             score_list.append(games[0])
             score_list.append(games[1])
 
-pull(2, leagues)    
-
-custom_matchups = [["Scottie Pippings", "Dort  Stop Believin"], ["New Orleans Zionlyfans", "Mos Eisley Banthas"], ["Team(Mos Eisley Banthas)", "Team(Dort  Stop Believin)"], ["Team(Dort  Stop Believin)", "Team(New Orleans Zionlyfans)"]]
 new_matchups = []
-clean_list = []
 
-for team in overall_list:
-    team.name = str(team.name).replace("Team(", "").replace(")", "")
-    clean_list.append(team)
+def update(matchweek, league):
+    global clean_list
+    clean_list = []
+    pull(matchweek, league)    
+    for team in overall_list:
+        team.name = str(team.name).replace("Team(", "").replace(")", "")
+        clean_list.append(team)
 
-clean_list = sorted(clean_list, key=lambda team: team.name)
+    clean_list = sorted(clean_list, key=lambda team: team.name)
 
-for teamA in overall_list:
-    for teamB in overall_list:
-        for custom in custom_matchups:
-            if [str(teamA.name), str(teamB.name)] == custom:
-                if [teamA, teamB] not in new_matchups and [teamB, teamA] not in new_matchups:
-                    new_matchups.append([teamA, teamB])
-            if [str(teamB.name), str(teamA.name)] == custom:
-                if [teamA, teamB] not in new_matchups and [teamB, teamA] not in new_matchups:
-                    new_matchups.append([teamB, teamA])
+update(2, leagues)
 
 df = pd.read_excel("./round1.xlsx", sheet_name='ROUND1-WK2', engine='openpyxl', header=None)
 pairings = df[1].dropna().tolist()
@@ -132,8 +126,6 @@ for pair in pairs:
     team2 = ' '.join(team2.rsplit(' ', 2)[:-2])
     round_1_matchups.append([team1, team2])
 
-print(len(round_1_matchups))
-
 app = Flask(__name__)
 app.secret_key = "AKL95Pegasus"
 
@@ -145,19 +137,33 @@ def table():
         proper_matchup.clear()
         session['team1'] = request.form['team1']
         session['team2'] = request.form['team2']
-        team1 = next((p for p in overall_list if str(p.name) == str(request.form.get("team1"))), None)
-        team2 = next((p for p in overall_list if str(p.name) == str(request.form.get("team2"))), None)
+        team1 = next((p for p in clean_list if str(p.name) == str(request.form.get("team1"))), None)
+        team2 = next((p for p in clean_list if str(p.name) == str(request.form.get("team2"))), None)
         proper_matchup.append([team1, team2])
         return redirect(url_for("matchup_table"))     
     return render_template('table.html', battles=proper_matchup, list_options=clean_list)
 
 @app.route("/matchup", methods=['GET', 'POST'])
 def matchup_table():
-    return render_template('table.html', battles=proper_matchup, list_options=clean_list)
+    data = request.args.get('hidden_data')
+    if data:
+        sched_battle = data.split(',')
+    else:
+        sched_battle = []
+    return render_template('table.html', battles=proper_matchup, default=sched_battle, list_options=clean_list)
 
 @app.route("/schedule", methods=['GET', 'POST'])
 def schedule_page():
     return render_template('schedule.html', matchups=round_1_matchups)
+
+@app.route("/refresh", methods=['POST'])
+def refresh_page():
+    received_key = request.form.get('secret_key', None)
+    if received_key == os.environ.get("SECRET_KEY"):
+        update(1, leagues)
+        return jsonify({"message": "Data updated successfully"}), 200
+    else:
+        return jsonify({"error": "Invalid secret key"}), 403
 
 if __name__ == '__main__':
     app.run(debug=True)

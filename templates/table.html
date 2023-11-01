@@ -11,6 +11,29 @@
     <title>Ball Page Knockout</title>
 </head>
 <img src="{{ url_for('static', filename='images/ball-page-copy.jpg') }}" alt="Your Image Description" id="header-image">
+{% if default is defined %}
+<form method="post" action="/">
+    <select name="team1">
+        {% for item in list_options %}
+            <option value="{{ item.name }}"
+                {% if default[0] == item.name %}selected{% endif %}>
+                {{ item.name }}
+            </option>
+        {% endfor %}
+    </select>
+
+    <select name="team2">
+        {% for item in list_options %}
+        <option value="{{ item.name }}"
+            {% if default[1] == item.name %}selected{% endif %}>
+        {{ item.name }}
+        </option>        
+        {% endfor %}
+    </select>
+    <input type="submit" value="Submit">
+</form>
+{% else %}
+
 <form method="post" action="/">
     <select name="team1">
         {% for item in list_options %}
@@ -28,8 +51,11 @@
         {{ item.name }}
         </option>        
         {% endfor %}
+
     </select>
     <input type="submit" value="Submit">
+    {% endif %}
+
 </form>
 <form class="schedule-button-container", action="{{ url_for('schedule_page') }}" method="get">
     <button class="schedule-button" type="submit">Schedule Page</button>
