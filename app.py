@@ -106,25 +106,99 @@ def update(matchweek, league):
     clean_list = []
     pull(matchweek, league)    
     for team in overall_list:
-        team.name = str(team.name).replace("Team(", "").replace(")", "")
+        team.name = str(team.name).replace("Team(", "").replace(")", "").strip()
         clean_list.append(team)
 
     clean_list = sorted(clean_list, key=lambda team: team.name)
 
+
+
 update(2, leagues)
 
-df = pd.read_excel("./round1.xlsx", sheet_name='ROUND1-WK2', engine='openpyxl', header=None)
+def clean_names(team_list):
+    for obj in team_list:
+        obj.name = re.sub(' +', ' ', obj.name)
+
+clean_names(clean_list)
+
+outliers = []
+
+df = pd.read_excel("./proper.xlsx", sheet_name='ROUND1-WK2', engine='openpyxl', header=None)
 pairings = df[1].dropna().tolist()
 pairs = [(pairings[i], pairings[i+1]) for i in range(0, len(pairings), 2)]
 round_1_matchups = []
 for pair in pairs:
-    team1 = pair[0].rsplit('(', 2)[0].strip()
-    team1 = re.sub(r'^\d+\.\s+', '', team1)
-    team1 = ' '.join(team1.rsplit(' ', 2)[:-2])
-    team2 = pair[1].rsplit('(', 2)[0].strip()
-    team2 = re.sub(r'^\d+\.\s+', '', team2)
-    team2 = ' '.join(team2.rsplit(' ', 2)[:-2])
+    team1 = pair[0]
+    team2 = pair[1]
     round_1_matchups.append([team1, team2])
+
+for matches in round_1_matchups:
+    for team in matches:
+        team_exists = any(str(obj.name.lower()) == team.lower() for obj in clean_list)
+        if not team_exists:
+            outliers.append(team)
+print(outliers)
+
+# def check_scores(cat):
+#     if cat == "turnovers":
+#         if getattr(matchups[0], cat) > getattr(matchups[1], cat):
+#             matchup[matchups[1].name] += 1
+#         if getattr(matchups[1], cat) > getattr(matchups[0], cat):
+#             matchup[matchups[0].name] += 1
+#         if getattr(matchups[0], cat) == getattr(matchups[1], cat):
+#             pass
+#     if cat != "turnovers":
+#         if getattr(matchups[0], cat) > getattr(matchups[1], cat):
+#             matchup[matchups[0].name] += 1
+#         if getattr(matchups[1], cat) > getattr(matchups[0], cat):
+#             matchup[matchups[1].name] += 1
+#         if getattr(matchups[0], cat) == getattr(matchups[1], cat):
+#             pass
+
+
+# for matchups in round_1_matchups:
+#     matchup = {matchups[0].name: 0,
+#                 matchups[1].name: 0
+#                 }
+#     check_scores('points')
+#     check_scores('blocks')
+#     check_scores('steals')
+#     check_scores('assists')
+#     check_scores('rebounds')
+#     check_scores('turnovers')
+#     check_scores('fg')
+#     check_scores('ft')
+#     check_scores('threes')
+#     check_scores('three_percent')
+#     check_scores('td')
+#     print(matchup)
+
+# df_dic = {}
+# for teamA in round_1_matchups:
+#     score = 0
+#     draw = 0
+#     for teamB in round_1_matchups:
+#         matchup = {teamA.name: 0,
+#                 teamB.name: 0
+#                 }
+#         check_scores('points')
+#         check_scores('blocks')
+#         check_scores('steals')
+#         check_scores('assists')
+#         check_scores('rebounds')
+#         check_scores('turnovers')
+#         check_scores('fg')
+#         check_scores('ft')
+#         check_scores('threes')
+#         check_scores('three_percent')
+#         check_scores('td')
+#         if matchup[teamA.name] > matchup[teamB.name]:
+#             score += 1
+#         if matchup[teamA.name] == matchup[teamB.name]:
+#             draw += 1
+#     df_dic[teamA.name] = score
+#     print(f"{teamA.name} would have won {score} and drawn {draw} matchups this week")
+
 
 app = Flask(__name__)
 app.secret_key = "AKL95Pegasus"
