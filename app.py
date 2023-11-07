@@ -221,7 +221,7 @@ def table():
 def matchup_table():
     data = request.args.get('hidden_data')
     if data:
-        sched_battle = data.split(',')
+        sched_battle = data.split('^')
     else:
         sched_battle = []
     return render_template('table.html', battles=proper_matchup, default=sched_battle, list_options=clean_list)

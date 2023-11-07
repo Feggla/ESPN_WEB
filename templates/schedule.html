@@ -25,7 +25,7 @@
             <td>{{battles[1]}}</td>
             <td>
             <form class="links-button-container" action="{{ url_for('matchup_table') }}" method="get">
-                <input type="hidden" name="hidden_data" value="{{ battles[0] + ',' + battles[1] }}">
+                <input type="hidden" name="hidden_data" value="{{ battles[0] + '^' + battles[1] }}">
                 <button class="links-button" type="submit">Link to Matchup</button>
             </form>            
             </td>
