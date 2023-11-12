@@ -9,7 +9,10 @@ from dotenv import load_dotenv
 import os
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cffb393 (Winners (#1))
 load_dotenv()
 leagues = {
     'aleague': {
@@ -127,8 +130,11 @@ clean_names(clean_list)
 
 outliers = []
 matchup_dic = {}
+<<<<<<< HEAD
 matchup_dic = {}
 matchup_dic = {}
+=======
+>>>>>>> cffb393 (Winners (#1))
 
 df = pd.read_excel("./proper.xlsx", sheet_name='ROUND1-WK2', engine='openpyxl', header=None)
 pairings = df[1].dropna().tolist()
@@ -138,11 +144,14 @@ team_dict = {int(id): name for name, id in zip(team_entries[1], team_entries[2])
 team_items = list(team_dict.items())
 pairings_list = [{team_items[i][0]: team_items[i][1], team_items[i+1][0]: team_items[i+1][1]}
                  for i in range(0, len(team_items) - 1, 2)]
+<<<<<<< HEAD
 team_entries = df.dropna(subset=[1, 2])
 team_dict = {int(id): name for name, id in zip(team_entries[1], team_entries[2])}
 team_items = list(team_dict.items())
 pairings_list = [{team_items[i][0]: team_items[i][1], team_items[i+1][0]: team_items[i+1][1]}
                  for i in range(0, len(team_items) - 1, 2)]
+=======
+>>>>>>> cffb393 (Winners (#1))
 round_1_matchups = []
 for pair in pairs:
     team1 = pair[0]
@@ -220,6 +229,7 @@ for matchups in obj_list:
             winner = matchups[0].name
         if matchup[matchups[1].name] > matchup[matchups[0].name]:
             winner = matchups[1].name
+<<<<<<< HEAD
     if matchup[matchups[0].name] == matchup[matchups[1].name]:
         check_scores("points")
         if matchup[matchups[0].name] > matchup[matchups[1].name]:
@@ -331,6 +341,8 @@ for matchups in obj_list:
             winner = matchups[0].name
         if matchup[matchups[1].name] > matchup[matchups[0].name]:
             winner = matchups[1].name
+=======
+>>>>>>> cffb393 (Winners (#1))
     result_list.append({
         matchups[0].name:matchup[matchups[0].name], 
         matchups[1].name: matchup[matchups[1].name],
@@ -386,10 +398,13 @@ def refresh_page():
 def winners_page():
     return render_template('winners.html', data=data_list)
 
+<<<<<<< HEAD
 @app.route("/winners", methods=["GET"])
 def winners_page():
     return render_template('winners.html', data=data_list)
 
+=======
+>>>>>>> cffb393 (Winners (#1))
 if __name__ == '__main__':
     app.run(debug=True)
 >>>>>>> 900f75d (added winners route)
