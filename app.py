@@ -6,6 +6,7 @@ import re
 from dotenv import load_dotenv
 import os
 
+
 load_dotenv()
 leagues = {
     'aleague': {
@@ -122,83 +123,104 @@ def clean_names(team_list):
 clean_names(clean_list)
 
 outliers = []
+matchup_dic = {}
 
 df = pd.read_excel("./proper.xlsx", sheet_name='ROUND1-WK2', engine='openpyxl', header=None)
 pairings = df[1].dropna().tolist()
 pairs = [(pairings[i], pairings[i+1]) for i in range(0, len(pairings), 2)]
+team_entries = df.dropna(subset=[1, 2])
+team_dict = {int(id): name for name, id in zip(team_entries[1], team_entries[2])}
+team_items = list(team_dict.items())
+pairings_list = [{team_items[i][0]: team_items[i][1], team_items[i+1][0]: team_items[i+1][1]}
+                 for i in range(0, len(team_items) - 1, 2)]
 round_1_matchups = []
 for pair in pairs:
     team1 = pair[0]
     team2 = pair[1]
     round_1_matchups.append([team1, team2])
 
-for matches in round_1_matchups:
-    for team in matches:
-        team_exists = any(str(obj.name.lower()) == team.lower() for obj in clean_list)
-        if not team_exists:
-            outliers.append(team)
-print(outliers)
+sorted_objects = sorted(clean_list, key=lambda obj: obj.name.lower())
 
-# def check_scores(cat):
-#     if cat == "turnovers":
-#         if getattr(matchups[0], cat) > getattr(matchups[1], cat):
-#             matchup[matchups[1].name] += 1
-#         if getattr(matchups[1], cat) > getattr(matchups[0], cat):
-#             matchup[matchups[0].name] += 1
-#         if getattr(matchups[0], cat) == getattr(matchups[1], cat):
-#             pass
-#     if cat != "turnovers":
-#         if getattr(matchups[0], cat) > getattr(matchups[1], cat):
-#             matchup[matchups[0].name] += 1
-#         if getattr(matchups[1], cat) > getattr(matchups[0], cat):
-#             matchup[matchups[1].name] += 1
-#         if getattr(matchups[0], cat) == getattr(matchups[1], cat):
-#             pass
+id = 1
+
+for item in sorted_objects:
+    item.id = id
+    id += 1
+
+obj_list = []
+
+new_clean_list = clean_list
+
+for matchups in pairings_list:
+    ids = list(matchups.keys())
+    team1_id = ids[0]
+    team2_id = ids[1]
+    battle = []
+    for objects in sorted_objects:
+        if team1_id == objects.id:
+            battle.append(objects) 
+        elif team2_id == objects.id:
+            battle.append(objects)
+    obj_list.append(battle)
+
+result_list = []
+
+def check_scores(cat):
+    if cat == "turnovers":
+        if getattr(matchups[0], cat) > getattr(matchups[1], cat):
+            matchup[matchups[1].name] += 1
+        if getattr(matchups[1], cat) > getattr(matchups[0], cat):
+            matchup[matchups[0].name] += 1
+        if getattr(matchups[0], cat) == getattr(matchups[1], cat):
+            matchup["draw"] += 1
+    if cat != "turnovers":
+        if getattr(matchups[0], cat) > getattr(matchups[1], cat):
+            matchup[matchups[0].name] += 1
+        if getattr(matchups[1], cat) > getattr(matchups[0], cat):
+            matchup[matchups[1].name] += 1
+        if getattr(matchups[0], cat) == getattr(matchups[1], cat):
+            matchup["draw"] +=1
+
+data_list = []
+
+for matchups in obj_list:
+    matchup = {matchups[0].name: 0,
+                matchups[1].name: 0, 
+                "draw" : 0
+                }
+    check_scores('points')
+    check_scores('blocks')
+    check_scores('steals')
+    check_scores('assists')
+    check_scores('rebounds')
+    check_scores('turnovers')
+    check_scores('fg')
+    check_scores('ft')
+    check_scores('threes')
+    check_scores('three_percent')
+    check_scores('td')
+    
+    if matchup[matchups[0].name] > matchup[matchups[1].name]:
+        winner = matchups[0].name
+    if matchup[matchups[1].name] > matchup[matchups[0].name]:
+        winner = matchups[1].name
+    if matchup[matchups[0].name] == matchup[matchups[1].name]:
+        check_scores("steals")
+        if matchup[matchups[0].name] > matchup[matchups[1].name]:
+            winner = matchups[0].name
+        if matchup[matchups[1].name] > matchup[matchups[0].name]:
+            winner = matchups[1].name
+    result_list.append({
+        matchups[0].name:matchup[matchups[0].name], 
+        matchups[1].name: matchup[matchups[1].name],
+        "Drawn": matchup['draw'],
+        "Winning Team": winner
+        })
+    data_list.append([matchups[0].name, matchup[matchups[0].name], matchups[1].name, matchup[matchups[1].name], matchup['draw'], winner])
 
 
-# for matchups in round_1_matchups:
-#     matchup = {matchups[0].name: 0,
-#                 matchups[1].name: 0
-#                 }
-#     check_scores('points')
-#     check_scores('blocks')
-#     check_scores('steals')
-#     check_scores('assists')
-#     check_scores('rebounds')
-#     check_scores('turnovers')
-#     check_scores('fg')
-#     check_scores('ft')
-#     check_scores('threes')
-#     check_scores('three_percent')
-#     check_scores('td')
-#     print(matchup)
-
-# df_dic = {}
-# for teamA in round_1_matchups:
-#     score = 0
-#     draw = 0
-#     for teamB in round_1_matchups:
-#         matchup = {teamA.name: 0,
-#                 teamB.name: 0
-#                 }
-#         check_scores('points')
-#         check_scores('blocks')
-#         check_scores('steals')
-#         check_scores('assists')
-#         check_scores('rebounds')
-#         check_scores('turnovers')
-#         check_scores('fg')
-#         check_scores('ft')
-#         check_scores('threes')
-#         check_scores('three_percent')
-#         check_scores('td')
-#         if matchup[teamA.name] > matchup[teamB.name]:
-#             score += 1
-#         if matchup[teamA.name] == matchup[teamB.name]:
-#             draw += 1
-#     df_dic[teamA.name] = score
-#     print(f"{teamA.name} would have won {score} and drawn {draw} matchups this week")
-
+for item in data_list:
+    print(item)
 
 app = Flask(__name__)
 app.secret_key = "AKL95Pegasus"
@@ -238,6 +260,10 @@ def refresh_page():
         return jsonify({"message": "Data updated successfully"}), 200
     else:
         return jsonify({"error": "Invalid secret key"}), 403
+
+@app.route("/winners", methods=["GET"])
+def winners_page():
+    return render_template('winners.html', data=data_list)
 
 if __name__ == '__main__':
     app.run(debug=True)

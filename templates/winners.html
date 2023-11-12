@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winners</title>
+</head>
+<body>
+    <form class="schedule-button-container", action="{{ url_for('matchup_table') }}" method="get">
+        <button class="schedule-button" type="submit">Back to matchups</button>
+    </form>
+    <table class="table schedule-table-striped">
+    <thead>
+        <th scope="col">Team1</th>
+        <th scope="col">Team2</th>
+        <th scope="col">Winner</th>
+    </thead>
+    {% for battles in data %}
+    <tbody>
+        <tr>
+            <td>
+                {{battles[0]}}
+                <br>
+                {{battles[1]}}
+            </td>
+            <td>
+                {{battles[2]}}
+                    <br>
+                {{battles[3]}}
+            </td>
+            <td>{{battles[5]}}</td>
+        </tr>
+    </tbody>
+    {% endfor %}
+    </table>
+</body>
+</html>
