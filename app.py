@@ -5,6 +5,9 @@ from Team_web import Teams
 import re
 from dotenv import load_dotenv
 import os
+import unicodedata
+import copy
+
 
 load_dotenv()
 leagues = {
@@ -132,12 +135,78 @@ for pair in pairs:
     team2 = pair[1]
     round_1_matchups.append([team1, team2])
 
-for matches in round_1_matchups:
-    for team in matches:
-        team_exists = any(str(obj.name.lower()) == team.lower() for obj in clean_list)
-        if not team_exists:
-            outliers.append(team)
-print(outliers)
+# for matches in round_1_matchups:
+#     for team in matches:
+#         team_exists = any(str(obj.name.lower()) == team.lower() for obj in clean_list)
+#         if not team_exists:
+#             outliers.append(team)
+# print(outliers)
+obj_list = []
+
+
+# for matchups in round_1_matchups:
+#     battle = []
+#     for objects in clean_list:
+#         if str(matchups[0]) == str(objects.name) and objects in new_clean_list:
+#             battle.append(objects)
+#             new_clean_list.remove(objects)
+            
+#         if str(matchups[1]) == str(objects.name) and objects in new_clean_list:
+#             battle.append(objects)
+#             new_clean_list.remove(objects)
+#     obj_list.append(battle)
+#     # if len(battle) > 2:
+#     #     for items in battle:
+#             # print(items.name)
+
+# for item in new_clean_list:
+#     print(item.name)
+new_clean_list = clean_list
+
+def tidy(team_list):
+    for teams in team_list:
+        teams[0] = re.sub(' +', ' ', teams[0])
+        teams[1] = re.sub(' +', ' ', teams[1])
+
+
+
+tidy(round_1_matchups)
+
+for matchups in round_1_matchups:
+    battle = []
+    for objects in clean_list:
+        if str(matchups[0]).strip() == str(objects.name).strip():
+            if len(battle) == 2:
+                pass
+            else:
+                battle.append(objects)
+        if str(matchups[1]).strip() == str(objects.name).strip():
+            if len(battle) == 2:
+                pass
+            else:
+                battle.append(objects)
+
+    obj_list.append(battle)
+
+# print(len(obj_list))
+
+
+newlist = []
+
+for obj in obj_list:
+    if len(obj) != 2:
+        print(obj[0].name)
+    elif obj[0] not in newlist:
+        newlist.append(obj[0])
+    if obj[1]  not in newlist:
+        newlist.append(obj[1])
+
+print(len(newlist))
+
+# for matchups in obj_list:
+#     if len(matchups) == 1:
+#         print(matchups[0].name)
+
 
 # def check_scores(cat):
 #     if cat == "turnovers":
