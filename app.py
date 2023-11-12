@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 import os
 
 
+
 load_dotenv()
 leagues = {
     'aleague': {
@@ -127,10 +128,16 @@ clean_names(clean_list)
 outliers = []
 matchup_dic = {}
 matchup_dic = {}
+matchup_dic = {}
 
 df = pd.read_excel("./proper.xlsx", sheet_name='ROUND1-WK2', engine='openpyxl', header=None)
 pairings = df[1].dropna().tolist()
 pairs = [(pairings[i], pairings[i+1]) for i in range(0, len(pairings), 2)]
+team_entries = df.dropna(subset=[1, 2])
+team_dict = {int(id): name for name, id in zip(team_entries[1], team_entries[2])}
+team_items = list(team_dict.items())
+pairings_list = [{team_items[i][0]: team_items[i][1], team_items[i+1][0]: team_items[i+1][1]}
+                 for i in range(0, len(team_items) - 1, 2)]
 team_entries = df.dropna(subset=[1, 2])
 team_dict = {int(id): name for name, id in zip(team_entries[1], team_entries[2])}
 team_items = list(team_dict.items())
@@ -253,6 +260,89 @@ df.to_excel('result_list.xlsx', index=False, engine='openpyxl')
 # df = pd.DataFrame(result_list)
 # print(df)
 
+sorted_objects = sorted(clean_list, key=lambda obj: obj.name.lower())
+
+id = 1
+
+for item in sorted_objects:
+    item.id = id
+    id += 1
+
+obj_list = []
+
+new_clean_list = clean_list
+
+for matchups in pairings_list:
+    ids = list(matchups.keys())
+    team1_id = ids[0]
+    team2_id = ids[1]
+    battle = []
+    for objects in sorted_objects:
+        if team1_id == objects.id:
+            battle.append(objects) 
+        elif team2_id == objects.id:
+            battle.append(objects)
+    obj_list.append(battle)
+
+result_list = []
+
+def check_scores(cat):
+    if cat == "turnovers":
+        if getattr(matchups[0], cat) > getattr(matchups[1], cat):
+            matchup[matchups[1].name] += 1
+        if getattr(matchups[1], cat) > getattr(matchups[0], cat):
+            matchup[matchups[0].name] += 1
+        if getattr(matchups[0], cat) == getattr(matchups[1], cat):
+            matchup["draw"] += 1
+    if cat != "turnovers":
+        if getattr(matchups[0], cat) > getattr(matchups[1], cat):
+            matchup[matchups[0].name] += 1
+        if getattr(matchups[1], cat) > getattr(matchups[0], cat):
+            matchup[matchups[1].name] += 1
+        if getattr(matchups[0], cat) == getattr(matchups[1], cat):
+            matchup["draw"] +=1
+
+data_list = []
+
+for matchups in obj_list:
+    matchup = {matchups[0].name: 0,
+                matchups[1].name: 0, 
+                "draw" : 0
+                }
+    check_scores('points')
+    check_scores('blocks')
+    check_scores('steals')
+    check_scores('assists')
+    check_scores('rebounds')
+    check_scores('turnovers')
+    check_scores('fg')
+    check_scores('ft')
+    check_scores('threes')
+    check_scores('three_percent')
+    check_scores('td')
+    
+    if matchup[matchups[0].name] > matchup[matchups[1].name]:
+        winner = matchups[0].name
+    if matchup[matchups[1].name] > matchup[matchups[0].name]:
+        winner = matchups[1].name
+    if matchup[matchups[0].name] == matchup[matchups[1].name]:
+        check_scores("steals")
+        if matchup[matchups[0].name] > matchup[matchups[1].name]:
+            winner = matchups[0].name
+        if matchup[matchups[1].name] > matchup[matchups[0].name]:
+            winner = matchups[1].name
+    result_list.append({
+        matchups[0].name:matchup[matchups[0].name], 
+        matchups[1].name: matchup[matchups[1].name],
+        "Drawn": matchup['draw'],
+        "Winning Team": winner
+        })
+    data_list.append([matchups[0].name, matchup[matchups[0].name], matchups[1].name, matchup[matchups[1].name], matchup['draw'], winner])
+
+
+for item in data_list:
+    print(item)
+
 app = Flask(__name__)
 app.secret_key = "AKL95Pegasus"
 
@@ -291,6 +381,10 @@ def refresh_page():
         return jsonify({"message": "Data updated successfully"}), 200
     else:
         return jsonify({"error": "Invalid secret key"}), 403
+
+@app.route("/winners", methods=["GET"])
+def winners_page():
+    return render_template('winners.html', data=data_list)
 
 @app.route("/winners", methods=["GET"])
 def winners_page():
