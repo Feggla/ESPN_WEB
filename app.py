@@ -5,8 +5,6 @@ from Team_web import Teams
 import re
 from dotenv import load_dotenv
 import os
-import unicodedata
-import copy
 
 
 load_dotenv()
