@@ -126,6 +126,7 @@ clean_names(clean_list)
 
 outliers = []
 matchup_dic = {}
+matchup_dic = {}
 
 df = pd.read_excel("./proper.xlsx", sheet_name='ROUND1-WK2', engine='openpyxl', header=None)
 pairings = df[1].dropna().tolist()
