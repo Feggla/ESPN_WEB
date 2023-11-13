@@ -223,6 +223,8 @@ for matchups in obj_list:
         })
     data_list.append([matchups[0].name, matchup[matchups[0].name], matchups[1].name, matchup[matchups[1].name], matchup['draw'], winner])
 
+
+
 app = Flask(__name__)
 app.secret_key = "AKL95Pegasus"
 
