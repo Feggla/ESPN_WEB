@@ -113,7 +113,6 @@ def update(matchweek, league):
     clean_list = sorted(clean_list, key=lambda team: team.name)
 
 
-
 update(2, leagues)
 
 def clean_names(team_list):
@@ -223,10 +222,6 @@ for matchups in obj_list:
         "Winning Team": winner
         })
     data_list.append([matchups[0].name, matchup[matchups[0].name], matchups[1].name, matchup[matchups[1].name], matchup['draw'], winner])
-
-
-for item in data_list:
-    print(item)
 
 app = Flask(__name__)
 app.secret_key = "AKL95Pegasus"
