@@ -284,9 +284,9 @@ def refresh_page():
     else:
         return jsonify({"error": "Invalid secret key"}), 403
 
-@app.route("/winners", methods=["GET"])
-def winners_page():
-    return render_template('winners.html', data=data_list)
+# @app.route("/winners", methods=["GET"])
+# def winners_page():
+#     return render_template('winners.html', data=data_list)
 
 if __name__ == '__main__':
     app.run(debug=True)
