@@ -113,7 +113,7 @@ def update(matchweek, league):
     clean_list = sorted(clean_list, key=lambda team: team.name)
 
 
-update(2, leagues)
+update(4, leagues)
 
 def clean_names(team_list):
     for obj in team_list:
@@ -223,6 +223,26 @@ for matchups in obj_list:
         })
     data_list.append([matchups[0].name, matchup[matchups[0].name], matchups[1].name, matchup[matchups[1].name], matchup['draw'], winner])
 
+restructured_list = []
+
+for result in result_list:
+    # Get team names and draw information
+    team_names = list(result.keys())[:-2]  # Exclude 'Drawn' and 'Winning Team'
+    team1_name, team2_name = team_names
+    draw = result['Drawn']
+    winning_team = result['Winning Team']
+
+    new_result = {
+        'Team1': f"{team1_name} ({result[team1_name]})",
+        'Team2': f"{team2_name} ({result[team2_name]})",
+        'Drawn': draw,
+        'Winning Team': winning_team
+    }
+    restructured_list.append(new_result)
+
+df = pd.DataFrame(restructured_list)
+df.columns = ['Team1', 'Team2', 'Drawn', 'Winning Team']
+df.to_excel('result_list.xlsx', index=False, engine='openpyxl')
 
 
 app = Flask(__name__)
@@ -259,7 +279,7 @@ def schedule_page():
 def refresh_page():
     received_key = request.form.get('secret_key', None)
     if received_key == os.environ.get("SECRET_KEY"):
-        update(2, leagues)
+        update(4, leagues)
         return jsonify({"message": "Data updated successfully"}), 200
     else:
         return jsonify({"error": "Invalid secret key"}), 403
