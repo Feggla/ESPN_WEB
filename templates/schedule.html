@@ -21,8 +21,8 @@
     {% for battles in matchups %}
     <tbody>
         <tr>
-            <td>{{battles[0]}}</td>
-            <td>{{battles[1]}}</td>
+            <td>{{battles[0]}} ({{letters[loop.index0][0]}})</td>
+            <td>{{battles[1]}} ({{letters[loop.index0][1]}})</td>
             <td>
             <form class="links-button-container" action="{{ url_for('matchup_table') }}" method="get">
                 <input type="hidden" name="hidden_data" value="{{ battles[0] + '^' + battles[1] }}">

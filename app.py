@@ -126,6 +126,7 @@ matchup_dic = {}
 
 df = pd.read_excel("./Round_2_Knockout.xlsx", sheet_name='Sheet1', engine='openpyxl', header=None)
 pairings = df[1].dropna().tolist()
+league_letters = df[0].dropna().tolist()
 pairs = [(pairings[i], pairings[i+1]) for i in range(0, len(pairings), 2)]
 team_entries = df.dropna(subset=[1, 2])
 team_dict = {int(id): name for name, id in zip(team_entries[1], team_entries[2])}
@@ -225,6 +226,9 @@ for matchups in obj_list:
 
 restructured_list = []
 
+paired_letters = [league_letters[i:i + 2] for i in range(0, len(league_letters), 2)]
+    
+
 for result in result_list:
     # Get team names and draw information
     team_names = list(result.keys())[:-2]  # Exclude 'Drawn' and 'Winning Team'
@@ -273,7 +277,7 @@ def matchup_table():
 
 @app.route("/schedule", methods=['GET', 'POST'])
 def schedule_page():
-    return render_template('schedule.html', matchups=round_1_matchups)
+    return render_template('schedule.html', matchups=round_1_matchups, letters=paired_letters)
 
 @app.route("/refresh", methods=['POST'])
 def refresh_page():
