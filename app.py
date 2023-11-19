@@ -124,7 +124,7 @@ clean_names(clean_list)
 outliers = []
 matchup_dic = {}
 
-df = pd.read_excel("./proper.xlsx", sheet_name='ROUND1-WK2', engine='openpyxl', header=None)
+df = pd.read_excel("./Round_2_Knockout.xlsx", sheet_name='Sheet1', engine='openpyxl', header=None)
 pairings = df[1].dropna().tolist()
 pairs = [(pairings[i], pairings[i+1]) for i in range(0, len(pairings), 2)]
 team_entries = df.dropna(subset=[1, 2])
