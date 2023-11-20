@@ -113,7 +113,7 @@ def update(matchweek, league):
     clean_list = sorted(clean_list, key=lambda team: team.name)
 
 
-update(4, leagues)
+update(5, leagues)
 
 def clean_names(team_list):
     for obj in team_list:
@@ -216,6 +216,8 @@ for matchups in obj_list:
             winner = matchups[0].name
         if matchup[matchups[1].name] > matchup[matchups[0].name]:
             winner = matchups[1].name
+        if matchup[matchups[0].name] == matchup[matchups[1].name]:
+            winner = "Not Determined"
     result_list.append({
         matchups[0].name:matchup[matchups[0].name], 
         matchups[1].name: matchup[matchups[1].name],
@@ -283,7 +285,7 @@ def schedule_page():
 def refresh_page():
     received_key = request.form.get('secret_key', None)
     if received_key == os.environ.get("SECRET_KEY"):
-        update(4, leagues)
+        update(5, leagues)
         return jsonify({"message": "Data updated successfully"}), 200
     else:
         return jsonify({"error": "Invalid secret key"}), 403
