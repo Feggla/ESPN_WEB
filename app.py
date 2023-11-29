@@ -143,6 +143,7 @@ sorted_objects = sorted(clean_list, key=lambda obj: obj.name.lower())
 
 id = 1
 
+
 for item in sorted_objects:
     item.id = id
     id += 1
@@ -153,6 +154,7 @@ new_clean_list = clean_list
 
 for matchups in pairings_list:
     ids = list(matchups.keys())
+    print(ids)
     team1_id = ids[0]
     team2_id = ids[1]
     battle = []
@@ -184,6 +186,7 @@ def check_scores(cat):
 data_list = []
 
 for matchups in obj_list:
+    print(matchups[0].name, matchups[1].name)
     matchup = {matchups[0].name: 0,
                 matchups[1].name: 0, 
                 "draw" : 0
@@ -248,7 +251,7 @@ for result in result_list:
 
 df = pd.DataFrame(restructured_list)
 df.columns = ['Team1', 'Team2', 'Drawn', 'Winning Team']
-df.to_excel('result_list.xlsx', index=False, engine='openpyxl')
+df.to_excel('result_list_round_2.xlsx', index=False, engine='openpyxl')
 
 
 app = Flask(__name__)
@@ -290,9 +293,9 @@ def refresh_page():
     else:
         return jsonify({"error": "Invalid secret key"}), 403
 
-# @app.route("/winners", methods=["GET"])
-# def winners_page():
-#     return render_template('winners.html', data=data_list)
+@app.route("/winners", methods=["GET"])
+def winners_page():
+    return render_template('winners.html', data=data_list)
 
 if __name__ == '__main__':
     app.run(debug=True)
