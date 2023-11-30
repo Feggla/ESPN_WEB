@@ -139,11 +139,15 @@ table tbody tr:last-child td {
 }
 
 .table thead th {
-  border-bottom: 2px solid #ffffff;  /* Add a border to give separation */
-  padding: 10px 5px;                 /* Some padding for spacing */
-  font-size: 1.2em;                 /* Slightly bigger font for emphasis */
-  text-transform: uppercase;        /* Make the text uppercase */
+  background-color: #4a90e2; /* A modern blue color */
+  color: #ffffff; /* White text color for contrast */
+  padding: 15px; /* Adjust padding to your preference */
+  font-size: 1.2em; /* Slightly larger font for headers */
+  text-transform: uppercase;
+  border-bottom: 3px solid #ffffff; /* A solid border for separation */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+
 
 /* Hover effect for the table headers (optional) */
 .table thead th:hover {
@@ -357,4 +361,15 @@ body {
   #searchBox {
       width: 80%; /* Full width on smaller screens */
   }
+}
+
+.button-wrapper {
+  display: flex; /* This will place all child elements inline */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px; /* Adds space between the buttons */
+}
+
+.schedule-button-container {
+  margin: 0; /* Remove any default margins */
+  /* Other styles... */
 }

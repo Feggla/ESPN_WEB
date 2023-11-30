@@ -9,6 +9,7 @@
     <title>Schedule Page</title>
 </head>
 <body>
+    <img src="{{ url_for('static', filename='images/ball-page-copy.jpg') }}" alt="Your Image Description" id="header-image">
     <form class="schedule-button-container", action="{{ url_for('matchup_table') }}" method="get">
         <button class="schedule-button" type="submit">Back to matchups</button>
     </form>

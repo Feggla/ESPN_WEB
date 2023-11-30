@@ -57,9 +57,14 @@
     {% endif %}
 
 </form>
-<form class="schedule-button-container", action="{{ url_for('schedule_page') }}" method="get">
-    <button class="schedule-button" type="submit">Schedule Page</button>
-</form>
+<div class="button-wrapper">
+    <form class="schedule-button-container" action="{{ url_for('schedule_page') }}" method="get">
+        <button class="schedule-button" type="submit">Schedule Page</button>
+    </form>
+    <form class="schedule-button-container" action="{{ url_for('rankings_page') }}" method="get">
+        <button class="schedule-button" type="submit">Rankings Page</button>
+    </form>
+</div>
 
 <body>
     {% for matchups in battles %}
@@ -70,7 +75,7 @@
         <thead>
           <tr>
             <th scope="col">{{matchups[0].name}}</th>
-            <th scope="col">Team</th>
+            <th scope="col">Matchweek {{week}}</th>
             <th scope="col">{{matchups[1].name}}</th>
           </tr>
         </thead>

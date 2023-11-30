@@ -5,6 +5,7 @@ from Team_web import Teams
 import re
 from dotenv import load_dotenv
 import os
+from rankings import check_rankings
 
 
 load_dotenv()
@@ -76,6 +77,7 @@ leagues = {
     }
 }
 overall_list = []
+current_matchweek = 5
 
 def pull(matchup_period, leagues):
     overall_list.clear()
@@ -113,7 +115,24 @@ def update(matchweek, league):
     clean_list = sorted(clean_list, key=lambda team: team.name)
 
 
-update(5, leagues)
+update(current_matchweek, leagues)
+
+rankings = check_rankings(clean_list)
+for team, scores in rankings.items():
+    rankings[team] = scores[0] + 0.5 * scores[1]
+sorted_rankings = dict(sorted(rankings.items(), key=lambda item: item[1], reverse=True))
+data = list(sorted_rankings.items())
+rank_df = pd.DataFrame(data, columns=['Team', 'Matchups Score'])
+min_score = rank_df['Matchups Score'].min()
+max_score = rank_df['Matchups Score'].max()
+def calculate_colors(score):
+        red = 255 - int((score - min_score) / (max_score - min_score) * 255)
+        green = int((score - min_score) / (max_score - min_score) * 255)
+        return f'rgb({red},{green},0)'
+
+rank_df['Color'] = rank_df['Matchups Score'].apply(calculate_colors)
+rank_data = rank_df.to_dict(orient='records')
+
 
 def clean_names(team_list):
     for obj in team_list:
@@ -154,7 +173,6 @@ new_clean_list = clean_list
 
 for matchups in pairings_list:
     ids = list(matchups.keys())
-    print(ids)
     team1_id = ids[0]
     team2_id = ids[1]
     battle = []
@@ -186,7 +204,6 @@ def check_scores(cat):
 data_list = []
 
 for matchups in obj_list:
-    print(matchups[0].name, matchups[1].name)
     matchup = {matchups[0].name: 0,
                 matchups[1].name: 0, 
                 "draw" : 0
@@ -271,7 +288,7 @@ def table():
         team2 = next((p for p in clean_list if str(p.name) == str(request.form.get("team2"))), None)
         proper_matchup.append([team1, team2])
         return redirect(url_for("matchup_table"))     
-    return render_template('table.html', battles=proper_matchup, list_options=clean_list)
+    return render_template('table.html', battles=proper_matchup, list_options=clean_list, week=current_matchweek)
 
 @app.route("/matchup", methods=['GET', 'POST'])
 def matchup_table():
@@ -280,7 +297,7 @@ def matchup_table():
         sched_battle = data.split('^')
     else:
         sched_battle = []
-    return render_template('table.html', battles=proper_matchup, default=sched_battle, list_options=clean_list)
+    return render_template('table.html', battles=proper_matchup, default=sched_battle, list_options=clean_list, week=current_matchweek)
 
 @app.route("/schedule", methods=['GET', 'POST'])
 def schedule_page():
@@ -298,6 +315,11 @@ def refresh_page():
 @app.route("/winners", methods=["GET"])
 def winners_page():
     return render_template('winners.html', data=data_list)
+
+@app.route("/rankings", methods=["GET"])
+def rankings_page():
+    return render_template('rankings.html', data=rank_data, matchweek=current_matchweek)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
