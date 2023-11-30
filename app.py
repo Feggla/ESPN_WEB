@@ -208,12 +208,6 @@ for matchups in obj_list:
     if matchup[matchups[1].name] > matchup[matchups[0].name]:
         winner = matchups[1].name
     if matchup[matchups[0].name] == matchup[matchups[1].name]:
-        check_scores("steals")
-        if matchup[matchups[0].name] > matchup[matchups[1].name]:
-            winner = matchups[0].name
-        if matchup[matchups[1].name] > matchup[matchups[0].name]:
-            winner = matchups[1].name
-    if matchup[matchups[0].name] == matchup[matchups[1].name]:
         check_scores("points")
         if matchup[matchups[0].name] > matchup[matchups[1].name]:
             winner = matchups[0].name
