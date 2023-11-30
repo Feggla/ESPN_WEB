@@ -205,21 +205,26 @@ for matchups in obj_list:
     
     if matchup[matchups[0].name] > matchup[matchups[1].name]:
         winner = matchups[0].name
+        loser = matchups[1].name
     if matchup[matchups[1].name] > matchup[matchups[0].name]:
         winner = matchups[1].name
+        loser = matchups[0].name
     if matchup[matchups[0].name] == matchup[matchups[1].name]:
         check_scores("points")
         if matchup[matchups[0].name] > matchup[matchups[1].name]:
             winner = matchups[0].name
+            loser = matchups[1].name
         if matchup[matchups[1].name] > matchup[matchups[0].name]:
             winner = matchups[1].name
+            loser = matchups[0].name
         if matchup[matchups[0].name] == matchup[matchups[1].name]:
             winner = "Not Determined"
     result_list.append({
         matchups[0].name:matchup[matchups[0].name], 
         matchups[1].name: matchup[matchups[1].name],
         "Drawn": matchup['draw'],
-        "Winning Team": winner
+        "Winning Team": winner,
+        "Losing Team": loser
         })
     data_list.append([matchups[0].name, matchup[matchups[0].name], matchups[1].name, matchup[matchups[1].name], matchup['draw'], winner])
 
@@ -230,21 +235,24 @@ paired_letters = [league_letters[i:i + 2] for i in range(0, len(league_letters),
 
 for result in result_list:
     # Get team names and draw information
-    team_names = list(result.keys())[:-2]  # Exclude 'Drawn' and 'Winning Team'
+    team_names = list(result.keys())[:-3]  # Exclude 'Drawn' and 'Winning Team'
     team1_name, team2_name = team_names
     draw = result['Drawn']
     winning_team = result['Winning Team']
+    losing_team = result['Losing Team']
+
 
     new_result = {
         'Team1': f"{team1_name} ({result[team1_name]})",
         'Team2': f"{team2_name} ({result[team2_name]})",
         'Drawn': draw,
-        'Winning Team': winning_team
+        'Winning Team': winning_team,
+        "Losing Team": losing_team
     }
     restructured_list.append(new_result)
 
 df = pd.DataFrame(restructured_list)
-df.columns = ['Team1', 'Team2', 'Drawn', 'Winning Team']
+df.columns = ['Team1', 'Team2', 'Drawn', 'Winning Team', 'Losing Team']
 df.to_excel('result_list_round_2.xlsx', index=False, engine='openpyxl')
 
 
