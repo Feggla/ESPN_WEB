@@ -77,7 +77,7 @@ leagues = {
     }
 }
 overall_list = []
-current_matchweek = 5
+current_matchweek = 6
 
 def pull(matchup_period, leagues):
     overall_list.clear()
@@ -307,7 +307,7 @@ def schedule_page():
 def refresh_page():
     received_key = request.form.get('secret_key', None)
     if received_key == os.environ.get("SECRET_KEY"):
-        update(5, leagues)
+        update(current_matchweek, leagues)
         return jsonify({"message": "Data updated successfully"}), 200
     else:
         return jsonify({"error": "Invalid secret key"}), 403
