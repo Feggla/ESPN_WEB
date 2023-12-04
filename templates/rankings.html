@@ -46,6 +46,7 @@
     <table class="table schedule-table-striped">
         <thead>
             <tr>
+                <th>rank No.</th>
                 <th>Team</th>
                 <th>Week {{matchweek}} Rankings</th>
             </tr>
@@ -53,6 +54,7 @@
         <tbody>
             {% for row in data %}
             <tr>
+                <td>{{loop.index}}</td>
                 <td>{{ row['Team'] }}</td>
                 <td style="background-color: {{ row['Color'] }};">
                     {{ row['Matchups Score'] }}

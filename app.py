@@ -127,7 +127,7 @@ min_score = rank_df['Matchups Score'].min()
 max_score = rank_df['Matchups Score'].max()
 def calculate_colors(score):
         red = 255 - int((score - min_score) / (max_score - min_score) * 255)
-        green = int((score - min_score) / (max_score - min_score) * 255)
+        green = int((score - min_score) / (max_score - min_score) * 200)
         return f'rgb({red},{green},0)'
 
 rank_df['Color'] = rank_df['Matchups Score'].apply(calculate_colors)
@@ -143,7 +143,7 @@ clean_names(clean_list)
 outliers = []
 matchup_dic = {}
 
-df = pd.read_excel("./Round_2_Knockout.xlsx", sheet_name='Sheet1', engine='openpyxl', header=None)
+df = pd.read_excel("./Knockout_Round_3.xlsx", sheet_name='Sheet1', engine='openpyxl', header=None)
 pairings = df[1].dropna().tolist()
 league_letters = df[0].dropna().tolist()
 pairs = [(pairings[i], pairings[i+1]) for i in range(0, len(pairings), 2)]
@@ -227,7 +227,7 @@ for matchups in obj_list:
         winner = matchups[1].name
         loser = matchups[0].name
     if matchup[matchups[0].name] == matchup[matchups[1].name]:
-        check_scores("points")
+        check_scores("rebounds")
         if matchup[matchups[0].name] > matchup[matchups[1].name]:
             winner = matchups[0].name
             loser = matchups[1].name
@@ -268,9 +268,9 @@ for result in result_list:
     }
     restructured_list.append(new_result)
 
-df = pd.DataFrame(restructured_list)
-df.columns = ['Team1', 'Team2', 'Drawn', 'Winning Team', 'Losing Team']
-df.to_excel('result_list_round_2.xlsx', index=False, engine='openpyxl')
+# df = pd.DataFrame(restructured_list)
+# df.columns = ['Team1', 'Team2', 'Drawn', 'Winning Team', 'Losing Team']
+# df.to_excel('result_list_round_2.xlsx', index=False, engine='openpyxl')
 
 
 app = Flask(__name__)
@@ -312,9 +312,9 @@ def refresh_page():
     else:
         return jsonify({"error": "Invalid secret key"}), 403
 
-@app.route("/winners", methods=["GET"])
-def winners_page():
-    return render_template('winners.html', data=data_list)
+# @app.route("/winners", methods=["GET"])
+# def winners_page():
+#     return render_template('winners.html', data=data_list)
 
 @app.route("/rankings", methods=["GET"])
 def rankings_page():
