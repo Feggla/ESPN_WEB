@@ -324,6 +324,10 @@ body {
     width: 100%;
     overflow-x: auto; /* Allow table to scroll on small devices */
   }
+  .table th, .table td {
+    padding: 8px; /* Smaller padding */
+    font-size: 14px; /* Smaller font for table headings and data */
+  }
 }
 
 /* Accessibility improvements */
@@ -372,4 +376,14 @@ body {
 .schedule-button-container {
   margin: 0; /* Remove any default margins */
   /* Other styles... */
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller base font size for mobile */
+    padding: 10px; /* Less padding around the body */
+  }
+    .schedule-button-container, .links-button-container {
+    padding: 10px; /* Less padding around buttons */
+  }
 }
