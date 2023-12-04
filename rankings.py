@@ -41,7 +41,7 @@ def check_rankings(score_list):
                     score += 1
                 if matchup[teamA.name] == matchup[teamB.name]:
                     draw += 1
-        df_dic[teamA.name] = [score, draw]
+        df_dic[teamA.name] = [score, draw, teamA.league]
         # print(f"{teamA.name} would have won {score} and drawn {draw} matchups this week")
     return df_dic
 

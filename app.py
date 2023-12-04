@@ -97,6 +97,8 @@ def pull(matchup_period, leagues):
                              scoreboard=scoreboard, score=score)
             games[1] = Teams(mw=matchup_period, player=team_matchups.index(games), place="away", league=league,
                              scoreboard=scoreboard, score=score)
+            games[0].league = association[0].upper()
+            games[1].league = association[0].upper()
             overall_list.append(games[0])
             overall_list.append(games[1])
             score_list.append(games[0])
@@ -119,10 +121,10 @@ update(current_matchweek, leagues)
 
 rankings = check_rankings(clean_list)
 for team, scores in rankings.items():
-    rankings[team] = scores[0] + 0.5 * scores[1]
-sorted_rankings = dict(sorted(rankings.items(), key=lambda item: item[1], reverse=True))
-data = list(sorted_rankings.items())
-rank_df = pd.DataFrame(data, columns=['Team', 'Matchups Score'])
+    rankings[team] = [scores[0] + 0.5 * scores[1], scores[2]]
+sorted_rankings = dict(sorted(rankings.items(), key=lambda item: item[1][0], reverse=True))
+data = [(team, *scores) for team, scores in sorted_rankings.items()]
+rank_df = pd.DataFrame(data, columns=['Team', 'Matchups Score', 'League'])
 min_score = rank_df['Matchups Score'].min()
 max_score = rank_df['Matchups Score'].max()
 def calculate_colors(score):
