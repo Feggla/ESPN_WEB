@@ -13,6 +13,33 @@
     <form class="schedule-button-container", action="{{ url_for('matchup_table') }}" method="get">
         <button class="schedule-button" type="submit">Back to matchups</button>
     </form>
+    <div class="search-container">
+        <input type="text" id="searchBox" onkeyup="searchTable()" placeholder="Filter teams">
+    </div>    
+    <script>
+        function searchTable() {
+            var input, filter, table, tbody, tr, td, i, txtValue;
+            input = document.getElementById("searchBox");
+            filter = input.value.toUpperCase();
+            table = document.querySelector(".table");
+            tbody = table.getElementsByTagName("tbody");
+        
+            // Loop through all table bodies, and hide those who don't match the search query
+            for (i = 0; i < tbody.length; i++) {
+                tr = tbody[i].getElementsByTagName("tr")[0];
+                if (tr) {
+                    // Assume we want to search in both team columns (index 0 and 1)
+                    td1 = tr.cells[0].textContent || tr.cells[0].innerText;
+                    td2 = tr.cells[1].textContent || tr.cells[1].innerText;
+                    if (td1.toUpperCase().indexOf(filter) > -1 || td2.toUpperCase().indexOf(filter) > -1) {
+                        tbody[i].style.display = "";
+                    } else {
+                        tbody[i].style.display = "none";
+                    }
+                }       
+            }
+        }
+        </script>
     <table class="table schedule-table-striped">
     <thead>
         <th scope="col">Team1</th>
