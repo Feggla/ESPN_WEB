@@ -274,9 +274,9 @@ for result in result_list:
     }
     restructured_list.append(new_result)
 
-# df = pd.DataFrame(restructured_list)
-# df.columns = ['Team1', 'Team2', 'Drawn', 'Winning Team', 'Losing Team']
-# df.to_excel('result_list_round_2.xlsx', index=False, engine='openpyxl')
+df = pd.DataFrame(restructured_list)
+df.columns = ['Team1', 'Team2', 'Drawn', 'Winning Team', 'Losing Team']
+df.to_excel('result_list_round_3.xlsx', index=False, engine='openpyxl')
 
 
 app = Flask(__name__)
@@ -318,9 +318,9 @@ def refresh_page():
     else:
         return jsonify({"error": "Invalid secret key"}), 403
 
-# @app.route("/winners", methods=["GET"])
-# def winners_page():
-#     return render_template('winners.html', data=data_list)
+@app.route("/winners", methods=["GET"])
+def winners_page():
+    return render_template('winners.html', data=data_list)
 
 @app.route("/rankings", methods=["GET"])
 def rankings_page():
