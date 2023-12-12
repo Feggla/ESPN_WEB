@@ -6,7 +6,7 @@ import re
 from dotenv import load_dotenv
 import os
 from rankings import check_rankings
-from data import update_db_rankings
+# from data import update_db_rankings
 
 
 load_dotenv()
