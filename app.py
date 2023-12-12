@@ -6,6 +6,7 @@ import re
 from dotenv import load_dotenv
 import os
 from rankings import check_rankings
+from data import update_db_rankings
 
 
 load_dotenv()
@@ -135,8 +136,10 @@ def calculate_colors(score):
         return f'rgb({red},{green},0)'
 
 rank_df['Color'] = rank_df['Matchups Score'].apply(calculate_colors)
-rank_data = rank_df.to_dict(orient='records')
+rank_df["Week"] = current_matchweek
+# rank_data = rank_df(orient='records')
 # rank_df.to_csv("week_1_data.csv")
+# update_db_rankings(rank_df)
 
 
 def clean_names(team_list):
@@ -170,6 +173,7 @@ id = 1
 
 for item in sorted_objects:
     item.id = id
+    print(item.name, item.id)
     id += 1
 
 obj_list = []
