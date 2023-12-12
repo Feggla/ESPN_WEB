@@ -137,7 +137,7 @@ def calculate_colors(score):
 
 rank_df['Color'] = rank_df['Matchups Score'].apply(calculate_colors)
 rank_df["Week"] = current_matchweek
-rank_data = rank_df(orient='records')
+rank_data = rank_df.to_dict(orient='records')
 rank_df.to_csv("week_1_data.csv")
 # update_db_rankings(rank_df)
 
