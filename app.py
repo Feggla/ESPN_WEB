@@ -264,7 +264,7 @@ for matchups in obj_list:
         winner = matchups[1].name
         loser = matchups[0].name
     if matchup[matchups[0].name] == matchup[matchups[1].name]:
-        check_scores("rebounds")
+        check_scores("assists")
         if matchup[matchups[0].name] > matchup[matchups[1].name]:
             winner = matchups[0].name
             loser = matchups[1].name
