@@ -10,3 +10,4 @@ urllib3==1.26.14
 uvicorn==0.23.2
 uvloop==0.19.0
 openpyxl
+pyscopg2==66.0.2
