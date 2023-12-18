@@ -6,7 +6,10 @@ import re
 from dotenv import load_dotenv
 import os
 from rankings import check_rankings
-# from data import update_db_rankings
+from data import update_db_rankings
+from testing import get_rankings
+from matchweek import assign_matchweek
+
 
 
 load_dotenv()
@@ -78,7 +81,8 @@ leagues = {
     }
 }
 overall_list = []
-current_matchweek = 7
+current_matchweek = assign_matchweek()
+# current_matchweek = 6
 
 def pull(matchup_period, leagues):
     overall_list.clear()
@@ -110,7 +114,12 @@ new_matchups = []
 def update(matchweek, league):
     global clean_list
     clean_list = []
-    pull(matchweek, league)    
+    try:
+        pull(matchweek, league)    
+    except AttributeError:
+        matchweek = matchweek-1
+        pull(matchweek, league)
+    print(matchweek)
     for team in overall_list:
         team.name = str(team.name).replace("Team(", "").replace(")", "").strip()
         clean_list.append(team)
@@ -138,8 +147,28 @@ def calculate_colors(score):
 rank_df['Color'] = rank_df['Matchups Score'].apply(calculate_colors)
 rank_df["Week"] = current_matchweek
 rank_data = rank_df.to_dict(orient='records')
+
+rankings = check_rankings(clean_list)
+for team, scores in rankings.items():
+    rankings[team] = [scores[0] + 0.5 * scores[1], scores[2]]
+sorted_rankings = dict(sorted(rankings.items(), key=lambda item: item[1][0], reverse=True))
+data = [(team, *scores) for team, scores in sorted_rankings.items()]
+rank_df = pd.DataFrame(data, columns=['Team', 'Matchups Score', 'League'])
+min_score = float(rank_df['Matchups Score'].min())
+max_score = float(rank_df['Matchups Score'].max())
+def calculate_colors(score):
+        if max_score == min_score:
+            return 'rgb(255, 255, 255)'
+        red = 255 - int((score - min_score) / (max_score - min_score) * 255)
+        green = int((score - min_score) / (max_score - min_score) * 200)
+        return f'rgb({red},{green},0)'
+
+rank_df['Color'] = rank_df['Matchups Score'].apply(calculate_colors)
+rank_df["Week"] = current_matchweek
+
+rank_data = rank_df.to_dict(orient='records')
 rank_df.to_csv("week_1_data.csv")
-# update_db_rankings(rank_df)
+update_db_rankings(rank_df)
 
 
 def clean_names(team_list):
@@ -151,7 +180,7 @@ clean_names(clean_list)
 outliers = []
 matchup_dic = {}
 
-df = pd.read_excel("./Knockout_Round_3.xlsx", sheet_name='Sheet1', engine='openpyxl', header=None)
+df = pd.read_excel("./Knockout_Round_4.xlsx", sheet_name='Sheet1', engine='openpyxl', header=None)
 pairings = df[1].dropna().tolist()
 league_letters = df[0].dropna().tolist()
 pairs = [(pairings[i], pairings[i+1]) for i in range(0, len(pairings), 2)]
@@ -327,8 +356,16 @@ def winners_page():
 
 @app.route("/rankings", methods=["GET"])
 def rankings_page():
-    return render_template('rankings.html', data=rank_data, matchweek=current_matchweek)
+    # default_week = current_matchweek  
+    # selected_week = request.args.get('week', default_week)
+    # try:
+    #     selected_week = int(selected_week)
+    # except (ValueError, TypeError):
+    #     selected_week = default_week  
+    
+    weeks = [str(i) for i in range(1, 9)]
+    return render_template('rankings.html', data=rank_data, weeks=current_matchweek)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=3000)

@@ -1,0 +1,1201 @@
+﻿Date,Away Team,Away Code,Home Team,Home Code
+"Tue, Oct 24, 2023",Los Angeles Lakers,LAL,Denver Nuggets,DEN
+"Tue, Oct 24, 2023",Phoenix Suns,PHO,Golden State Warriors,GSW
+"Wed, Oct 25, 2023",Houston Rockets,HOU,Orlando Magic,ORL
+"Wed, Oct 25, 2023",Boston Celtics,BOS,New York Knicks,NYK
+"Wed, Oct 25, 2023",Washington Wizards,WAS,Indiana Pacers,IND
+"Wed, Oct 25, 2023",Atlanta Hawks,ATL,Charlotte Hornets,CHA
+"Wed, Oct 25, 2023",Detroit Pistons,DET,Miami Heat,MIA
+"Wed, Oct 25, 2023",Minnesota Timberwolves,MIN,Toronto Raptors,TOR
+"Wed, Oct 25, 2023",Cleveland Cavaliers,CLE,Brooklyn Nets,BKN
+"Wed, Oct 25, 2023",New Orleans Pelicans,NOP,Memphis Grizzlies,MEM
+"Wed, Oct 25, 2023",Oklahoma City Thunder,OKC,Chicago Bulls,CHI
+"Wed, Oct 25, 2023",Sacramento Kings,SAC,Utah Jazz,UTA
+"Wed, Oct 25, 2023",Dallas Mavericks,DAL,San Antonio Spurs,SAS
+"Wed, Oct 25, 2023",Portland Trail Blazers,POR,Los Angeles Clippers,LAC
+"Thu, Oct 26, 2023",Philadelphia 76ers,PHI,Milwaukee Bucks,MIL
+"Thu, Oct 26, 2023",Phoenix Suns,PHO,Los Angeles Lakers,LAL
+"Fri, Oct 27, 2023",Denver Nuggets,DEN,Memphis Grizzlies,MEM
+"Fri, Oct 27, 2023",Detroit Pistons,DET,Charlotte Hornets,CHA
+"Fri, Oct 27, 2023",New York Knicks,NYK,Atlanta Hawks,ATL
+"Fri, Oct 27, 2023",Oklahoma City Thunder,OKC,Cleveland Cavaliers,CLE
+"Fri, Oct 27, 2023",Miami Heat,MIA,Boston Celtics,BOS
+"Fri, Oct 27, 2023",Toronto Raptors,TOR,Chicago Bulls,CHI
+"Fri, Oct 27, 2023",Houston Rockets,HOU,San Antonio Spurs,SAS
+"Fri, Oct 27, 2023",Brooklyn Nets,BKN,Dallas Mavericks,DAL
+"Fri, Oct 27, 2023",Los Angeles Clippers,LAC,Utah Jazz,UTA
+"Fri, Oct 27, 2023",Orlando Magic,ORL,Portland Trail Blazers,POR
+"Fri, Oct 27, 2023",Golden State Warriors,GSW,Sacramento Kings,SAC
+"Sat, Oct 28, 2023",Chicago Bulls,CHI,Detroit Pistons,DET
+"Sat, Oct 28, 2023",Memphis Grizzlies,MEM,Washington Wizards,WAS
+"Sat, Oct 28, 2023",New York Knicks,NYK,New Orleans Pelicans,NOP
+"Sat, Oct 28, 2023",Indiana Pacers,IND,Cleveland Cavaliers,CLE
+"Sat, Oct 28, 2023",Philadelphia 76ers,PHI,Toronto Raptors,TOR
+"Sat, Oct 28, 2023",Miami Heat,MIA,Minnesota Timberwolves,MIN
+"Sat, Oct 28, 2023",Utah Jazz,UTA,Phoenix Suns,PHO
+"Sun, Oct 29, 2023",Denver Nuggets,DEN,Oklahoma City Thunder,OKC
+"Sun, Oct 29, 2023",Golden State Warriors,GSW,Houston Rockets,HOU
+"Sun, Oct 29, 2023",Atlanta Hawks,ATL,Milwaukee Bucks,MIL
+"Sun, Oct 29, 2023",Portland Trail Blazers,POR,Philadelphia 76ers,PHI
+"Sun, Oct 29, 2023",San Antonio Spurs,SAS,Los Angeles Clippers,LAC
+"Sun, Oct 29, 2023",Los Angeles Lakers,LAL,Sacramento Kings,SAC
+"Mon, Oct 30, 2023",Chicago Bulls,CHI,Indiana Pacers,IND
+"Mon, Oct 30, 2023",Boston Celtics,BOS,Washington Wizards,WAS
+"Mon, Oct 30, 2023",Brooklyn Nets,BKN,Charlotte Hornets,CHA
+"Mon, Oct 30, 2023",Portland Trail Blazers,POR,Toronto Raptors,TOR
+"Mon, Oct 30, 2023",Minnesota Timberwolves,MIN,Atlanta Hawks,ATL
+"Mon, Oct 30, 2023",Dallas Mavericks,DAL,Memphis Grizzlies,MEM
+"Mon, Oct 30, 2023",Miami Heat,MIA,Milwaukee Bucks,MIL
+"Mon, Oct 30, 2023",Golden State Warriors,GSW,New Orleans Pelicans,NOP
+"Mon, Oct 30, 2023",Detroit Pistons,DET,Oklahoma City Thunder,OKC
+"Mon, Oct 30, 2023",Utah Jazz,UTA,Denver Nuggets,DEN
+"Mon, Oct 30, 2023",Orlando Magic,ORL,Los Angeles Lakers,LAL
+"Tue, Oct 31, 2023",New York Knicks,NYK,Cleveland Cavaliers,CLE
+"Tue, Oct 31, 2023",San Antonio Spurs,SAS,Phoenix Suns,PHO
+"Tue, Oct 31, 2023",Orlando Magic,ORL,Los Angeles Clippers,LAC
+"Wed, Nov 1, 2023",Portland Trail Blazers,POR,Detroit Pistons,DET
+"Wed, Nov 1, 2023",Milwaukee Bucks,MIL,Toronto Raptors,TOR
+"Wed, Nov 1, 2023",Washington Wizards,WAS,Atlanta Hawks,ATL
+"Wed, Nov 1, 2023",Indiana Pacers,IND,Boston Celtics,BOS
+"Wed, Nov 1, 2023",Brooklyn Nets,BKN,Miami Heat,MIA
+"Wed, Nov 1, 2023",Cleveland Cavaliers,CLE,New York Knicks,NYK
+"Wed, Nov 1, 2023",New Orleans Pelicans,NOP,Oklahoma City Thunder,OKC
+"Wed, Nov 1, 2023",Charlotte Hornets,CHA,Houston Rockets,HOU
+"Wed, Nov 1, 2023",Denver Nuggets,DEN,Minnesota Timberwolves,MIN
+"Wed, Nov 1, 2023",Chicago Bulls,CHI,Dallas Mavericks,DAL
+"Wed, Nov 1, 2023",Memphis Grizzlies,MEM,Utah Jazz,UTA
+"Wed, Nov 1, 2023",Sacramento Kings,SAC,Golden State Warriors,GSW
+"Wed, Nov 1, 2023",Los Angeles Clippers,LAC,Los Angeles Lakers,LAL
+"Thu, Nov 2, 2023",Toronto Raptors,TOR,Philadelphia 76ers,PHI
+"Thu, Nov 2, 2023",Detroit Pistons,DET,New Orleans Pelicans,NOP
+"Thu, Nov 2, 2023",Orlando Magic,ORL,Utah Jazz,UTA
+"Thu, Nov 2, 2023",San Antonio Spurs,SAS,Phoenix Suns,PHO
+"Fri, Nov 3, 2023",Cleveland Cavaliers,CLE,Indiana Pacers,IND
+"Fri, Nov 3, 2023",New York Knicks,NYK,Milwaukee Bucks,MIL
+"Fri, Nov 3, 2023",Brooklyn Nets,BKN,Chicago Bulls,CHI
+"Fri, Nov 3, 2023",Washington Wizards,WAS,Miami Heat,MIA
+"Fri, Nov 3, 2023",Golden State Warriors,GSW,Oklahoma City Thunder,OKC
+"Fri, Nov 3, 2023",Dallas Mavericks,DAL,Denver Nuggets,DEN
+"Fri, Nov 3, 2023",Memphis Grizzlies,MEM,Portland Trail Blazers,POR
+"Sat, Nov 4, 2023",Phoenix Suns,PHO,Philadelphia 76ers,PHI
+"Sat, Nov 4, 2023",Charlotte Hornets,CHA,Indiana Pacers,IND
+"Sat, Nov 4, 2023",Atlanta Hawks,ATL,New Orleans Pelicans,NOP
+"Sat, Nov 4, 2023",Los Angeles Lakers,LAL,Orlando Magic,ORL
+"Sat, Nov 4, 2023",Boston Celtics,BOS,Brooklyn Nets,BKN
+"Sat, Nov 4, 2023",Sacramento Kings,SAC,Houston Rockets,HOU
+"Sat, Nov 4, 2023",Utah Jazz,UTA,Minnesota Timberwolves,MIN
+"Sat, Nov 4, 2023",Chicago Bulls,CHI,Denver Nuggets,DEN
+"Sun, Nov 5, 2023",Phoenix Suns,PHO,Detroit Pistons,DET
+"Sun, Nov 5, 2023",Toronto Raptors,TOR,San Antonio Spurs,SAS
+"Sun, Nov 5, 2023",Golden State Warriors,GSW,Cleveland Cavaliers,CLE
+"Sun, Nov 5, 2023",Charlotte Hornets,CHA,Dallas Mavericks,DAL
+"Sun, Nov 5, 2023",Memphis Grizzlies,MEM,Portland Trail Blazers,POR
+"Mon, Nov 6, 2023",Golden State Warriors,GSW,Detroit Pistons,DET
+"Mon, Nov 6, 2023",San Antonio Spurs,SAS,Indiana Pacers,IND
+"Mon, Nov 6, 2023",Dallas Mavericks,DAL,Orlando Magic,ORL
+"Mon, Nov 6, 2023",Washington Wizards,WAS,Philadelphia 76ers,PHI
+"Mon, Nov 6, 2023",Milwaukee Bucks,MIL,Brooklyn Nets,BKN
+"Mon, Nov 6, 2023",Los Angeles Lakers,LAL,Miami Heat,MIA
+"Mon, Nov 6, 2023",Los Angeles Clippers,LAC,New York Knicks,NYK
+"Mon, Nov 6, 2023",Utah Jazz,UTA,Chicago Bulls,CHI
+"Mon, Nov 6, 2023",Sacramento Kings,SAC,Houston Rockets,HOU
+"Mon, Nov 6, 2023",Boston Celtics,BOS,Minnesota Timberwolves,MIN
+"Mon, Nov 6, 2023",Atlanta Hawks,ATL,Oklahoma City Thunder,OKC
+"Mon, Nov 6, 2023",New Orleans Pelicans,NOP,Denver Nuggets,DEN
+"Wed, Nov 8, 2023",Washington Wizards,WAS,Charlotte Hornets,CHA
+"Wed, Nov 8, 2023",Utah Jazz,UTA,Indiana Pacers,IND
+"Wed, Nov 8, 2023",Boston Celtics,BOS,Philadelphia 76ers,PHI
+"Wed, Nov 8, 2023",Los Angeles Clippers,LAC,Brooklyn Nets,BKN
+"Wed, Nov 8, 2023",San Antonio Spurs,SAS,New York Knicks,NYK
+"Wed, Nov 8, 2023",Phoenix Suns,PHO,Chicago Bulls,CHI
+"Wed, Nov 8, 2023",Los Angeles Lakers,LAL,Houston Rockets,HOU
+"Wed, Nov 8, 2023",Miami Heat,MIA,Memphis Grizzlies,MEM
+"Wed, Nov 8, 2023",Detroit Pistons,DET,Milwaukee Bucks,MIL
+"Wed, Nov 8, 2023",New Orleans Pelicans,NOP,Minnesota Timberwolves,MIN
+"Wed, Nov 8, 2023",Cleveland Cavaliers,CLE,Oklahoma City Thunder,OKC
+"Wed, Nov 8, 2023",Toronto Raptors,TOR,Dallas Mavericks,DAL
+"Wed, Nov 8, 2023",Golden State Warriors,GSW,Denver Nuggets,DEN
+"Wed, Nov 8, 2023",Portland Trail Blazers,POR,Sacramento Kings,SAC
+"Thu, Nov 9, 2023",Milwaukee Bucks,MIL,Indiana Pacers,IND
+"Thu, Nov 9, 2023",Atlanta Hawks,ATL,Orlando Magic,ORL
+"Fri, Nov 10, 2023",Philadelphia 76ers,PHI,Detroit Pistons,DET
+"Fri, Nov 10, 2023",Charlotte Hornets,CHA,Washington Wizards,WAS
+"Fri, Nov 10, 2023",Brooklyn Nets,BKN,Boston Celtics,BOS
+"Fri, Nov 10, 2023",New Orleans Pelicans,NOP,Houston Rockets,HOU
+"Fri, Nov 10, 2023",Utah Jazz,UTA,Memphis Grizzlies,MEM
+"Fri, Nov 10, 2023",Minnesota Timberwolves,MIN,San Antonio Spurs,SAS
+"Fri, Nov 10, 2023",Los Angeles Clippers,LAC,Dallas Mavericks,DAL
+"Fri, Nov 10, 2023",Los Angeles Lakers,LAL,Phoenix Suns,PHO
+"Fri, Nov 10, 2023",Oklahoma City Thunder,OKC,Sacramento Kings,SAC
+"Sat, Nov 11, 2023",Milwaukee Bucks,MIL,Orlando Magic,ORL
+"Sat, Nov 11, 2023",Toronto Raptors,TOR,Boston Celtics,BOS
+"Sat, Nov 11, 2023",Miami Heat,MIA,Atlanta Hawks,ATL
+"Sat, Nov 11, 2023",Cleveland Cavaliers,CLE,Golden State Warriors,GSW
+"Sun, Nov 12, 2023",Charlotte Hornets,CHA,New York Knicks,NYK
+"Sun, Nov 12, 2023",Washington Wizards,WAS,Brooklyn Nets,BKN
+"Sun, Nov 12, 2023",Memphis Grizzlies,MEM,Los Angeles Clippers,LAC
+"Sun, Nov 12, 2023",Indiana Pacers,IND,Philadelphia 76ers,PHI
+"Sun, Nov 12, 2023",Detroit Pistons,DET,Chicago Bulls,CHI
+"Sun, Nov 12, 2023",Denver Nuggets,DEN,Houston Rockets,HOU
+"Sun, Nov 12, 2023",Dallas Mavericks,DAL,New Orleans Pelicans,NOP
+"Sun, Nov 12, 2023",Miami Heat,MIA,San Antonio Spurs,SAS
+"Sun, Nov 12, 2023",Oklahoma City Thunder,OKC,Phoenix Suns,PHO
+"Sun, Nov 12, 2023",Minnesota Timberwolves,MIN,Golden State Warriors,GSW
+"Sun, Nov 12, 2023",Portland Trail Blazers,POR,Los Angeles Lakers,LAL
+"Mon, Nov 13, 2023",New York Knicks,NYK,Boston Celtics,BOS
+"Mon, Nov 13, 2023",Washington Wizards,WAS,Toronto Raptors,TOR
+"Mon, Nov 13, 2023",Chicago Bulls,CHI,Milwaukee Bucks,MIL
+"Mon, Nov 13, 2023",Cleveland Cavaliers,CLE,Sacramento Kings,SAC
+"Tue, Nov 14, 2023",Miami Heat,MIA,Charlotte Hornets,CHA
+"Tue, Nov 14, 2023",Atlanta Hawks,ATL,Detroit Pistons,DET
+"Tue, Nov 14, 2023",Indiana Pacers,IND,Philadelphia 76ers,PHI
+"Tue, Nov 14, 2023",Orlando Magic,ORL,Brooklyn Nets,BKN
+"Tue, Nov 14, 2023",San Antonio Spurs,SAS,Oklahoma City Thunder,OKC
+"Tue, Nov 14, 2023",Dallas Mavericks,DAL,New Orleans Pelicans,NOP
+"Tue, Nov 14, 2023",Portland Trail Blazers,POR,Utah Jazz,UTA
+"Tue, Nov 14, 2023",Los Angeles Clippers,LAC,Denver Nuggets,DEN
+"Tue, Nov 14, 2023",Minnesota Timberwolves,MIN,Golden State Warriors,GSW
+"Tue, Nov 14, 2023",Memphis Grizzlies,MEM,Los Angeles Lakers,LAL
+"Wed, Nov 15, 2023",Dallas Mavericks,DAL,Washington Wizards,WAS
+"Wed, Nov 15, 2023",New York Knicks,NYK,Atlanta Hawks,ATL
+"Wed, Nov 15, 2023",Boston Celtics,BOS,Philadelphia 76ers,PHI
+"Wed, Nov 15, 2023",Milwaukee Bucks,MIL,Toronto Raptors,TOR
+"Wed, Nov 15, 2023",Orlando Magic,ORL,Chicago Bulls,CHI
+"Wed, Nov 15, 2023",Minnesota Timberwolves,MIN,Phoenix Suns,PHO
+"Wed, Nov 15, 2023",Sacramento Kings,SAC,Los Angeles Lakers,LAL
+"Wed, Nov 15, 2023",Cleveland Cavaliers,CLE,Portland Trail Blazers,POR
+"Thu, Nov 16, 2023",Brooklyn Nets,BKN,Miami Heat,MIA
+"Thu, Nov 16, 2023",Oklahoma City Thunder,OKC,Golden State Warriors,GSW
+"Fri, Nov 17, 2023",Milwaukee Bucks,MIL,Charlotte Hornets,CHA
+"Fri, Nov 17, 2023",New York Knicks,NYK,Washington Wizards,WAS
+"Fri, Nov 17, 2023",Philadelphia 76ers,PHI,Atlanta Hawks,ATL
+"Fri, Nov 17, 2023",Detroit Pistons,DET,Cleveland Cavaliers,CLE
+"Fri, Nov 17, 2023",Sacramento Kings,SAC,San Antonio Spurs,SAS
+"Fri, Nov 17, 2023",Boston Celtics,BOS,Toronto Raptors,TOR
+"Fri, Nov 17, 2023",Orlando Magic,ORL,Chicago Bulls,CHI
+"Fri, Nov 17, 2023",Denver Nuggets,DEN,New Orleans Pelicans,NOP
+"Fri, Nov 17, 2023",Los Angeles Lakers,LAL,Portland Trail Blazers,POR
+"Fri, Nov 17, 2023",Phoenix Suns,PHO,Utah Jazz,UTA
+"Fri, Nov 17, 2023",Houston Rockets,HOU,Los Angeles Clippers,LAC
+"Sat, Nov 18, 2023",New York Knicks,NYK,Charlotte Hornets,CHA
+"Sat, Nov 18, 2023",Minnesota Timberwolves,MIN,New Orleans Pelicans,NOP
+"Sat, Nov 18, 2023",Miami Heat,MIA,Chicago Bulls,CHI
+"Sat, Nov 18, 2023",Dallas Mavericks,DAL,Milwaukee Bucks,MIL
+"Sat, Nov 18, 2023",Memphis Grizzlies,MEM,San Antonio Spurs,SAS
+"Sat, Nov 18, 2023",Oklahoma City Thunder,OKC,Golden State Warriors,GSW
+"Sun, Nov 19, 2023",Philadelphia 76ers,PHI,Brooklyn Nets,BKN
+"Sun, Nov 19, 2023",Detroit Pistons,DET,Toronto Raptors,TOR
+"Sun, Nov 19, 2023",Orlando Magic,ORL,Indiana Pacers,IND
+"Sun, Nov 19, 2023",Denver Nuggets,DEN,Cleveland Cavaliers,CLE
+"Sun, Nov 19, 2023",Sacramento Kings,SAC,Dallas Mavericks,DAL
+"Sun, Nov 19, 2023",Boston Celtics,BOS,Memphis Grizzlies,MEM
+"Sun, Nov 19, 2023",Phoenix Suns,PHO,Utah Jazz,UTA
+"Sun, Nov 19, 2023",Oklahoma City Thunder,OKC,Portland Trail Blazers,POR
+"Sun, Nov 19, 2023",Houston Rockets,HOU,Los Angeles Lakers,LAL
+"Mon, Nov 20, 2023",Boston Celtics,BOS,Charlotte Hornets,CHA
+"Mon, Nov 20, 2023",Denver Nuggets,DEN,Detroit Pistons,DET
+"Mon, Nov 20, 2023",Milwaukee Bucks,MIL,Washington Wizards,WAS
+"Mon, Nov 20, 2023",Miami Heat,MIA,Chicago Bulls,CHI
+"Mon, Nov 20, 2023",New York Knicks,NYK,Minnesota Timberwolves,MIN
+"Mon, Nov 20, 2023",Sacramento Kings,SAC,New Orleans Pelicans,NOP
+"Mon, Nov 20, 2023",Los Angeles Clippers,LAC,San Antonio Spurs,SAS
+"Mon, Nov 20, 2023",Houston Rockets,HOU,Golden State Warriors,GSW
+"Tue, Nov 21, 2023",Toronto Raptors,TOR,Orlando Magic,ORL
+"Tue, Nov 21, 2023",Indiana Pacers,IND,Atlanta Hawks,ATL
+"Tue, Nov 21, 2023",Cleveland Cavaliers,CLE,Philadelphia 76ers,PHI
+"Tue, Nov 21, 2023",Portland Trail Blazers,POR,Phoenix Suns,PHO
+"Tue, Nov 21, 2023",Utah Jazz,UTA,Los Angeles Lakers,LAL
+"Wed, Nov 22, 2023",Washington Wizards,WAS,Charlotte Hornets,CHA
+"Wed, Nov 22, 2023",Denver Nuggets,DEN,Orlando Magic,ORL
+"Wed, Nov 22, 2023",Brooklyn Nets,BKN,Atlanta Hawks,ATL
+"Wed, Nov 22, 2023",Milwaukee Bucks,MIL,Boston Celtics,BOS
+"Wed, Nov 22, 2023",Miami Heat,MIA,Cleveland Cavaliers,CLE
+"Wed, Nov 22, 2023",Toronto Raptors,TOR,Indiana Pacers,IND
+"Wed, Nov 22, 2023",Memphis Grizzlies,MEM,Houston Rockets,HOU
+"Wed, Nov 22, 2023",Philadelphia 76ers,PHI,Minnesota Timberwolves,MIN
+"Wed, Nov 22, 2023",Sacramento Kings,SAC,New Orleans Pelicans,NOP
+"Wed, Nov 22, 2023",Chicago Bulls,CHI,Oklahoma City Thunder,OKC
+"Wed, Nov 22, 2023",Los Angeles Clippers,LAC,San Antonio Spurs,SAS
+"Wed, Nov 22, 2023",Golden State Warriors,GSW,Phoenix Suns,PHO
+"Wed, Nov 22, 2023",Utah Jazz,UTA,Portland Trail Blazers,POR
+"Wed, Nov 22, 2023",Dallas Mavericks,DAL,Los Angeles Lakers,LAL
+"Fri, Nov 24, 2023",Boston Celtics,BOS,Orlando Magic,ORL
+"Fri, Nov 24, 2023",Phoenix Suns,PHO,Memphis Grizzlies,MEM
+"Fri, Nov 24, 2023",Miami Heat,MIA,New York Knicks,NYK
+"Fri, Nov 24, 2023",Chicago Bulls,CHI,Toronto Raptors,TOR
+"Fri, Nov 24, 2023",Denver Nuggets,DEN,Houston Rockets,HOU
+"Fri, Nov 24, 2023",Detroit Pistons,DET,Indiana Pacers,IND
+"Fri, Nov 24, 2023",Washington Wizards,WAS,Milwaukee Bucks,MIL
+"Fri, Nov 24, 2023",Sacramento Kings,SAC,Minnesota Timberwolves,MIN
+"Fri, Nov 24, 2023",San Antonio Spurs,SAS,Golden State Warriors,GSW
+"Fri, Nov 24, 2023",New Orleans Pelicans,NOP,Los Angeles Clippers,LAC
+"Sat, Nov 25, 2023",Philadelphia 76ers,PHI,Oklahoma City Thunder,OKC
+"Sat, Nov 25, 2023",Miami Heat,MIA,Brooklyn Nets,BKN
+"Sat, Nov 25, 2023",Atlanta Hawks,ATL,Washington Wizards,WAS
+"Sat, Nov 25, 2023",Los Angeles Lakers,LAL,Cleveland Cavaliers,CLE
+"Sat, Nov 25, 2023",New Orleans Pelicans,NOP,Utah Jazz,UTA
+"Sat, Nov 25, 2023",Dallas Mavericks,DAL,Los Angeles Clippers,LAC
+"Sun, Nov 26, 2023",Portland Trail Blazers,POR,Milwaukee Bucks,MIL
+"Sun, Nov 26, 2023",Atlanta Hawks,ATL,Boston Celtics,BOS
+"Sun, Nov 26, 2023",Minnesota Timberwolves,MIN,Memphis Grizzlies,MEM
+"Sun, Nov 26, 2023",Phoenix Suns,PHO,New York Knicks,NYK
+"Sun, Nov 26, 2023",Charlotte Hornets,CHA,Orlando Magic,ORL
+"Sun, Nov 26, 2023",Chicago Bulls,CHI,Brooklyn Nets,BKN
+"Sun, Nov 26, 2023",Toronto Raptors,TOR,Cleveland Cavaliers,CLE
+"Sun, Nov 26, 2023",San Antonio Spurs,SAS,Denver Nuggets,DEN
+"Mon, Nov 27, 2023",Washington Wizards,WAS,Detroit Pistons,DET
+"Mon, Nov 27, 2023",Portland Trail Blazers,POR,Indiana Pacers,IND
+"Mon, Nov 27, 2023",Los Angeles Lakers,LAL,Philadelphia 76ers,PHI
+"Mon, Nov 27, 2023",New Orleans Pelicans,NOP,Utah Jazz,UTA
+"Mon, Nov 27, 2023",Denver Nuggets,DEN,Los Angeles Clippers,LAC
+"Tue, Nov 28, 2023",Chicago Bulls,CHI,Boston Celtics,BOS
+"Tue, Nov 28, 2023",Toronto Raptors,TOR,Brooklyn Nets,BKN
+"Tue, Nov 28, 2023",Atlanta Hawks,ATL,Cleveland Cavaliers,CLE
+"Tue, Nov 28, 2023",Milwaukee Bucks,MIL,Miami Heat,MIA
+"Tue, Nov 28, 2023",Charlotte Hornets,CHA,New York Knicks,NYK
+"Tue, Nov 28, 2023",Oklahoma City Thunder,OKC,Minnesota Timberwolves,MIN
+"Tue, Nov 28, 2023",Houston Rockets,HOU,Dallas Mavericks,DAL
+"Tue, Nov 28, 2023",Golden State Warriors,GSW,Sacramento Kings,SAC
+"Wed, Nov 29, 2023",Los Angeles Lakers,LAL,Detroit Pistons,DET
+"Wed, Nov 29, 2023",Washington Wizards,WAS,Orlando Magic,ORL
+"Wed, Nov 29, 2023",Phoenix Suns,PHO,Toronto Raptors,TOR
+"Wed, Nov 29, 2023",Utah Jazz,UTA,Memphis Grizzlies,MEM
+"Wed, Nov 29, 2023",Philadelphia 76ers,PHI,New Orleans Pelicans,NOP
+"Wed, Nov 29, 2023",Houston Rockets,HOU,Denver Nuggets,DEN
+"Wed, Nov 29, 2023",Los Angeles Clippers,LAC,Sacramento Kings,SAC
+"Thu, Nov 30, 2023",Portland Trail Blazers,POR,Cleveland Cavaliers,CLE
+"Thu, Nov 30, 2023",Charlotte Hornets,CHA,Brooklyn Nets,BKN
+"Thu, Nov 30, 2023",Indiana Pacers,IND,Miami Heat,MIA
+"Thu, Nov 30, 2023",Detroit Pistons,DET,New York Knicks,NYK
+"Thu, Nov 30, 2023",Milwaukee Bucks,MIL,Chicago Bulls,CHI
+"Thu, Nov 30, 2023",Utah Jazz,UTA,Minnesota Timberwolves,MIN
+"Thu, Nov 30, 2023",Los Angeles Lakers,LAL,Oklahoma City Thunder,OKC
+"Thu, Nov 30, 2023",Atlanta Hawks,ATL,San Antonio Spurs,SAS
+"Thu, Nov 30, 2023",Los Angeles Clippers,LAC,Golden State Warriors,GSW
+"Fri, Dec 1, 2023",Washington Wizards,WAS,Orlando Magic,ORL
+"Fri, Dec 1, 2023",Philadelphia 76ers,PHI,Boston Celtics,BOS
+"Fri, Dec 1, 2023",Memphis Grizzlies,MEM,Dallas Mavericks,DAL
+"Fri, Dec 1, 2023",New York Knicks,NYK,Toronto Raptors,TOR
+"Fri, Dec 1, 2023",San Antonio Spurs,SAS,New Orleans Pelicans,NOP
+"Fri, Dec 1, 2023",Denver Nuggets,DEN,Phoenix Suns,PHO
+"Sat, Dec 2, 2023",Golden State Warriors,GSW,Los Angeles Clippers,LAC
+"Sat, Dec 2, 2023",Minnesota Timberwolves,MIN,Charlotte Hornets,CHA
+"Sat, Dec 2, 2023",Orlando Magic,ORL,Brooklyn Nets,BKN
+"Sat, Dec 2, 2023",Cleveland Cavaliers,CLE,Detroit Pistons,DET
+"Sat, Dec 2, 2023",New Orleans Pelicans,NOP,Chicago Bulls,CHI
+"Sat, Dec 2, 2023",Indiana Pacers,IND,Miami Heat,MIA
+"Sat, Dec 2, 2023",Atlanta Hawks,ATL,Milwaukee Bucks,MIL
+"Sat, Dec 2, 2023",Oklahoma City Thunder,OKC,Dallas Mavericks,DAL
+"Sat, Dec 2, 2023",Memphis Grizzlies,MEM,Phoenix Suns,PHO
+"Sat, Dec 2, 2023",Portland Trail Blazers,POR,Utah Jazz,UTA
+"Sat, Dec 2, 2023",Denver Nuggets,DEN,Sacramento Kings,SAC
+"Sat, Dec 2, 2023",Houston Rockets,HOU,Los Angeles Lakers,LAL
+"Mon, Dec 11, 2023",Miami Heat,MIA,Charlotte Hornets,CHA
+"Mon, Dec 11, 2023",Indiana Pacers,IND,Detroit Pistons,DET
+"Mon, Dec 11, 2023",Cleveland Cavaliers,CLE,Orlando Magic,ORL
+"Mon, Dec 11, 2023",Washington Wizards,WAS,Philadelphia 76ers,PHI
+"Mon, Dec 11, 2023",Denver Nuggets,DEN,Atlanta Hawks,ATL
+"Mon, Dec 11, 2023",Toronto Raptors,TOR,New York Knicks,NYK
+"Mon, Dec 11, 2023",San Antonio Spurs,SAS,Houston Rockets,HOU
+"Mon, Dec 11, 2023",Dallas Mavericks,DAL,Memphis Grizzlies,MEM
+"Mon, Dec 11, 2023",Chicago Bulls,CHI,Milwaukee Bucks,MIL
+"Mon, Dec 11, 2023",Minnesota Timberwolves,MIN,New Orleans Pelicans,NOP
+"Mon, Dec 11, 2023",Utah Jazz,UTA,Oklahoma City Thunder,OKC
+"Mon, Dec 11, 2023",Brooklyn Nets,BKN,Sacramento Kings,SAC
+"Mon, Dec 11, 2023",Portland Trail Blazers,POR,Los Angeles Clippers,LAC
+"Tue, Dec 12, 2023",Cleveland Cavaliers,CLE,Boston Celtics,BOS
+"Tue, Dec 12, 2023",Los Angeles Lakers,LAL,Dallas Mavericks,DAL
+"Tue, Dec 12, 2023",Denver Nuggets,DEN,Chicago Bulls,CHI
+"Tue, Dec 12, 2023",Golden State Warriors,GSW,Phoenix Suns,PHO
+"Tue, Dec 12, 2023",Sacramento Kings,SAC,Los Angeles Clippers,LAC
+"Wed, Dec 13, 2023",Philadelphia 76ers,PHI,Detroit Pistons,DET
+"Wed, Dec 13, 2023",New Orleans Pelicans,NOP,Washington Wizards,WAS
+"Wed, Dec 13, 2023",Charlotte Hornets,CHA,Miami Heat,MIA
+"Wed, Dec 13, 2023",Atlanta Hawks,ATL,Toronto Raptors,TOR
+"Wed, Dec 13, 2023",Memphis Grizzlies,MEM,Houston Rockets,HOU
+"Wed, Dec 13, 2023",Indiana Pacers,IND,Milwaukee Bucks,MIL
+"Wed, Dec 13, 2023",Los Angeles Lakers,LAL,San Antonio Spurs,SAS
+"Wed, Dec 13, 2023",Brooklyn Nets,BKN,Phoenix Suns,PHO
+"Wed, Dec 13, 2023",New York Knicks,NYK,Utah Jazz,UTA
+"Thu, Dec 14, 2023",Cleveland Cavaliers,CLE,Boston Celtics,BOS
+"Thu, Dec 14, 2023",Chicago Bulls,CHI,Miami Heat,MIA
+"Thu, Dec 14, 2023",Minnesota Timberwolves,MIN,Dallas Mavericks,DAL
+"Thu, Dec 14, 2023",Brooklyn Nets,BKN,Denver Nuggets,DEN
+"Thu, Dec 14, 2023",Utah Jazz,UTA,Portland Trail Blazers,POR
+"Thu, Dec 14, 2023",Oklahoma City Thunder,OKC,Sacramento Kings,SAC
+"Thu, Dec 14, 2023",Golden State Warriors,GSW,Los Angeles Clippers,LAC
+"Fri, Dec 15, 2023",New Orleans Pelicans,NOP,Charlotte Hornets,CHA
+"Fri, Dec 15, 2023",Detroit Pistons,DET,Philadelphia 76ers,PHI
+"Fri, Dec 15, 2023",Indiana Pacers,IND,Washington Wizards,WAS
+"Fri, Dec 15, 2023",Orlando Magic,ORL,Boston Celtics,BOS
+"Fri, Dec 15, 2023",Los Angeles Lakers,LAL,San Antonio Spurs,SAS
+"Fri, Dec 15, 2023",Atlanta Hawks,ATL,Toronto Raptors,TOR
+"Fri, Dec 15, 2023",Houston Rockets,HOU,Memphis Grizzlies,MEM
+"Fri, Dec 15, 2023",New York Knicks,NYK,Phoenix Suns,PHO
+"Sat, Dec 16, 2023",Detroit Pistons,DET,Milwaukee Bucks,MIL
+"Sat, Dec 16, 2023",Philadelphia 76ers,PHI,Charlotte Hornets,CHA
+"Sat, Dec 16, 2023",Atlanta Hawks,ATL,Cleveland Cavaliers,CLE
+"Sat, Dec 16, 2023",Chicago Bulls,CHI,Miami Heat,MIA
+"Sat, Dec 16, 2023",Indiana Pacers,IND,Minnesota Timberwolves,MIN
+"Sat, Dec 16, 2023",Brooklyn Nets,BKN,Golden State Warriors,GSW
+"Sat, Dec 16, 2023",Oklahoma City Thunder,OKC,Denver Nuggets,DEN
+"Sat, Dec 16, 2023",Dallas Mavericks,DAL,Portland Trail Blazers,POR
+"Sat, Dec 16, 2023",Utah Jazz,UTA,Sacramento Kings,SAC
+"Sat, Dec 16, 2023",New York Knicks,NYK,Los Angeles Clippers,LAC
+"Sun, Dec 17, 2023",Orlando Magic,ORL,Boston Celtics,BOS
+"Sun, Dec 17, 2023",New Orleans Pelicans,NOP,San Antonio Spurs,SAS
+"Sun, Dec 17, 2023",Houston Rockets,HOU,Milwaukee Bucks,MIL
+"Sun, Dec 17, 2023",Washington Wizards,WAS,Phoenix Suns,PHO
+"Sun, Dec 17, 2023",Golden State Warriors,GSW,Portland Trail Blazers,POR
+"Mon, Dec 18, 2023",Houston Rockets,HOU,Cleveland Cavaliers,CLE
+"Mon, Dec 18, 2023",Los Angeles Clippers,LAC,Indiana Pacers,IND
+"Mon, Dec 18, 2023",Chicago Bulls,CHI,Philadelphia 76ers,PHI
+"Mon, Dec 18, 2023",Detroit Pistons,DET,Atlanta Hawks,ATL
+"Mon, Dec 18, 2023",Minnesota Timberwolves,MIN,Miami Heat,MIA
+"Mon, Dec 18, 2023",Charlotte Hornets,CHA,Toronto Raptors,TOR
+"Mon, Dec 18, 2023",Memphis Grizzlies,MEM,Oklahoma City Thunder,OKC
+"Mon, Dec 18, 2023",Dallas Mavericks,DAL,Denver Nuggets,DEN
+"Mon, Dec 18, 2023",Brooklyn Nets,BKN,Utah Jazz,UTA
+"Mon, Dec 18, 2023",Washington Wizards,WAS,Sacramento Kings,SAC
+"Mon, Dec 18, 2023",New York Knicks,NYK,Los Angeles Lakers,LAL
+"Tue, Dec 19, 2023",Memphis Grizzlies,MEM,New Orleans Pelicans,NOP
+"Tue, Dec 19, 2023",San Antonio Spurs,SAS,Milwaukee Bucks,MIL
+"Tue, Dec 19, 2023",Boston Celtics,BOS,Golden State Warriors,GSW
+"Tue, Dec 19, 2023",Phoenix Suns,PHO,Portland Trail Blazers,POR
+"Wed, Dec 20, 2023",Utah Jazz,UTA,Cleveland Cavaliers,CLE
+"Wed, Dec 20, 2023",Charlotte Hornets,CHA,Indiana Pacers,IND
+"Wed, Dec 20, 2023",Miami Heat,MIA,Orlando Magic,ORL
+"Wed, Dec 20, 2023",Minnesota Timberwolves,MIN,Philadelphia 76ers,PHI
+"Wed, Dec 20, 2023",New York Knicks,NYK,Brooklyn Nets,BKN
+"Wed, Dec 20, 2023",Denver Nuggets,DEN,Toronto Raptors,TOR
+"Wed, Dec 20, 2023",Los Angeles Lakers,LAL,Chicago Bulls,CHI
+"Wed, Dec 20, 2023",Atlanta Hawks,ATL,Houston Rockets,HOU
+"Wed, Dec 20, 2023",Los Angeles Clippers,LAC,Dallas Mavericks,DAL
+"Wed, Dec 20, 2023",Boston Celtics,BOS,Sacramento Kings,SAC
+"Thu, Dec 21, 2023",Utah Jazz,UTA,Detroit Pistons,DET
+"Thu, Dec 21, 2023",New Orleans Pelicans,NOP,Cleveland Cavaliers,CLE
+"Thu, Dec 21, 2023",San Antonio Spurs,SAS,Chicago Bulls,CHI
+"Thu, Dec 21, 2023",Indiana Pacers,IND,Memphis Grizzlies,MEM
+"Thu, Dec 21, 2023",Orlando Magic,ORL,Milwaukee Bucks,MIL
+"Thu, Dec 21, 2023",Los Angeles Clippers,LAC,Oklahoma City Thunder,OKC
+"Thu, Dec 21, 2023",Los Angeles Lakers,LAL,Minnesota Timberwolves,MIN
+"Thu, Dec 21, 2023",Washington Wizards,WAS,Portland Trail Blazers,POR
+"Fri, Dec 22, 2023",Denver Nuggets,DEN,Brooklyn Nets,BKN
+"Fri, Dec 22, 2023",Toronto Raptors,TOR,Philadelphia 76ers,PHI
+"Fri, Dec 22, 2023",Dallas Mavericks,DAL,Houston Rockets,HOU
+"Fri, Dec 22, 2023",Atlanta Hawks,ATL,Miami Heat,MIA
+"Fri, Dec 22, 2023",Washington Wizards,WAS,Golden State Warriors,GSW
+"Fri, Dec 22, 2023",Phoenix Suns,PHO,Sacramento Kings,SAC
+"Sat, Dec 23, 2023",Milwaukee Bucks,MIL,New York Knicks,NYK
+"Sat, Dec 23, 2023",Boston Celtics,BOS,Los Angeles Clippers,LAC
+"Sat, Dec 23, 2023",Denver Nuggets,DEN,Charlotte Hornets,CHA
+"Sat, Dec 23, 2023",Orlando Magic,ORL,Indiana Pacers,IND
+"Sat, Dec 23, 2023",Houston Rockets,HOU,New Orleans Pelicans,NOP
+"Sat, Dec 23, 2023",Memphis Grizzlies,MEM,Atlanta Hawks,ATL
+"Sat, Dec 23, 2023",Detroit Pistons,DET,Brooklyn Nets,BKN
+"Sat, Dec 23, 2023",Utah Jazz,UTA,Toronto Raptors,TOR
+"Sat, Dec 23, 2023",Cleveland Cavaliers,CLE,Chicago Bulls,CHI
+"Sat, Dec 23, 2023",Los Angeles Lakers,LAL,Oklahoma City Thunder,OKC
+"Sat, Dec 23, 2023",San Antonio Spurs,SAS,Dallas Mavericks,DAL
+"Sat, Dec 23, 2023",Portland Trail Blazers,POR,Golden State Warriors,GSW
+"Sat, Dec 23, 2023",Minnesota Timberwolves,MIN,Sacramento Kings,SAC
+"Mon, Dec 25, 2023",Milwaukee Bucks,MIL,New York Knicks,NYK
+"Mon, Dec 25, 2023",Golden State Warriors,GSW,Denver Nuggets,DEN
+"Mon, Dec 25, 2023",Boston Celtics,BOS,Los Angeles Lakers,LAL
+"Mon, Dec 25, 2023",Philadelphia 76ers,PHI,Miami Heat,MIA
+"Mon, Dec 25, 2023",Dallas Mavericks,DAL,Phoenix Suns,PHO
+"Tue, Dec 26, 2023",Brooklyn Nets,BKN,Detroit Pistons,DET
+"Tue, Dec 26, 2023",Orlando Magic,ORL,Washington Wizards,WAS
+"Tue, Dec 26, 2023",Atlanta Hawks,ATL,Chicago Bulls,CHI
+"Tue, Dec 26, 2023",Indiana Pacers,IND,Houston Rockets,HOU
+"Tue, Dec 26, 2023",Memphis Grizzlies,MEM,New Orleans Pelicans,NOP
+"Tue, Dec 26, 2023",Minnesota Timberwolves,MIN,Oklahoma City Thunder,OKC
+"Tue, Dec 26, 2023",Utah Jazz,UTA,San Antonio Spurs,SAS
+"Tue, Dec 26, 2023",Sacramento Kings,SAC,Portland Trail Blazers,POR
+"Tue, Dec 26, 2023",Charlotte Hornets,CHA,Los Angeles Clippers,LAC
+"Wed, Dec 27, 2023",Philadelphia 76ers,PHI,Orlando Magic,ORL
+"Wed, Dec 27, 2023",Toronto Raptors,TOR,Washington Wizards,WAS
+"Wed, Dec 27, 2023",Milwaukee Bucks,MIL,Brooklyn Nets,BKN
+"Wed, Dec 27, 2023",Phoenix Suns,PHO,Houston Rockets,HOU
+"Wed, Dec 27, 2023",New York Knicks,NYK,Oklahoma City Thunder,OKC
+"Wed, Dec 27, 2023",Cleveland Cavaliers,CLE,Dallas Mavericks,DAL
+"Thu, Dec 28, 2023",Detroit Pistons,DET,Boston Celtics,BOS
+"Thu, Dec 28, 2023",Indiana Pacers,IND,Chicago Bulls,CHI
+"Thu, Dec 28, 2023",Dallas Mavericks,DAL,Minnesota Timberwolves,MIN
+"Thu, Dec 28, 2023",Utah Jazz,UTA,New Orleans Pelicans,NOP
+"Thu, Dec 28, 2023",Memphis Grizzlies,MEM,Denver Nuggets,DEN
+"Thu, Dec 28, 2023",Miami Heat,MIA,Golden State Warriors,GSW
+"Thu, Dec 28, 2023",San Antonio Spurs,SAS,Portland Trail Blazers,POR
+"Thu, Dec 28, 2023",Charlotte Hornets,CHA,Los Angeles Lakers,LAL
+"Fri, Dec 29, 2023",New York Knicks,NYK,Orlando Magic,ORL
+"Fri, Dec 29, 2023",Brooklyn Nets,BKN,Washington Wizards,WAS
+"Fri, Dec 29, 2023",Sacramento Kings,SAC,Atlanta Hawks,ATL
+"Fri, Dec 29, 2023",Toronto Raptors,TOR,Boston Celtics,BOS
+"Fri, Dec 29, 2023",Milwaukee Bucks,MIL,Cleveland Cavaliers,CLE
+"Fri, Dec 29, 2023",Philadelphia 76ers,PHI,Houston Rockets,HOU
+"Fri, Dec 29, 2023",Oklahoma City Thunder,OKC,Denver Nuggets,DEN
+"Fri, Dec 29, 2023",Charlotte Hornets,CHA,Phoenix Suns,PHO
+"Fri, Dec 29, 2023",San Antonio Spurs,SAS,Portland Trail Blazers,POR
+"Fri, Dec 29, 2023",Memphis Grizzlies,MEM,Los Angeles Clippers,LAC
+"Sat, Dec 30, 2023",Miami Heat,MIA,Utah Jazz,UTA
+"Sat, Dec 30, 2023",Toronto Raptors,TOR,Detroit Pistons,DET
+"Sat, Dec 30, 2023",New York Knicks,NYK,Indiana Pacers,IND
+"Sat, Dec 30, 2023",Philadelphia 76ers,PHI,Chicago Bulls,CHI
+"Sat, Dec 30, 2023",Los Angeles Lakers,LAL,Minnesota Timberwolves,MIN
+"Sat, Dec 30, 2023",Dallas Mavericks,DAL,Golden State Warriors,GSW
+"Sun, Dec 31, 2023",Atlanta Hawks,ATL,Washington Wizards,WAS
+"Sun, Dec 31, 2023",Los Angeles Lakers,LAL,New Orleans Pelicans,NOP
+"Sun, Dec 31, 2023",Brooklyn Nets,BKN,Oklahoma City Thunder,OKC
+"Sun, Dec 31, 2023",Boston Celtics,BOS,San Antonio Spurs,SAS
+"Sun, Dec 31, 2023",Sacramento Kings,SAC,Memphis Grizzlies,MEM
+"Sun, Dec 31, 2023",Orlando Magic,ORL,Phoenix Suns,PHO
+"Mon, Jan 1, 2024",Minnesota Timberwolves,MIN,New York Knicks,NYK
+"Mon, Jan 1, 2024",Cleveland Cavaliers,CLE,Toronto Raptors,TOR
+"Mon, Jan 1, 2024",Detroit Pistons,DET,Houston Rockets,HOU
+"Mon, Jan 1, 2024",Indiana Pacers,IND,Milwaukee Bucks,MIL
+"Mon, Jan 1, 2024",Charlotte Hornets,CHA,Denver Nuggets,DEN
+"Mon, Jan 1, 2024",Portland Trail Blazers,POR,Phoenix Suns,PHO
+"Mon, Jan 1, 2024",Dallas Mavericks,DAL,Utah Jazz,UTA
+"Mon, Jan 1, 2024",Miami Heat,MIA,Los Angeles Clippers,LAC
+"Tue, Jan 2, 2024",Chicago Bulls,CHI,Philadelphia 76ers,PHI
+"Tue, Jan 2, 2024",San Antonio Spurs,SAS,Memphis Grizzlies,MEM
+"Tue, Jan 2, 2024",Brooklyn Nets,BKN,New Orleans Pelicans,NOP
+"Tue, Jan 2, 2024",Boston Celtics,BOS,Oklahoma City Thunder,OKC
+"Tue, Jan 2, 2024",Orlando Magic,ORL,Golden State Warriors,GSW
+"Tue, Jan 2, 2024",Charlotte Hornets,CHA,Sacramento Kings,SAC
+"Wed, Jan 3, 2024",Washington Wizards,WAS,Cleveland Cavaliers,CLE
+"Wed, Jan 3, 2024",Milwaukee Bucks,MIL,Indiana Pacers,IND
+"Wed, Jan 3, 2024",Oklahoma City Thunder,OKC,Atlanta Hawks,ATL
+"Wed, Jan 3, 2024",Brooklyn Nets,BKN,Houston Rockets,HOU
+"Wed, Jan 3, 2024",Toronto Raptors,TOR,Memphis Grizzlies,MEM
+"Wed, Jan 3, 2024",New Orleans Pelicans,NOP,Minnesota Timberwolves,MIN
+"Wed, Jan 3, 2024",Portland Trail Blazers,POR,Dallas Mavericks,DAL
+"Wed, Jan 3, 2024",Chicago Bulls,CHI,New York Knicks,NYK
+"Wed, Jan 3, 2024",Los Angeles Clippers,LAC,Phoenix Suns,PHO
+"Wed, Jan 3, 2024",Detroit Pistons,DET,Utah Jazz,UTA
+"Wed, Jan 3, 2024",Miami Heat,MIA,Los Angeles Lakers,LAL
+"Wed, Jan 3, 2024",Orlando Magic,ORL,Sacramento Kings,SAC
+"Thu, Jan 4, 2024",Milwaukee Bucks,MIL,San Antonio Spurs,SAS
+"Thu, Jan 4, 2024",Denver Nuggets,DEN,Golden State Warriors,GSW
+"Fri, Jan 5, 2024",Utah Jazz,UTA,Boston Celtics,BOS
+"Fri, Jan 5, 2024",Atlanta Hawks,ATL,Indiana Pacers,IND
+"Fri, Jan 5, 2024",Oklahoma City Thunder,OKC,Brooklyn Nets,BKN
+"Fri, Jan 5, 2024",Washington Wizards,WAS,Cleveland Cavaliers,CLE
+"Fri, Jan 5, 2024",New York Knicks,NYK,Philadelphia 76ers,PHI
+"Fri, Jan 5, 2024",Charlotte Hornets,CHA,Chicago Bulls,CHI
+"Fri, Jan 5, 2024",Minnesota Timberwolves,MIN,Houston Rockets,HOU
+"Fri, Jan 5, 2024",Los Angeles Clippers,LAC,New Orleans Pelicans,NOP
+"Fri, Jan 5, 2024",Portland Trail Blazers,POR,Dallas Mavericks,DAL
+"Fri, Jan 5, 2024",Orlando Magic,ORL,Denver Nuggets,DEN
+"Fri, Jan 5, 2024",Miami Heat,MIA,Phoenix Suns,PHO
+"Fri, Jan 5, 2024",Detroit Pistons,DET,Golden State Warriors,GSW
+"Fri, Jan 5, 2024",Memphis Grizzlies,MEM,Los Angeles Lakers,LAL
+"Fri, Jan 5, 2024",Toronto Raptors,TOR,Sacramento Kings,SAC
+"Sat, Jan 6, 2024",Boston Celtics,BOS,Indiana Pacers,IND
+"Sat, Jan 6, 2024",New York Knicks,NYK,Washington Wizards,WAS
+"Sat, Jan 6, 2024",Utah Jazz,UTA,Philadelphia 76ers,PHI
+"Sat, Jan 6, 2024",Milwaukee Bucks,MIL,Houston Rockets,HOU
+"Sun, Jan 7, 2024",San Antonio Spurs,SAS,Cleveland Cavaliers,CLE
+"Sun, Jan 7, 2024",Portland Trail Blazers,POR,Brooklyn Nets,BKN
+"Sun, Jan 7, 2024",Atlanta Hawks,ATL,Orlando Magic,ORL
+"Sun, Jan 7, 2024",New Orleans Pelicans,NOP,Sacramento Kings,SAC
+"Sun, Jan 7, 2024",Minnesota Timberwolves,MIN,Dallas Mavericks,DAL
+"Sun, Jan 7, 2024",Detroit Pistons,DET,Denver Nuggets,DEN
+"Sun, Jan 7, 2024",Memphis Grizzlies,MEM,Phoenix Suns,PHO
+"Sun, Jan 7, 2024",Toronto Raptors,TOR,Golden State Warriors,GSW
+"Sun, Jan 7, 2024",Los Angeles Clippers,LAC,Los Angeles Lakers,LAL
+"Mon, Jan 8, 2024",Chicago Bulls,CHI,Charlotte Hornets,CHA
+"Mon, Jan 8, 2024",Boston Celtics,BOS,Indiana Pacers,IND
+"Mon, Jan 8, 2024",Oklahoma City Thunder,OKC,Washington Wizards,WAS
+"Mon, Jan 8, 2024",Houston Rockets,HOU,Miami Heat,MIA
+"Mon, Jan 8, 2024",Utah Jazz,UTA,Milwaukee Bucks,MIL
+"Mon, Jan 8, 2024",Phoenix Suns,PHO,Los Angeles Clippers,LAC
+"Tue, Jan 9, 2024",Sacramento Kings,SAC,Detroit Pistons,DET
+"Tue, Jan 9, 2024",Minnesota Timberwolves,MIN,Orlando Magic,ORL
+"Tue, Jan 9, 2024",Portland Trail Blazers,POR,New York Knicks,NYK
+"Tue, Jan 9, 2024",Memphis Grizzlies,MEM,Dallas Mavericks,DAL
+"Tue, Jan 9, 2024",Toronto Raptors,TOR,Los Angeles Lakers,LAL
+"Wed, Jan 10, 2024",Minnesota Timberwolves,MIN,Boston Celtics,BOS
+"Wed, Jan 10, 2024",Sacramento Kings,SAC,Charlotte Hornets,CHA
+"Wed, Jan 10, 2024",San Antonio Spurs,SAS,Detroit Pistons,DET
+"Wed, Jan 10, 2024",Washington Wizards,WAS,Indiana Pacers,IND
+"Wed, Jan 10, 2024",Philadelphia 76ers,PHI,Atlanta Hawks,ATL
+"Wed, Jan 10, 2024",Oklahoma City Thunder,OKC,Miami Heat,MIA
+"Wed, Jan 10, 2024",Houston Rockets,HOU,Chicago Bulls,CHI
+"Wed, Jan 10, 2024",New Orleans Pelicans,NOP,Golden State Warriors,GSW
+"Wed, Jan 10, 2024",Denver Nuggets,DEN,Utah Jazz,UTA
+"Wed, Jan 10, 2024",Toronto Raptors,TOR,Los Angeles Clippers,LAC
+"Thu, Jan 11, 2024",Brooklyn Nets,BKN,Cleveland Cavaliers,CLE
+"Thu, Jan 11, 2024",Boston Celtics,BOS,Milwaukee Bucks,MIL
+"Thu, Jan 11, 2024",Portland Trail Blazers,POR,Oklahoma City Thunder,OKC
+"Thu, Jan 11, 2024",New York Knicks,NYK,Dallas Mavericks,DAL
+"Thu, Jan 11, 2024",Phoenix Suns,PHO,Los Angeles Lakers,LAL
+"Fri, Jan 12, 2024",Sacramento Kings,SAC,Philadelphia 76ers,PHI
+"Fri, Jan 12, 2024",Indiana Pacers,IND,Atlanta Hawks,ATL
+"Fri, Jan 12, 2024",Houston Rockets,HOU,Detroit Pistons,DET
+"Fri, Jan 12, 2024",Golden State Warriors,GSW,Chicago Bulls,CHI
+"Fri, Jan 12, 2024",Los Angeles Clippers,LAC,Memphis Grizzlies,MEM
+"Fri, Jan 12, 2024",Orlando Magic,ORL,Miami Heat,MIA
+"Fri, Jan 12, 2024",Portland Trail Blazers,POR,Minnesota Timberwolves,MIN
+"Fri, Jan 12, 2024",New Orleans Pelicans,NOP,Denver Nuggets,DEN
+"Fri, Jan 12, 2024",Toronto Raptors,TOR,Utah Jazz,UTA
+"Fri, Jan 12, 2024",Charlotte Hornets,CHA,San Antonio Spurs,SAS
+"Sat, Jan 13, 2024",Houston Rockets,HOU,Boston Celtics,BOS
+"Sat, Jan 13, 2024",Washington Wizards,WAS,Atlanta Hawks,ATL
+"Sat, Jan 13, 2024",New York Knicks,NYK,Memphis Grizzlies,MEM
+"Sat, Jan 13, 2024",Golden State Warriors,GSW,Milwaukee Bucks,MIL
+"Sat, Jan 13, 2024",Orlando Magic,ORL,Oklahoma City Thunder,OKC
+"Sat, Jan 13, 2024",New Orleans Pelicans,NOP,Dallas Mavericks,DAL
+"Sat, Jan 13, 2024",Chicago Bulls,CHI,San Antonio Spurs,SAS
+"Sat, Jan 13, 2024",Los Angeles Lakers,LAL,Utah Jazz,UTA
+"Sun, Jan 14, 2024",Indiana Pacers,IND,Denver Nuggets,DEN
+"Sun, Jan 14, 2024",Charlotte Hornets,CHA,Miami Heat,MIA
+"Sun, Jan 14, 2024",Sacramento Kings,SAC,Milwaukee Bucks,MIL
+"Sun, Jan 14, 2024",Los Angeles Clippers,LAC,Minnesota Timberwolves,MIN
+"Sun, Jan 14, 2024",Phoenix Suns,PHO,Portland Trail Blazers,POR
+"Mon, Jan 15, 2024",Houston Rockets,HOU,Philadelphia 76ers,PHI
+"Mon, Jan 15, 2024",New Orleans Pelicans,NOP,Dallas Mavericks,DAL
+"Mon, Jan 15, 2024",Orlando Magic,ORL,New York Knicks,NYK
+"Mon, Jan 15, 2024",Detroit Pistons,DET,Washington Wizards,WAS
+"Mon, Jan 15, 2024",San Antonio Spurs,SAS,Atlanta Hawks,ATL
+"Mon, Jan 15, 2024",Golden State Warriors,GSW,Memphis Grizzlies,MEM
+"Mon, Jan 15, 2024",Chicago Bulls,CHI,Cleveland Cavaliers,CLE
+"Mon, Jan 15, 2024",Miami Heat,MIA,Brooklyn Nets,BKN
+"Mon, Jan 15, 2024",Boston Celtics,BOS,Toronto Raptors,TOR
+"Mon, Jan 15, 2024",Indiana Pacers,IND,Utah Jazz,UTA
+"Mon, Jan 15, 2024",Oklahoma City Thunder,OKC,Los Angeles Lakers,LAL
+"Tue, Jan 16, 2024",Denver Nuggets,DEN,Philadelphia 76ers,PHI
+"Tue, Jan 16, 2024",Sacramento Kings,SAC,Phoenix Suns,PHO
+"Tue, Jan 16, 2024",Oklahoma City Thunder,OKC,Los Angeles Clippers,LAC
+"Wed, Jan 17, 2024",Minnesota Timberwolves,MIN,Detroit Pistons,DET
+"Wed, Jan 17, 2024",Orlando Magic,ORL,Atlanta Hawks,ATL
+"Wed, Jan 17, 2024",San Antonio Spurs,SAS,Boston Celtics,BOS
+"Wed, Jan 17, 2024",Milwaukee Bucks,MIL,Cleveland Cavaliers,CLE
+"Wed, Jan 17, 2024",Houston Rockets,HOU,New York Knicks,NYK
+"Wed, Jan 17, 2024",Miami Heat,MIA,Toronto Raptors,TOR
+"Wed, Jan 17, 2024",Charlotte Hornets,CHA,New Orleans Pelicans,NOP
+"Wed, Jan 17, 2024",Dallas Mavericks,DAL,Los Angeles Lakers,LAL
+"Wed, Jan 17, 2024",Golden State Warriors,GSW,Utah Jazz,UTA
+"Wed, Jan 17, 2024",Brooklyn Nets,BKN,Portland Trail Blazers,POR
+"Thu, Jan 18, 2024",Washington Wizards,WAS,New York Knicks,NYK
+"Thu, Jan 18, 2024",Chicago Bulls,CHI,Toronto Raptors,TOR
+"Thu, Jan 18, 2024",Oklahoma City Thunder,OKC,Utah Jazz,UTA
+"Thu, Jan 18, 2024",Memphis Grizzlies,MEM,Minnesota Timberwolves,MIN
+"Thu, Jan 18, 2024",Indiana Pacers,IND,Sacramento Kings,SAC
+"Fri, Jan 19, 2024",San Antonio Spurs,SAS,Charlotte Hornets,CHA
+"Fri, Jan 19, 2024",Philadelphia 76ers,PHI,Orlando Magic,ORL
+"Fri, Jan 19, 2024",Denver Nuggets,DEN,Boston Celtics,BOS
+"Fri, Jan 19, 2024",Atlanta Hawks,ATL,Miami Heat,MIA
+"Fri, Jan 19, 2024",Phoenix Suns,PHO,New Orleans Pelicans,NOP
+"Fri, Jan 19, 2024",Dallas Mavericks,DAL,Golden State Warriors,GSW
+"Fri, Jan 19, 2024",Indiana Pacers,IND,Portland Trail Blazers,POR
+"Fri, Jan 19, 2024",Brooklyn Nets,BKN,Los Angeles Lakers,LAL
+"Sat, Jan 20, 2024",Milwaukee Bucks,MIL,Detroit Pistons,DET
+"Sat, Jan 20, 2024",Philadelphia 76ers,PHI,Charlotte Hornets,CHA
+"Sat, Jan 20, 2024",San Antonio Spurs,SAS,Washington Wizards,WAS
+"Sat, Jan 20, 2024",Cleveland Cavaliers,CLE,Atlanta Hawks,ATL
+"Sat, Jan 20, 2024",Toronto Raptors,TOR,New York Knicks,NYK
+"Sat, Jan 20, 2024",Memphis Grizzlies,MEM,Chicago Bulls,CHI
+"Sat, Jan 20, 2024",Utah Jazz,UTA,Houston Rockets,HOU
+"Sat, Jan 20, 2024",Oklahoma City Thunder,OKC,Minnesota Timberwolves,MIN
+"Sun, Jan 21, 2024",Brooklyn Nets,BKN,Los Angeles Clippers,LAC
+"Sun, Jan 21, 2024",Miami Heat,MIA,Orlando Magic,ORL
+"Sun, Jan 21, 2024",Denver Nuggets,DEN,Washington Wizards,WAS
+"Sun, Jan 21, 2024",Boston Celtics,BOS,Houston Rockets,HOU
+"Sun, Jan 21, 2024",Indiana Pacers,IND,Phoenix Suns,PHO
+"Sun, Jan 21, 2024",Portland Trail Blazers,POR,Los Angeles Lakers,LAL
+"Mon, Jan 22, 2024",Milwaukee Bucks,MIL,Detroit Pistons,DET
+"Mon, Jan 22, 2024",Cleveland Cavaliers,CLE,Orlando Magic,ORL
+"Mon, Jan 22, 2024",San Antonio Spurs,SAS,Philadelphia 76ers,PHI
+"Mon, Jan 22, 2024",Memphis Grizzlies,MEM,Toronto Raptors,TOR
+"Mon, Jan 22, 2024",Charlotte Hornets,CHA,Minnesota Timberwolves,MIN
+"Mon, Jan 22, 2024",Boston Celtics,BOS,Dallas Mavericks,DAL
+"Mon, Jan 22, 2024",Chicago Bulls,CHI,Phoenix Suns,PHO
+"Mon, Jan 22, 2024",Atlanta Hawks,ATL,Sacramento Kings,SAC
+"Tue, Jan 23, 2024",Denver Nuggets,DEN,Indiana Pacers,IND
+"Tue, Jan 23, 2024",New York Knicks,NYK,Brooklyn Nets,BKN
+"Tue, Jan 23, 2024",Utah Jazz,UTA,New Orleans Pelicans,NOP
+"Tue, Jan 23, 2024",Portland Trail Blazers,POR,Oklahoma City Thunder,OKC
+"Tue, Jan 23, 2024",Los Angeles Lakers,LAL,Los Angeles Clippers,LAC
+"Wed, Jan 24, 2024",Charlotte Hornets,CHA,Detroit Pistons,DET
+"Wed, Jan 24, 2024",Minnesota Timberwolves,MIN,Washington Wizards,WAS
+"Wed, Jan 24, 2024",Memphis Grizzlies,MEM,Miami Heat,MIA
+"Wed, Jan 24, 2024",Portland Trail Blazers,POR,Houston Rockets,HOU
+"Wed, Jan 24, 2024",Cleveland Cavaliers,CLE,Milwaukee Bucks,MIL
+"Wed, Jan 24, 2024",Oklahoma City Thunder,OKC,San Antonio Spurs,SAS
+"Wed, Jan 24, 2024",Phoenix Suns,PHO,Dallas Mavericks,DAL
+"Wed, Jan 24, 2024",Atlanta Hawks,ATL,Golden State Warriors,GSW
+"Thu, Jan 25, 2024",Philadelphia 76ers,PHI,Indiana Pacers,IND
+"Thu, Jan 25, 2024",Utah Jazz,UTA,Washington Wizards,WAS
+"Thu, Jan 25, 2024",Minnesota Timberwolves,MIN,Brooklyn Nets,BKN
+"Thu, Jan 25, 2024",Boston Celtics,BOS,Miami Heat,MIA
+"Thu, Jan 25, 2024",Denver Nuggets,DEN,New York Knicks,NYK
+"Thu, Jan 25, 2024",Sacramento Kings,SAC,Golden State Warriors,GSW
+"Thu, Jan 25, 2024",Chicago Bulls,CHI,Los Angeles Lakers,LAL
+"Fri, Jan 26, 2024",Dallas Mavericks,DAL,Atlanta Hawks,ATL
+"Fri, Jan 26, 2024",Houston Rockets,HOU,Charlotte Hornets,CHA
+"Fri, Jan 26, 2024",Phoenix Suns,PHO,Indiana Pacers,IND
+"Fri, Jan 26, 2024",Los Angeles Clippers,LAC,Toronto Raptors,TOR
+"Fri, Jan 26, 2024",Orlando Magic,ORL,Memphis Grizzlies,MEM
+"Fri, Jan 26, 2024",Cleveland Cavaliers,CLE,Milwaukee Bucks,MIL
+"Fri, Jan 26, 2024",Oklahoma City Thunder,OKC,New Orleans Pelicans,NOP
+"Fri, Jan 26, 2024",Portland Trail Blazers,POR,San Antonio Spurs,SAS
+"Sat, Jan 27, 2024",Washington Wizards,WAS,Detroit Pistons,DET
+"Sat, Jan 27, 2024",Miami Heat,MIA,New York Knicks,NYK
+"Sat, Jan 27, 2024",Philadelphia 76ers,PHI,Denver Nuggets,DEN
+"Sat, Jan 27, 2024",Houston Rockets,HOU,Brooklyn Nets,BKN
+"Sat, Jan 27, 2024",Los Angeles Clippers,LAC,Boston Celtics,BOS
+"Sat, Jan 27, 2024",Utah Jazz,UTA,Charlotte Hornets,CHA
+"Sat, Jan 27, 2024",New Orleans Pelicans,NOP,Milwaukee Bucks,MIL
+"Sat, Jan 27, 2024",Los Angeles Lakers,LAL,Golden State Warriors,GSW
+"Sat, Jan 27, 2024",Minnesota Timberwolves,MIN,San Antonio Spurs,SAS
+"Sat, Jan 27, 2024",Sacramento Kings,SAC,Dallas Mavericks,DAL
+"Sun, Jan 28, 2024",Memphis Grizzlies,MEM,Indiana Pacers,IND
+"Sun, Jan 28, 2024",Toronto Raptors,TOR,Atlanta Hawks,ATL
+"Sun, Jan 28, 2024",Oklahoma City Thunder,OKC,Detroit Pistons,DET
+"Sun, Jan 28, 2024",Phoenix Suns,PHO,Orlando Magic,ORL
+"Sun, Jan 28, 2024",Chicago Bulls,CHI,Portland Trail Blazers,POR
+"Mon, Jan 29, 2024",New York Knicks,NYK,Charlotte Hornets,CHA
+"Mon, Jan 29, 2024",Los Angeles Clippers,LAC,Cleveland Cavaliers,CLE
+"Mon, Jan 29, 2024",New Orleans Pelicans,NOP,Boston Celtics,BOS
+"Mon, Jan 29, 2024",Utah Jazz,UTA,Brooklyn Nets,BKN
+"Mon, Jan 29, 2024",Phoenix Suns,PHO,Miami Heat,MIA
+"Mon, Jan 29, 2024",Los Angeles Lakers,LAL,Houston Rockets,HOU
+"Mon, Jan 29, 2024",Sacramento Kings,SAC,Memphis Grizzlies,MEM
+"Mon, Jan 29, 2024",Minnesota Timberwolves,MIN,Oklahoma City Thunder,OKC
+"Mon, Jan 29, 2024",Washington Wizards,WAS,San Antonio Spurs,SAS
+"Mon, Jan 29, 2024",Orlando Magic,ORL,Dallas Mavericks,DAL
+"Mon, Jan 29, 2024",Milwaukee Bucks,MIL,Denver Nuggets,DEN
+"Mon, Jan 29, 2024",Philadelphia 76ers,PHI,Portland Trail Blazers,POR
+"Tue, Jan 30, 2024",Los Angeles Lakers,LAL,Atlanta Hawks,ATL
+"Tue, Jan 30, 2024",Indiana Pacers,IND,Boston Celtics,BOS
+"Tue, Jan 30, 2024",Utah Jazz,UTA,New York Knicks,NYK
+"Tue, Jan 30, 2024",Toronto Raptors,TOR,Chicago Bulls,CHI
+"Tue, Jan 30, 2024",Philadelphia 76ers,PHI,Golden State Warriors,GSW
+"Wed, Jan 31, 2024",Chicago Bulls,CHI,Charlotte Hornets,CHA
+"Wed, Jan 31, 2024",Detroit Pistons,DET,Cleveland Cavaliers,CLE
+"Wed, Jan 31, 2024",Los Angeles Clippers,LAC,Washington Wizards,WAS
+"Wed, Jan 31, 2024",Sacramento Kings,SAC,Miami Heat,MIA
+"Wed, Jan 31, 2024",New Orleans Pelicans,NOP,Houston Rockets,HOU
+"Wed, Jan 31, 2024",Dallas Mavericks,DAL,Minnesota Timberwolves,MIN
+"Wed, Jan 31, 2024",Denver Nuggets,DEN,Oklahoma City Thunder,OKC
+"Wed, Jan 31, 2024",Orlando Magic,ORL,San Antonio Spurs,SAS
+"Wed, Jan 31, 2024",Phoenix Suns,PHO,Brooklyn Nets,BKN
+"Wed, Jan 31, 2024",Milwaukee Bucks,MIL,Portland Trail Blazers,POR
+"Thu, Feb 1, 2024",Los Angeles Lakers,LAL,Boston Celtics,BOS
+"Thu, Feb 1, 2024",Indiana Pacers,IND,New York Knicks,NYK
+"Thu, Feb 1, 2024",Philadelphia 76ers,PHI,Utah Jazz,UTA
+"Thu, Feb 1, 2024",Cleveland Cavaliers,CLE,Memphis Grizzlies,MEM
+"Fri, Feb 2, 2024",Los Angeles Clippers,LAC,Detroit Pistons,DET
+"Fri, Feb 2, 2024",Miami Heat,MIA,Washington Wizards,WAS
+"Fri, Feb 2, 2024",Phoenix Suns,PHO,Atlanta Hawks,ATL
+"Fri, Feb 2, 2024",Sacramento Kings,SAC,Indiana Pacers,IND
+"Fri, Feb 2, 2024",Toronto Raptors,TOR,Houston Rockets,HOU
+"Fri, Feb 2, 2024",Golden State Warriors,GSW,Memphis Grizzlies,MEM
+"Fri, Feb 2, 2024",Orlando Magic,ORL,Minnesota Timberwolves,MIN
+"Fri, Feb 2, 2024",Charlotte Hornets,CHA,Oklahoma City Thunder,OKC
+"Fri, Feb 2, 2024",New Orleans Pelicans,NOP,San Antonio Spurs,SAS
+"Fri, Feb 2, 2024",Portland Trail Blazers,POR,Denver Nuggets,DEN
+"Sat, Feb 3, 2024",Brooklyn Nets,BKN,Philadelphia 76ers,PHI
+"Sat, Feb 3, 2024",Golden State Warriors,GSW,Atlanta Hawks,ATL
+"Sat, Feb 3, 2024",Sacramento Kings,SAC,Chicago Bulls,CHI
+"Sat, Feb 3, 2024",Milwaukee Bucks,MIL,Dallas Mavericks,DAL
+"Sat, Feb 3, 2024",Los Angeles Lakers,LAL,New York Knicks,NYK
+"Sat, Feb 3, 2024",Cleveland Cavaliers,CLE,San Antonio Spurs,SAS
+"Sun, Feb 4, 2024",Orlando Magic,ORL,Detroit Pistons,DET
+"Sun, Feb 4, 2024",Phoenix Suns,PHO,Washington Wizards,WAS
+"Sun, Feb 4, 2024",Memphis Grizzlies,MEM,Boston Celtics,BOS
+"Sun, Feb 4, 2024",Indiana Pacers,IND,Charlotte Hornets,CHA
+"Sun, Feb 4, 2024",Los Angeles Clippers,LAC,Miami Heat,MIA
+"Sun, Feb 4, 2024",Houston Rockets,HOU,Minnesota Timberwolves,MIN
+"Sun, Feb 4, 2024",Toronto Raptors,TOR,Oklahoma City Thunder,OKC
+"Sun, Feb 4, 2024",Milwaukee Bucks,MIL,Utah Jazz,UTA
+"Sun, Feb 4, 2024",Portland Trail Blazers,POR,Denver Nuggets,DEN
+"Mon, Feb 5, 2024",Los Angeles Lakers,LAL,Charlotte Hornets,CHA
+"Mon, Feb 5, 2024",Sacramento Kings,SAC,Cleveland Cavaliers,CLE
+"Mon, Feb 5, 2024",Dallas Mavericks,DAL,Philadelphia 76ers,PHI
+"Mon, Feb 5, 2024",Los Angeles Clippers,LAC,Atlanta Hawks,ATL
+"Mon, Feb 5, 2024",Golden State Warriors,GSW,Brooklyn Nets,BKN
+"Mon, Feb 5, 2024",Toronto Raptors,TOR,New Orleans Pelicans,NOP
+"Tue, Feb 6, 2024",Houston Rockets,HOU,Indiana Pacers,IND
+"Tue, Feb 6, 2024",Dallas Mavericks,DAL,Brooklyn Nets,BKN
+"Tue, Feb 6, 2024",Orlando Magic,ORL,Miami Heat,MIA
+"Tue, Feb 6, 2024",Memphis Grizzlies,MEM,New York Knicks,NYK
+"Tue, Feb 6, 2024",Minnesota Timberwolves,MIN,Chicago Bulls,CHI
+"Tue, Feb 6, 2024",Oklahoma City Thunder,OKC,Utah Jazz,UTA
+"Tue, Feb 6, 2024",Milwaukee Bucks,MIL,Phoenix Suns,PHO
+"Wed, Feb 7, 2024",Toronto Raptors,TOR,Charlotte Hornets,CHA
+"Wed, Feb 7, 2024",Golden State Warriors,GSW,Philadelphia 76ers,PHI
+"Wed, Feb 7, 2024",Cleveland Cavaliers,CLE,Washington Wizards,WAS
+"Wed, Feb 7, 2024",Atlanta Hawks,ATL,Boston Celtics,BOS
+"Wed, Feb 7, 2024",San Antonio Spurs,SAS,Miami Heat,MIA
+"Wed, Feb 7, 2024",New Orleans Pelicans,NOP,Los Angeles Clippers,LAC
+"Wed, Feb 7, 2024",Detroit Pistons,DET,Sacramento Kings,SAC
+"Thu, Feb 8, 2024",Golden State Warriors,GSW,Indiana Pacers,IND
+"Thu, Feb 8, 2024",San Antonio Spurs,SAS,Orlando Magic,ORL
+"Thu, Feb 8, 2024",Cleveland Cavaliers,CLE,Brooklyn Nets,BKN
+"Thu, Feb 8, 2024",Dallas Mavericks,DAL,New York Knicks,NYK
+"Thu, Feb 8, 2024",Chicago Bulls,CHI,Memphis Grizzlies,MEM
+"Thu, Feb 8, 2024",Minnesota Timberwolves,MIN,Milwaukee Bucks,MIL
+"Thu, Feb 8, 2024",Utah Jazz,UTA,Phoenix Suns,PHO
+"Thu, Feb 8, 2024",Denver Nuggets,DEN,Los Angeles Lakers,LAL
+"Thu, Feb 8, 2024",Detroit Pistons,DET,Portland Trail Blazers,POR
+"Fri, Feb 9, 2024",Atlanta Hawks,ATL,Philadelphia 76ers,PHI
+"Fri, Feb 9, 2024",Washington Wizards,WAS,Boston Celtics,BOS
+"Fri, Feb 9, 2024",Houston Rockets,HOU,Toronto Raptors,TOR
+"Fri, Feb 9, 2024",Charlotte Hornets,CHA,Milwaukee Bucks,MIL
+"Fri, Feb 9, 2024",Denver Nuggets,DEN,Sacramento Kings,SAC
+"Fri, Feb 9, 2024",New Orleans Pelicans,NOP,Los Angeles Lakers,LAL
+"Sat, Feb 10, 2024",Oklahoma City Thunder,OKC,Dallas Mavericks,DAL
+"Sat, Feb 10, 2024",Detroit Pistons,DET,Los Angeles Clippers,LAC
+"Sat, Feb 10, 2024",San Antonio Spurs,SAS,Brooklyn Nets,BKN
+"Sat, Feb 10, 2024",Memphis Grizzlies,MEM,Charlotte Hornets,CHA
+"Sat, Feb 10, 2024",Chicago Bulls,CHI,Orlando Magic,ORL
+"Sat, Feb 10, 2024",Philadelphia 76ers,PHI,Washington Wizards,WAS
+"Sat, Feb 10, 2024",Houston Rockets,HOU,Atlanta Hawks,ATL
+"Sat, Feb 10, 2024",Indiana Pacers,IND,New York Knicks,NYK
+"Sat, Feb 10, 2024",Cleveland Cavaliers,CLE,Toronto Raptors,TOR
+"Sat, Feb 10, 2024",Phoenix Suns,PHO,Golden State Warriors,GSW
+"Sat, Feb 10, 2024",New Orleans Pelicans,NOP,Portland Trail Blazers,POR
+"Sun, Feb 11, 2024",Boston Celtics,BOS,Miami Heat,MIA
+"Sun, Feb 11, 2024",Sacramento Kings,SAC,Oklahoma City Thunder,OKC
+"Mon, Feb 12, 2024",Indiana Pacers,IND,Charlotte Hornets,CHA
+"Mon, Feb 12, 2024",Philadelphia 76ers,PHI,Cleveland Cavaliers,CLE
+"Mon, Feb 12, 2024",Chicago Bulls,CHI,Atlanta Hawks,ATL
+"Mon, Feb 12, 2024",San Antonio Spurs,SAS,Toronto Raptors,TOR
+"Mon, Feb 12, 2024",New York Knicks,NYK,Houston Rockets,HOU
+"Mon, Feb 12, 2024",New Orleans Pelicans,NOP,Memphis Grizzlies,MEM
+"Mon, Feb 12, 2024",Denver Nuggets,DEN,Milwaukee Bucks,MIL
+"Mon, Feb 12, 2024",Washington Wizards,WAS,Dallas Mavericks,DAL
+"Mon, Feb 12, 2024",Golden State Warriors,GSW,Utah Jazz,UTA
+"Mon, Feb 12, 2024",Minnesota Timberwolves,MIN,Los Angeles Clippers,LAC
+"Tue, Feb 13, 2024",Boston Celtics,BOS,Brooklyn Nets,BKN
+"Tue, Feb 13, 2024",Oklahoma City Thunder,OKC,Orlando Magic,ORL
+"Tue, Feb 13, 2024",Miami Heat,MIA,Milwaukee Bucks,MIL
+"Tue, Feb 13, 2024",Sacramento Kings,SAC,Phoenix Suns,PHO
+"Tue, Feb 13, 2024",Minnesota Timberwolves,MIN,Portland Trail Blazers,POR
+"Tue, Feb 13, 2024",Detroit Pistons,DET,Los Angeles Lakers,LAL
+"Wed, Feb 14, 2024",Atlanta Hawks,ATL,Charlotte Hornets,CHA
+"Wed, Feb 14, 2024",New York Knicks,NYK,Orlando Magic,ORL
+"Wed, Feb 14, 2024",Miami Heat,MIA,Philadelphia 76ers,PHI
+"Wed, Feb 14, 2024",Brooklyn Nets,BKN,Boston Celtics,BOS
+"Wed, Feb 14, 2024",Chicago Bulls,CHI,Cleveland Cavaliers,CLE
+"Wed, Feb 14, 2024",Indiana Pacers,IND,Toronto Raptors,TOR
+"Wed, Feb 14, 2024",Houston Rockets,HOU,Memphis Grizzlies,MEM
+"Wed, Feb 14, 2024",Washington Wizards,WAS,New Orleans Pelicans,NOP
+"Wed, Feb 14, 2024",San Antonio Spurs,SAS,Dallas Mavericks,DAL
+"Wed, Feb 14, 2024",Sacramento Kings,SAC,Denver Nuggets,DEN
+"Wed, Feb 14, 2024",Detroit Pistons,DET,Phoenix Suns,PHO
+"Wed, Feb 14, 2024",Los Angeles Lakers,LAL,Utah Jazz,UTA
+"Wed, Feb 14, 2024",Los Angeles Clippers,LAC,Golden State Warriors,GSW
+"Thu, Feb 15, 2024",Milwaukee Bucks,MIL,Memphis Grizzlies,MEM
+"Thu, Feb 15, 2024",Minnesota Timberwolves,MIN,Portland Trail Blazers,POR
+"Thu, Feb 22, 2024",Orlando Magic,ORL,Cleveland Cavaliers,CLE
+"Thu, Feb 22, 2024",Detroit Pistons,DET,Indiana Pacers,IND
+"Thu, Feb 22, 2024",New York Knicks,NYK,Philadelphia 76ers,PHI
+"Thu, Feb 22, 2024",Brooklyn Nets,BKN,Toronto Raptors,TOR
+"Thu, Feb 22, 2024",Phoenix Suns,PHO,Dallas Mavericks,DAL
+"Thu, Feb 22, 2024",Boston Celtics,BOS,Chicago Bulls,CHI
+"Thu, Feb 22, 2024",Houston Rockets,HOU,New Orleans Pelicans,NOP
+"Thu, Feb 22, 2024",Los Angeles Clippers,LAC,Oklahoma City Thunder,OKC
+"Thu, Feb 22, 2024",Washington Wizards,WAS,Denver Nuggets,DEN
+"Thu, Feb 22, 2024",Charlotte Hornets,CHA,Utah Jazz,UTA
+"Thu, Feb 22, 2024",Los Angeles Lakers,LAL,Golden State Warriors,GSW
+"Thu, Feb 22, 2024",San Antonio Spurs,SAS,Sacramento Kings,SAC
+"Fri, Feb 23, 2024",Toronto Raptors,TOR,Atlanta Hawks,ATL
+"Fri, Feb 23, 2024",Cleveland Cavaliers,CLE,Philadelphia 76ers,PHI
+"Fri, Feb 23, 2024",Phoenix Suns,PHO,Houston Rockets,HOU
+"Fri, Feb 23, 2024",Los Angeles Clippers,LAC,Memphis Grizzlies,MEM
+"Fri, Feb 23, 2024",Milwaukee Bucks,MIL,Minnesota Timberwolves,MIN
+"Fri, Feb 23, 2024",Washington Wizards,WAS,Oklahoma City Thunder,OKC
+"Fri, Feb 23, 2024",Charlotte Hornets,CHA,Golden State Warriors,GSW
+"Fri, Feb 23, 2024",Miami Heat,MIA,New Orleans Pelicans,NOP
+"Fri, Feb 23, 2024",Denver Nuggets,DEN,Portland Trail Blazers,POR
+"Fri, Feb 23, 2024",San Antonio Spurs,SAS,Los Angeles Lakers,LAL
+"Sat, Feb 24, 2024",Orlando Magic,ORL,Detroit Pistons,DET
+"Sat, Feb 24, 2024",Brooklyn Nets,BKN,Minnesota Timberwolves,MIN
+"Sat, Feb 24, 2024",Boston Celtics,BOS,New York Knicks,NYK
+"Sun, Feb 25, 2024",Milwaukee Bucks,MIL,Philadelphia 76ers,PHI
+"Sun, Feb 25, 2024",Los Angeles Lakers,LAL,Phoenix Suns,PHO
+"Sun, Feb 25, 2024",Dallas Mavericks,DAL,Indiana Pacers,IND
+"Sun, Feb 25, 2024",Cleveland Cavaliers,CLE,Washington Wizards,WAS
+"Sun, Feb 25, 2024",Orlando Magic,ORL,Atlanta Hawks,ATL
+"Sun, Feb 25, 2024",Denver Nuggets,DEN,Golden State Warriors,GSW
+"Sun, Feb 25, 2024",Oklahoma City Thunder,OKC,Houston Rockets,HOU
+"Sun, Feb 25, 2024",Chicago Bulls,CHI,New Orleans Pelicans,NOP
+"Sun, Feb 25, 2024",San Antonio Spurs,SAS,Utah Jazz,UTA
+"Sun, Feb 25, 2024",Charlotte Hornets,CHA,Portland Trail Blazers,POR
+"Sun, Feb 25, 2024",Sacramento Kings,SAC,Los Angeles Clippers,LAC
+"Mon, Feb 26, 2024",New York Knicks,NYK,Detroit Pistons,DET
+"Mon, Feb 26, 2024",Toronto Raptors,TOR,Indiana Pacers,IND
+"Mon, Feb 26, 2024",Brooklyn Nets,BKN,Memphis Grizzlies,MEM
+"Mon, Feb 26, 2024",Miami Heat,MIA,Sacramento Kings,SAC
+"Tue, Feb 27, 2024",Dallas Mavericks,DAL,Cleveland Cavaliers,CLE
+"Tue, Feb 27, 2024",Brooklyn Nets,BKN,Orlando Magic,ORL
+"Tue, Feb 27, 2024",Golden State Warriors,GSW,Washington Wizards,WAS
+"Tue, Feb 27, 2024",Utah Jazz,UTA,Atlanta Hawks,ATL
+"Tue, Feb 27, 2024",Philadelphia 76ers,PHI,Boston Celtics,BOS
+"Tue, Feb 27, 2024",San Antonio Spurs,SAS,Minnesota Timberwolves,MIN
+"Tue, Feb 27, 2024",New Orleans Pelicans,NOP,New York Knicks,NYK
+"Tue, Feb 27, 2024",Detroit Pistons,DET,Chicago Bulls,CHI
+"Tue, Feb 27, 2024",Charlotte Hornets,CHA,Milwaukee Bucks,MIL
+"Tue, Feb 27, 2024",Houston Rockets,HOU,Oklahoma City Thunder,OKC
+"Tue, Feb 27, 2024",Miami Heat,MIA,Portland Trail Blazers,POR
+"Wed, Feb 28, 2024",New Orleans Pelicans,NOP,Indiana Pacers,IND
+"Wed, Feb 28, 2024",Memphis Grizzlies,MEM,Minnesota Timberwolves,MIN
+"Wed, Feb 28, 2024",Dallas Mavericks,DAL,Toronto Raptors,TOR
+"Wed, Feb 28, 2024",Cleveland Cavaliers,CLE,Chicago Bulls,CHI
+"Wed, Feb 28, 2024",Sacramento Kings,SAC,Denver Nuggets,DEN
+"Wed, Feb 28, 2024",Los Angeles Lakers,LAL,Los Angeles Clippers,LAC
+"Thu, Feb 29, 2024",Milwaukee Bucks,MIL,Charlotte Hornets,CHA
+"Thu, Feb 29, 2024",Utah Jazz,UTA,Orlando Magic,ORL
+"Thu, Feb 29, 2024",Atlanta Hawks,ATL,Brooklyn Nets,BKN
+"Thu, Feb 29, 2024",Golden State Warriors,GSW,New York Knicks,NYK
+"Thu, Feb 29, 2024",Oklahoma City Thunder,OKC,San Antonio Spurs,SAS
+"Thu, Feb 29, 2024",Houston Rockets,HOU,Phoenix Suns,PHO
+"Thu, Feb 29, 2024",Miami Heat,MIA,Denver Nuggets,DEN
+"Thu, Feb 29, 2024",Washington Wizards,WAS,Los Angeles Lakers,LAL
+"Fri, Mar 1, 2024",Cleveland Cavaliers,CLE,Detroit Pistons,DET
+"Fri, Mar 1, 2024",Charlotte Hornets,CHA,Philadelphia 76ers,PHI
+"Fri, Mar 1, 2024",Dallas Mavericks,DAL,Boston Celtics,BOS
+"Fri, Mar 1, 2024",Golden State Warriors,GSW,Toronto Raptors,TOR
+"Fri, Mar 1, 2024",Portland Trail Blazers,POR,Memphis Grizzlies,MEM
+"Fri, Mar 1, 2024",Sacramento Kings,SAC,Minnesota Timberwolves,MIN
+"Fri, Mar 1, 2024",Indiana Pacers,IND,New Orleans Pelicans,NOP
+"Fri, Mar 1, 2024",Milwaukee Bucks,MIL,Chicago Bulls,CHI
+"Fri, Mar 1, 2024",Washington Wizards,WAS,Los Angeles Clippers,LAC
+"Sat, Mar 2, 2024",Atlanta Hawks,ATL,Brooklyn Nets,BKN
+"Sat, Mar 2, 2024",Utah Jazz,UTA,Miami Heat,MIA
+"Sat, Mar 2, 2024",Portland Trail Blazers,POR,Memphis Grizzlies,MEM
+"Sat, Mar 2, 2024",Denver Nuggets,DEN,Los Angeles Lakers,LAL
+"Sat, Mar 2, 2024",Houston Rockets,HOU,Phoenix Suns,PHO
+"Sun, Mar 3, 2024",Philadelphia 76ers,PHI,Dallas Mavericks,DAL
+"Sun, Mar 3, 2024",Golden State Warriors,GSW,Boston Celtics,BOS
+"Sun, Mar 3, 2024",Los Angeles Clippers,LAC,Minnesota Timberwolves,MIN
+"Sun, Mar 3, 2024",Detroit Pistons,DET,Orlando Magic,ORL
+"Sun, Mar 3, 2024",Charlotte Hornets,CHA,Toronto Raptors,TOR
+"Sun, Mar 3, 2024",New York Knicks,NYK,Cleveland Cavaliers,CLE
+"Sun, Mar 3, 2024",Indiana Pacers,IND,San Antonio Spurs,SAS
+"Sun, Mar 3, 2024",Oklahoma City Thunder,OKC,Phoenix Suns,PHO
+"Mon, Mar 4, 2024",Memphis Grizzlies,MEM,Brooklyn Nets,BKN
+"Mon, Mar 4, 2024",Los Angeles Clippers,LAC,Milwaukee Bucks,MIL
+"Mon, Mar 4, 2024",Portland Trail Blazers,POR,Minnesota Timberwolves,MIN
+"Mon, Mar 4, 2024",Washington Wizards,WAS,Utah Jazz,UTA
+"Mon, Mar 4, 2024",Chicago Bulls,CHI,Sacramento Kings,SAC
+"Mon, Mar 4, 2024",Oklahoma City Thunder,OKC,Los Angeles Lakers,LAL
+"Tue, Mar 5, 2024",Orlando Magic,ORL,Charlotte Hornets,CHA
+"Tue, Mar 5, 2024",Boston Celtics,BOS,Cleveland Cavaliers,CLE
+"Tue, Mar 5, 2024",Philadelphia 76ers,PHI,Brooklyn Nets,BKN
+"Tue, Mar 5, 2024",Detroit Pistons,DET,Miami Heat,MIA
+"Tue, Mar 5, 2024",Atlanta Hawks,ATL,New York Knicks,NYK
+"Tue, Mar 5, 2024",New Orleans Pelicans,NOP,Toronto Raptors,TOR
+"Tue, Mar 5, 2024",San Antonio Spurs,SAS,Houston Rockets,HOU
+"Tue, Mar 5, 2024",Indiana Pacers,IND,Dallas Mavericks,DAL
+"Tue, Mar 5, 2024",Phoenix Suns,PHO,Denver Nuggets,DEN
+"Wed, Mar 6, 2024",Orlando Magic,ORL,Washington Wizards,WAS
+"Wed, Mar 6, 2024",Cleveland Cavaliers,CLE,Atlanta Hawks,ATL
+"Wed, Mar 6, 2024",Memphis Grizzlies,MEM,Philadelphia 76ers,PHI
+"Wed, Mar 6, 2024",Los Angeles Clippers,LAC,Houston Rockets,HOU
+"Wed, Mar 6, 2024",Chicago Bulls,CHI,Utah Jazz,UTA
+"Wed, Mar 6, 2024",Milwaukee Bucks,MIL,Golden State Warriors,GSW
+"Wed, Mar 6, 2024",Oklahoma City Thunder,OKC,Portland Trail Blazers,POR
+"Wed, Mar 6, 2024",Sacramento Kings,SAC,Los Angeles Lakers,LAL
+"Thu, Mar 7, 2024",Brooklyn Nets,BKN,Detroit Pistons,DET
+"Thu, Mar 7, 2024",Minnesota Timberwolves,MIN,Indiana Pacers,IND
+"Thu, Mar 7, 2024",Miami Heat,MIA,Dallas Mavericks,DAL
+"Thu, Mar 7, 2024",Toronto Raptors,TOR,Phoenix Suns,PHO
+"Thu, Mar 7, 2024",Boston Celtics,BOS,Denver Nuggets,DEN
+"Thu, Mar 7, 2024",Chicago Bulls,CHI,Golden State Warriors,GSW
+"Thu, Mar 7, 2024",San Antonio Spurs,SAS,Sacramento Kings,SAC
+"Fri, Mar 8, 2024",New Orleans Pelicans,NOP,Philadelphia 76ers,PHI
+"Fri, Mar 8, 2024",Charlotte Hornets,CHA,Washington Wizards,WAS
+"Fri, Mar 8, 2024",Minnesota Timberwolves,MIN,Cleveland Cavaliers,CLE
+"Fri, Mar 8, 2024",Atlanta Hawks,ATL,Memphis Grizzlies,MEM
+"Fri, Mar 8, 2024",Orlando Magic,ORL,New York Knicks,NYK
+"Fri, Mar 8, 2024",Miami Heat,MIA,Oklahoma City Thunder,OKC
+"Fri, Mar 8, 2024",Milwaukee Bucks,MIL,Los Angeles Lakers,LAL
+"Fri, Mar 8, 2024",Houston Rockets,HOU,Portland Trail Blazers,POR
+"Sat, Mar 9, 2024",Chicago Bulls,CHI,Los Angeles Clippers,LAC
+"Sat, Mar 9, 2024",Brooklyn Nets,BKN,Charlotte Hornets,CHA
+"Sat, Mar 9, 2024",Dallas Mavericks,DAL,Detroit Pistons,DET
+"Sat, Mar 9, 2024",San Antonio Spurs,SAS,Golden State Warriors,GSW
+"Sat, Mar 9, 2024",Boston Celtics,BOS,Phoenix Suns,PHO
+"Sat, Mar 9, 2024",Utah Jazz,UTA,Denver Nuggets,DEN
+"Sat, Mar 9, 2024",Toronto Raptors,TOR,Portland Trail Blazers,POR
+"Sun, Mar 10, 2024",Milwaukee Bucks,MIL,Los Angeles Clippers,LAC
+"Sun, Mar 10, 2024",New Orleans Pelicans,NOP,Atlanta Hawks,ATL
+"Sun, Mar 10, 2024",Washington Wizards,WAS,Miami Heat,MIA
+"Sun, Mar 10, 2024",Philadelphia 76ers,PHI,New York Knicks,NYK
+"Sun, Mar 10, 2024",Indiana Pacers,IND,Orlando Magic,ORL
+"Sun, Mar 10, 2024",Houston Rockets,HOU,Sacramento Kings,SAC
+"Sun, Mar 10, 2024",Brooklyn Nets,BKN,Cleveland Cavaliers,CLE
+"Sun, Mar 10, 2024",Memphis Grizzlies,MEM,Oklahoma City Thunder,OKC
+"Sun, Mar 10, 2024",Minnesota Timberwolves,MIN,Los Angeles Lakers,LAL
+"Mon, Mar 11, 2024",Charlotte Hornets,CHA,Detroit Pistons,DET
+"Mon, Mar 11, 2024",Phoenix Suns,PHO,Cleveland Cavaliers,CLE
+"Mon, Mar 11, 2024",Dallas Mavericks,DAL,Chicago Bulls,CHI
+"Mon, Mar 11, 2024",Golden State Warriors,GSW,San Antonio Spurs,SAS
+"Mon, Mar 11, 2024",Toronto Raptors,TOR,Denver Nuggets,DEN
+"Mon, Mar 11, 2024",Boston Celtics,BOS,Portland Trail Blazers,POR
+"Tue, Mar 12, 2024",Philadelphia 76ers,PHI,New York Knicks,NYK
+"Tue, Mar 12, 2024",Washington Wizards,WAS,Memphis Grizzlies,MEM
+"Tue, Mar 12, 2024",Indiana Pacers,IND,Oklahoma City Thunder,OKC
+"Tue, Mar 12, 2024",Houston Rockets,HOU,San Antonio Spurs,SAS
+"Tue, Mar 12, 2024",Boston Celtics,BOS,Utah Jazz,UTA
+"Tue, Mar 12, 2024",Minnesota Timberwolves,MIN,Los Angeles Clippers,LAC
+"Tue, Mar 12, 2024",Milwaukee Bucks,MIL,Sacramento Kings,SAC
+"Wed, Mar 13, 2024",Toronto Raptors,TOR,Detroit Pistons,DET
+"Wed, Mar 13, 2024",Brooklyn Nets,BKN,Orlando Magic,ORL
+"Wed, Mar 13, 2024",Chicago Bulls,CHI,Indiana Pacers,IND
+"Wed, Mar 13, 2024",Denver Nuggets,DEN,Miami Heat,MIA
+"Wed, Mar 13, 2024",Charlotte Hornets,CHA,Memphis Grizzlies,MEM
+"Wed, Mar 13, 2024",Cleveland Cavaliers,CLE,New Orleans Pelicans,NOP
+"Wed, Mar 13, 2024",Golden State Warriors,GSW,Dallas Mavericks,DAL
+"Wed, Mar 13, 2024",Atlanta Hawks,ATL,Portland Trail Blazers,POR
+"Wed, Mar 13, 2024",Los Angeles Lakers,LAL,Sacramento Kings,SAC
+"Thu, Mar 14, 2024",Phoenix Suns,PHO,Boston Celtics,BOS
+"Thu, Mar 14, 2024",Los Angeles Clippers,LAC,Chicago Bulls,CHI
+"Thu, Mar 14, 2024",Washington Wizards,WAS,Houston Rockets,HOU
+"Thu, Mar 14, 2024",Philadelphia 76ers,PHI,Milwaukee Bucks,MIL
+"Thu, Mar 14, 2024",Dallas Mavericks,DAL,Oklahoma City Thunder,OKC
+"Thu, Mar 14, 2024",New York Knicks,NYK,Portland Trail Blazers,POR
+"Fri, Mar 15, 2024",Phoenix Suns,PHO,Charlotte Hornets,CHA
+"Fri, Mar 15, 2024",Miami Heat,MIA,Detroit Pistons,DET
+"Fri, Mar 15, 2024",Orlando Magic,ORL,Toronto Raptors,TOR
+"Fri, Mar 15, 2024",Los Angeles Clippers,LAC,New Orleans Pelicans,NOP
+"Fri, Mar 15, 2024",Denver Nuggets,DEN,San Antonio Spurs,SAS
+"Fri, Mar 15, 2024",Atlanta Hawks,ATL,Utah Jazz,UTA
+"Sat, Mar 16, 2024",Cleveland Cavaliers,CLE,Houston Rockets,HOU
+"Sat, Mar 16, 2024",Brooklyn Nets,BKN,Indiana Pacers,IND
+"Sat, Mar 16, 2024",Portland Trail Blazers,POR,New Orleans Pelicans,NOP
+"Sat, Mar 16, 2024",Charlotte Hornets,CHA,Philadelphia 76ers,PHI
+"Sat, Mar 16, 2024",Washington Wizards,WAS,Chicago Bulls,CHI
+"Sat, Mar 16, 2024",Oklahoma City Thunder,OKC,Memphis Grizzlies,MEM
+"Sat, Mar 16, 2024",Golden State Warriors,GSW,Los Angeles Lakers,LAL
+"Sat, Mar 16, 2024",Minnesota Timberwolves,MIN,Utah Jazz,UTA
+"Sat, Mar 16, 2024",New York Knicks,NYK,Sacramento Kings,SAC
+"Sun, Mar 17, 2024",Phoenix Suns,PHO,Milwaukee Bucks,MIL
+"Sun, Mar 17, 2024",Miami Heat,MIA,Detroit Pistons,DET
+"Sun, Mar 17, 2024",Denver Nuggets,DEN,Dallas Mavericks,DAL
+"Sun, Mar 17, 2024",Toronto Raptors,TOR,Orlando Magic,ORL
+"Sun, Mar 17, 2024",Boston Celtics,BOS,Washington Wizards,WAS
+"Sun, Mar 17, 2024",Brooklyn Nets,BKN,San Antonio Spurs,SAS
+"Sun, Mar 17, 2024",Atlanta Hawks,ATL,Los Angeles Clippers,LAC
+"Mon, Mar 18, 2024",Cleveland Cavaliers,CLE,Indiana Pacers,IND
+"Mon, Mar 18, 2024",Detroit Pistons,DET,Boston Celtics,BOS
+"Mon, Mar 18, 2024",Miami Heat,MIA,Philadelphia 76ers,PHI
+"Mon, Mar 18, 2024",Portland Trail Blazers,POR,Chicago Bulls,CHI
+"Mon, Mar 18, 2024",Minnesota Timberwolves,MIN,Utah Jazz,UTA
+"Mon, Mar 18, 2024",New York Knicks,NYK,Golden State Warriors,GSW
+"Mon, Mar 18, 2024",Memphis Grizzlies,MEM,Sacramento Kings,SAC
+"Mon, Mar 18, 2024",Atlanta Hawks,ATL,Los Angeles Lakers,LAL
+"Tue, Mar 19, 2024",Charlotte Hornets,CHA,Orlando Magic,ORL
+"Tue, Mar 19, 2024",Houston Rockets,HOU,Washington Wizards,WAS
+"Tue, Mar 19, 2024",New Orleans Pelicans,NOP,Brooklyn Nets,BKN
+"Tue, Mar 19, 2024",Dallas Mavericks,DAL,San Antonio Spurs,SAS
+"Tue, Mar 19, 2024",Denver Nuggets,DEN,Minnesota Timberwolves,MIN
+"Wed, Mar 20, 2024",Miami Heat,MIA,Cleveland Cavaliers,CLE
+"Wed, Mar 20, 2024",Indiana Pacers,IND,Detroit Pistons,DET
+"Wed, Mar 20, 2024",Milwaukee Bucks,MIL,Boston Celtics,BOS
+"Wed, Mar 20, 2024",Sacramento Kings,SAC,Toronto Raptors,TOR
+"Wed, Mar 20, 2024",Utah Jazz,UTA,Oklahoma City Thunder,OKC
+"Wed, Mar 20, 2024",Memphis Grizzlies,MEM,Golden State Warriors,GSW
+"Wed, Mar 20, 2024",Philadelphia 76ers,PHI,Phoenix Suns,PHO
+"Wed, Mar 20, 2024",Los Angeles Clippers,LAC,Portland Trail Blazers,POR
+"Thu, Mar 21, 2024",New Orleans Pelicans,NOP,Orlando Magic,ORL
+"Thu, Mar 21, 2024",Sacramento Kings,SAC,Washington Wizards,WAS
+"Thu, Mar 21, 2024",Chicago Bulls,CHI,Houston Rockets,HOU
+"Thu, Mar 21, 2024",Brooklyn Nets,BKN,Milwaukee Bucks,MIL
+"Thu, Mar 21, 2024",Utah Jazz,UTA,Dallas Mavericks,DAL
+"Thu, Mar 21, 2024",New York Knicks,NYK,Denver Nuggets,DEN
+"Thu, Mar 21, 2024",Atlanta Hawks,ATL,Phoenix Suns,PHO
+"Fri, Mar 22, 2024",Boston Celtics,BOS,Detroit Pistons,DET
+"Fri, Mar 22, 2024",Oklahoma City Thunder,OKC,Toronto Raptors,TOR
+"Fri, Mar 22, 2024",New Orleans Pelicans,NOP,Miami Heat,MIA
+"Fri, Mar 22, 2024",Cleveland Cavaliers,CLE,Minnesota Timberwolves,MIN
+"Fri, Mar 22, 2024",Memphis Grizzlies,MEM,San Antonio Spurs,SAS
+"Fri, Mar 22, 2024",Indiana Pacers,IND,Golden State Warriors,GSW
+"Fri, Mar 22, 2024",Los Angeles Clippers,LAC,Portland Trail Blazers,POR
+"Fri, Mar 22, 2024",Philadelphia 76ers,PHI,Los Angeles Lakers,LAL
+"Sat, Mar 23, 2024",Brooklyn Nets,BKN,New York Knicks,NYK
+"Sat, Mar 23, 2024",Sacramento Kings,SAC,Orlando Magic,ORL
+"Sat, Mar 23, 2024",Charlotte Hornets,CHA,Atlanta Hawks,ATL
+"Sat, Mar 23, 2024",Boston Celtics,BOS,Chicago Bulls,CHI
+"Sat, Mar 23, 2024",Utah Jazz,UTA,Houston Rockets,HOU
+"Sat, Mar 23, 2024",Phoenix Suns,PHO,San Antonio Spurs,SAS
+"Sat, Mar 23, 2024",Toronto Raptors,TOR,Washington Wizards,WAS
+"Sat, Mar 23, 2024",Denver Nuggets,DEN,Portland Trail Blazers,POR
+"Sun, Mar 24, 2024",New Orleans Pelicans,NOP,Detroit Pistons,DET
+"Sun, Mar 24, 2024",Philadelphia 76ers,PHI,Los Angeles Clippers,LAC
+"Sun, Mar 24, 2024",Cleveland Cavaliers,CLE,Miami Heat,MIA
+"Sun, Mar 24, 2024",Oklahoma City Thunder,OKC,Milwaukee Bucks,MIL
+"Sun, Mar 24, 2024",Golden State Warriors,GSW,Minnesota Timberwolves,MIN
+"Sun, Mar 24, 2024",Indiana Pacers,IND,Los Angeles Lakers,LAL
+"Mon, Mar 25, 2024",Charlotte Hornets,CHA,Cleveland Cavaliers,CLE
+"Mon, Mar 25, 2024",Boston Celtics,BOS,Atlanta Hawks,ATL
+"Mon, Mar 25, 2024",Detroit Pistons,DET,New York Knicks,NYK
+"Mon, Mar 25, 2024",Brooklyn Nets,BKN,Toronto Raptors,TOR
+"Mon, Mar 25, 2024",Washington Wizards,WAS,Chicago Bulls,CHI
+"Mon, Mar 25, 2024",Portland Trail Blazers,POR,Houston Rockets,HOU
+"Mon, Mar 25, 2024",Phoenix Suns,PHO,San Antonio Spurs,SAS
+"Mon, Mar 25, 2024",Memphis Grizzlies,MEM,Denver Nuggets,DEN
+"Mon, Mar 25, 2024",Dallas Mavericks,DAL,Utah Jazz,UTA
+"Mon, Mar 25, 2024",Philadelphia 76ers,PHI,Sacramento Kings,SAC
+"Mon, Mar 25, 2024",Indiana Pacers,IND,Los Angeles Clippers,LAC
+"Tue, Mar 26, 2024",Golden State Warriors,GSW,Miami Heat,MIA
+"Tue, Mar 26, 2024",Los Angeles Lakers,LAL,Milwaukee Bucks,MIL
+"Tue, Mar 26, 2024",Oklahoma City Thunder,OKC,New Orleans Pelicans,NOP
+"Tue, Mar 26, 2024",Dallas Mavericks,DAL,Sacramento Kings,SAC
+"Wed, Mar 27, 2024",Cleveland Cavaliers,CLE,Charlotte Hornets,CHA
+"Wed, Mar 27, 2024",Golden State Warriors,GSW,Orlando Magic,ORL
+"Wed, Mar 27, 2024",Brooklyn Nets,BKN,Washington Wizards,WAS
+"Wed, Mar 27, 2024",Portland Trail Blazers,POR,Atlanta Hawks,ATL
+"Wed, Mar 27, 2024",Los Angeles Clippers,LAC,Philadelphia 76ers,PHI
+"Wed, Mar 27, 2024",New York Knicks,NYK,Toronto Raptors,TOR
+"Wed, Mar 27, 2024",Indiana Pacers,IND,Chicago Bulls,CHI
+"Wed, Mar 27, 2024",Los Angeles Lakers,LAL,Memphis Grizzlies,MEM
+"Wed, Mar 27, 2024",Detroit Pistons,DET,Minnesota Timberwolves,MIN
+"Wed, Mar 27, 2024",Houston Rockets,HOU,Oklahoma City Thunder,OKC
+"Wed, Mar 27, 2024",San Antonio Spurs,SAS,Utah Jazz,UTA
+"Wed, Mar 27, 2024",Phoenix Suns,PHO,Denver Nuggets,DEN
+"Thu, Mar 28, 2024",Boston Celtics,BOS,Atlanta Hawks,ATL
+"Thu, Mar 28, 2024",Milwaukee Bucks,MIL,New Orleans Pelicans,NOP
+"Fri, Mar 29, 2024",Golden State Warriors,GSW,Charlotte Hornets,CHA
+"Fri, Mar 29, 2024",Los Angeles Lakers,LAL,Indiana Pacers,IND
+"Fri, Mar 29, 2024",Los Angeles Clippers,LAC,Orlando Magic,ORL
+"Fri, Mar 29, 2024",Detroit Pistons,DET,Washington Wizards,WAS
+"Fri, Mar 29, 2024",Chicago Bulls,CHI,Brooklyn Nets,BKN
+"Fri, Mar 29, 2024",Philadelphia 76ers,PHI,Cleveland Cavaliers,CLE
+"Fri, Mar 29, 2024",Portland Trail Blazers,POR,Miami Heat,MIA
+"Fri, Mar 29, 2024",Phoenix Suns,PHO,Oklahoma City Thunder,OKC
+"Fri, Mar 29, 2024",New York Knicks,NYK,San Antonio Spurs,SAS
+"Fri, Mar 29, 2024",Minnesota Timberwolves,MIN,Denver Nuggets,DEN
+"Fri, Mar 29, 2024",Houston Rockets,HOU,Utah Jazz,UTA
+"Fri, Mar 29, 2024",Dallas Mavericks,DAL,Sacramento Kings,SAC
+"Sat, Mar 30, 2024",Boston Celtics,BOS,New Orleans Pelicans,NOP
+"Sat, Mar 30, 2024",Memphis Grizzlies,MEM,Orlando Magic,ORL
+"Sat, Mar 30, 2024",Milwaukee Bucks,MIL,Atlanta Hawks,ATL
+"Sun, Mar 31, 2024",Cleveland Cavaliers,CLE,Denver Nuggets,DEN
+"Sun, Mar 31, 2024",Los Angeles Lakers,LAL,Brooklyn Nets,BKN
+"Sun, Mar 31, 2024",Los Angeles Clippers,LAC,Charlotte Hornets,CHA
+"Sun, Mar 31, 2024",Philadelphia 76ers,PHI,Toronto Raptors,TOR
+"Sun, Mar 31, 2024",Miami Heat,MIA,Washington Wizards,WAS
+"Sun, Mar 31, 2024",Dallas Mavericks,DAL,Houston Rockets,HOU
+"Sun, Mar 31, 2024",Chicago Bulls,CHI,Minnesota Timberwolves,MIN
+"Sun, Mar 31, 2024",Oklahoma City Thunder,OKC,New York Knicks,NYK
+"Sun, Mar 31, 2024",Golden State Warriors,GSW,San Antonio Spurs,SAS
+"Sun, Mar 31, 2024",Utah Jazz,UTA,Sacramento Kings,SAC
+"Mon, Apr 1, 2024",Boston Celtics,BOS,Charlotte Hornets,CHA
+"Mon, Apr 1, 2024",Memphis Grizzlies,MEM,Detroit Pistons,DET
+"Mon, Apr 1, 2024",Brooklyn Nets,BKN,Indiana Pacers,IND
+"Mon, Apr 1, 2024",Portland Trail Blazers,POR,Orlando Magic,ORL
+"Mon, Apr 1, 2024",Atlanta Hawks,ATL,Chicago Bulls,CHI
+"Mon, Apr 1, 2024",Phoenix Suns,PHO,New Orleans Pelicans,NOP
+"Tue, Apr 2, 2024",Oklahoma City Thunder,OKC,Philadelphia 76ers,PHI
+"Tue, Apr 2, 2024",Los Angeles Lakers,LAL,Toronto Raptors,TOR
+"Tue, Apr 2, 2024",Milwaukee Bucks,MIL,Washington Wizards,WAS
+"Tue, Apr 2, 2024",Golden State Warriors,GSW,Dallas Mavericks,DAL
+"Tue, Apr 2, 2024",New York Knicks,NYK,Miami Heat,MIA
+"Tue, Apr 2, 2024",Houston Rockets,HOU,Minnesota Timberwolves,MIN
+"Tue, Apr 2, 2024",San Antonio Spurs,SAS,Denver Nuggets,DEN
+"Tue, Apr 2, 2024",Cleveland Cavaliers,CLE,Utah Jazz,UTA
+"Tue, Apr 2, 2024",Los Angeles Clippers,LAC,Sacramento Kings,SAC
+"Wed, Apr 3, 2024",Portland Trail Blazers,POR,Charlotte Hornets,CHA
+"Wed, Apr 3, 2024",Los Angeles Lakers,LAL,Washington Wizards,WAS
+"Wed, Apr 3, 2024",Detroit Pistons,DET,Atlanta Hawks,ATL
+"Wed, Apr 3, 2024",Oklahoma City Thunder,OKC,Boston Celtics,BOS
+"Wed, Apr 3, 2024",Indiana Pacers,IND,Brooklyn Nets,BKN
+"Wed, Apr 3, 2024",Memphis Grizzlies,MEM,Milwaukee Bucks,MIL
+"Wed, Apr 3, 2024",Toronto Raptors,TOR,Minnesota Timberwolves,MIN
+"Wed, Apr 3, 2024",Orlando Magic,ORL,New Orleans Pelicans,NOP
+"Wed, Apr 3, 2024",Cleveland Cavaliers,CLE,Phoenix Suns,PHO
+"Thu, Apr 4, 2024",Philadelphia 76ers,PHI,Miami Heat,MIA
+"Thu, Apr 4, 2024",Sacramento Kings,SAC,New York Knicks,NYK
+"Thu, Apr 4, 2024",Golden State Warriors,GSW,Houston Rockets,HOU
+"Thu, Apr 4, 2024",Denver Nuggets,DEN,Los Angeles Clippers,LAC
+"Fri, Apr 5, 2024",Orlando Magic,ORL,Charlotte Hornets,CHA
+"Fri, Apr 5, 2024",Oklahoma City Thunder,OKC,Indiana Pacers,IND
+"Fri, Apr 5, 2024",Portland Trail Blazers,POR,Washington Wizards,WAS
+"Fri, Apr 5, 2024",Sacramento Kings,SAC,Boston Celtics,BOS
+"Fri, Apr 5, 2024",New York Knicks,NYK,Chicago Bulls,CHI
+"Fri, Apr 5, 2024",Miami Heat,MIA,Houston Rockets,HOU
+"Fri, Apr 5, 2024",Detroit Pistons,DET,Memphis Grizzlies,MEM
+"Fri, Apr 5, 2024",Toronto Raptors,TOR,Milwaukee Bucks,MIL
+"Fri, Apr 5, 2024",San Antonio Spurs,SAS,New Orleans Pelicans,NOP
+"Fri, Apr 5, 2024",Atlanta Hawks,ATL,Dallas Mavericks,DAL
+"Fri, Apr 5, 2024",Minnesota Timberwolves,MIN,Phoenix Suns,PHO
+"Fri, Apr 5, 2024",Utah Jazz,UTA,Los Angeles Clippers,LAC
+"Sat, Apr 6, 2024",Cleveland Cavaliers,CLE,Los Angeles Lakers,LAL
+"Sat, Apr 6, 2024",Detroit Pistons,DET,Brooklyn Nets,BKN
+"Sat, Apr 6, 2024",Philadelphia 76ers,PHI,Memphis Grizzlies,MEM
+"Sat, Apr 6, 2024",Atlanta Hawks,ATL,Denver Nuggets,DEN
+"Sun, Apr 7, 2024",Houston Rockets,HOU,Dallas Mavericks,DAL
+"Sun, Apr 7, 2024",Cleveland Cavaliers,CLE,Los Angeles Clippers,LAC
+"Sun, Apr 7, 2024",Miami Heat,MIA,Indiana Pacers,IND
+"Sun, Apr 7, 2024",Portland Trail Blazers,POR,Boston Celtics,BOS
+"Sun, Apr 7, 2024",Oklahoma City Thunder,OKC,Charlotte Hornets,CHA
+"Sun, Apr 7, 2024",Chicago Bulls,CHI,Orlando Magic,ORL
+"Sun, Apr 7, 2024",New Orleans Pelicans,NOP,Phoenix Suns,PHO
+"Sun, Apr 7, 2024",Washington Wizards,WAS,Toronto Raptors,TOR
+"Sun, Apr 7, 2024",New York Knicks,NYK,Milwaukee Bucks,MIL
+"Sun, Apr 7, 2024",Philadelphia 76ers,PHI,San Antonio Spurs,SAS
+"Sun, Apr 7, 2024",Sacramento Kings,SAC,Brooklyn Nets,BKN
+"Sun, Apr 7, 2024",Utah Jazz,UTA,Golden State Warriors,GSW
+"Sun, Apr 7, 2024",Minnesota Timberwolves,MIN,Los Angeles Lakers,LAL
+"Tue, Apr 9, 2024",Dallas Mavericks,DAL,Charlotte Hornets,CHA
+"Tue, Apr 9, 2024",Detroit Pistons,DET,Philadelphia 76ers,PHI
+"Tue, Apr 9, 2024",Indiana Pacers,IND,Toronto Raptors,TOR
+"Tue, Apr 9, 2024",Miami Heat,MIA,Atlanta Hawks,ATL
+"Tue, Apr 9, 2024",Boston Celtics,BOS,Milwaukee Bucks,MIL
+"Tue, Apr 9, 2024",New York Knicks,NYK,Chicago Bulls,CHI
+"Tue, Apr 9, 2024",Orlando Magic,ORL,Houston Rockets,HOU
+"Tue, Apr 9, 2024",San Antonio Spurs,SAS,Memphis Grizzlies,MEM
+"Tue, Apr 9, 2024",Washington Wizards,WAS,Minnesota Timberwolves,MIN
+"Tue, Apr 9, 2024",Sacramento Kings,SAC,Oklahoma City Thunder,OKC
+"Tue, Apr 9, 2024",Denver Nuggets,DEN,Utah Jazz,UTA
+"Tue, Apr 9, 2024",Golden State Warriors,GSW,Los Angeles Lakers,LAL
+"Tue, Apr 9, 2024",Los Angeles Clippers,LAC,Phoenix Suns,PHO
+"Tue, Apr 9, 2024",New Orleans Pelicans,NOP,Portland Trail Blazers,POR
+"Wed, Apr 10, 2024",Memphis Grizzlies,MEM,Cleveland Cavaliers,CLE
+"Wed, Apr 10, 2024",Charlotte Hornets,CHA,Atlanta Hawks,ATL
+"Wed, Apr 10, 2024",Toronto Raptors,TOR,Brooklyn Nets,BKN
+"Wed, Apr 10, 2024",Dallas Mavericks,DAL,Miami Heat,MIA
+"Wed, Apr 10, 2024",Orlando Magic,ORL,Milwaukee Bucks,MIL
+"Wed, Apr 10, 2024",San Antonio Spurs,SAS,Oklahoma City Thunder,OKC
+"Wed, Apr 10, 2024",Minnesota Timberwolves,MIN,Denver Nuggets,DEN
+"Wed, Apr 10, 2024",Phoenix Suns,PHO,Los Angeles Clippers,LAC
+"Thu, Apr 11, 2024",Chicago Bulls,CHI,Detroit Pistons,DET
+"Thu, Apr 11, 2024",New York Knicks,NYK,Boston Celtics,BOS
+"Thu, Apr 11, 2024",Houston Rockets,HOU,Utah Jazz,UTA
+"Thu, Apr 11, 2024",Golden State Warriors,GSW,Portland Trail Blazers,POR
+"Thu, Apr 11, 2024",New Orleans Pelicans,NOP,Sacramento Kings,SAC
+"Fri, Apr 12, 2024",Orlando Magic,ORL,Philadelphia 76ers,PHI
+"Fri, Apr 12, 2024",Chicago Bulls,CHI,Washington Wizards,WAS
+"Fri, Apr 12, 2024",Charlotte Hornets,CHA,Boston Celtics,BOS
+"Fri, Apr 12, 2024",Indiana Pacers,IND,Cleveland Cavaliers,CLE
+"Fri, Apr 12, 2024",Brooklyn Nets,BKN,New York Knicks,NYK
+"Fri, Apr 12, 2024",Los Angeles Lakers,LAL,Memphis Grizzlies,MEM
+"Fri, Apr 12, 2024",Toronto Raptors,TOR,Miami Heat,MIA
+"Fri, Apr 12, 2024",Atlanta Hawks,ATL,Minnesota Timberwolves,MIN
+"Fri, Apr 12, 2024",Milwaukee Bucks,MIL,Oklahoma City Thunder,OKC
+"Fri, Apr 12, 2024",Denver Nuggets,DEN,San Antonio Spurs,SAS
+"Fri, Apr 12, 2024",Detroit Pistons,DET,Dallas Mavericks,DAL
+"Fri, Apr 12, 2024",New Orleans Pelicans,NOP,Golden State Warriors,GSW
+"Fri, Apr 12, 2024",Houston Rockets,HOU,Portland Trail Blazers,POR
+"Fri, Apr 12, 2024",Utah Jazz,UTA,Los Angeles Clippers,LAC
+"Fri, Apr 12, 2024",Phoenix Suns,PHO,Sacramento Kings,SAC
+"Sun, Apr 14, 2024",Washington Wizards,WAS,Boston Celtics,BOS
+"Sun, Apr 14, 2024",Charlotte Hornets,CHA,Cleveland Cavaliers,CLE
+"Sun, Apr 14, 2024",Atlanta Hawks,ATL,Indiana Pacers,IND
+"Sun, Apr 14, 2024",Toronto Raptors,TOR,Miami Heat,MIA
+"Sun, Apr 14, 2024",Chicago Bulls,CHI,New York Knicks,NYK
+"Sun, Apr 14, 2024",Milwaukee Bucks,MIL,Orlando Magic,ORL
+"Sun, Apr 14, 2024",Brooklyn Nets,BKN,Philadelphia 76ers,PHI
+"Sun, Apr 14, 2024",Utah Jazz,UTA,Golden State Warriors,GSW
+"Sun, Apr 14, 2024",Houston Rockets,HOU,Los Angeles Clippers,LAC
+"Sun, Apr 14, 2024",Denver Nuggets,DEN,Memphis Grizzlies,MEM
+"Sun, Apr 14, 2024",Phoenix Suns,PHO,Minnesota Timberwolves,MIN
+"Sun, Apr 14, 2024",Los Angeles Lakers,LAL,New Orleans Pelicans,NOP
+"Sun, Apr 14, 2024",Dallas Mavericks,DAL,Oklahoma City Thunder,OKC
+"Sun, Apr 14, 2024",Portland Trail Blazers,POR,Sacramento Kings,SAC
+"Sun, Apr 14, 2024",Detroit Pistons,DET,San Antonio Spurs,SAS

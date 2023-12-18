@@ -387,3 +387,22 @@ body {
     padding: 10px; /* Less padding around buttons */
   }
 }
+
+.week-selector-container {
+  text-align: center;  /* Center the content */
+  margin: 20px 0;     /* Add some vertical margin for spacing */
+}
+
+.week-selector-container select {
+  width: 50%;         /* Set the width of the dropdown */
+  padding: 5px;       /* Add some padding for aesthetics */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .week-selector-container select {
+      width: 80%;     /* Wider dropdown on smaller screens */
+  }
+}
