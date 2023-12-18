@@ -6,7 +6,7 @@ import re
 from dotenv import load_dotenv
 import os
 from rankings import check_rankings
-from data import update_db_rankings
+# from data import update_db_rankings
 # from testing import get_rankings
 from matchweek import assign_matchweek
 
@@ -168,7 +168,7 @@ rank_df["Week"] = current_matchweek
 
 rank_data = rank_df.to_dict(orient='records')
 rank_df.to_csv("week_1_data.csv")
-update_db_rankings(rank_df)
+# update_db_rankings(rank_df)
 
 
 def clean_names(team_list):
