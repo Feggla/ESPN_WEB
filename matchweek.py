@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from depen import *
 from datetime import datetime
-from sqlalchemy import create_engine
 import pandas as pd
 
 def parse_date(date_string):
