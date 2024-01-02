@@ -18,18 +18,15 @@
 </form>
 
 <body>
-    <!-- <form action="{{ url_for('rankings_page') }}" method="get">
-        <div class="week-selector-container">
-            <select id="week-select" name="week">
-                <option value="">Select a Week</option>
+    <form action="{{ url_for('rankings_page') }}" method="get" class="rankings-form">
+            <select id="week-select" name="week" class="week-selector-style">
+                <option value="">Select Week</option>
                 {% for week in weeks %}
                 <option value="{{ week }}" {% if week == selected_week %}selected{% endif %}>{{ week }}</option>
                 {% endfor %}
             </select>
-        </div>
-        <button type="submit">Show Rankings</button>
-    </form> -->
-
+            <button type="submit" class="btn-custom">Show Rankings</button>
+    </form>
     <div class="search-container">
         <input type="text" id="searchBox" onkeyup="searchTable()" placeholder="Filter teams">
     </div>    

@@ -1,43 +1,34 @@
-from flask import Flask, request, jsonify
-import psycopg2
+# from flask import Flask, request, jsonify, Blueprint
+# import psycopg2
+# from depen import get_db_connection
 
-app = Flask(__name__)
+# api_blueprint = Blueprint('api', __name__, url_prefix='/api')
 
-def get_db_connection():
-    conn = psycopg2.connect(database="db_191_bball_db",
-                        host="dpg-ciue2hdgkuvoig81jpdg-a.singapore-postgres.render.com",
-                        user="db_191_bball_db_user",
-                        password="quLutlREFgxzM9ngAk6tu8JDcYR3BSOr",
-                        port="5432")
-    return conn
+# @api_blueprint.route('/get_rankings', methods=['GET'])
+# def get_rankings():
+#     print("GOT HERE")
+#     week = request.args.get('week')  # Get 'week' from query parameter
 
-@app.route('/rankings', methods=['GET'])
-def get_rankings():
-    week = request.args.get('week')  # Get 'week' from query parameter
+#     if not week:
+#         return jsonify({'error': 'Week parameter is required'}), 400
 
-    if not week:
-        return jsonify({'error': 'Week parameter is required'}), 400
+#     conn = get_db_connection()
+#     cursor = conn.cursor()
 
-    conn = get_db_connection()
-    cursor = conn.cursor()
+#     # Query the database for rankings for the specified week
+#     query = """
+#         SELECT t.team_name, m.score, m.league, m.week
+#         FROM matchup_rankings.matchups m
+#         JOIN matchup_rankings.teams t ON m.team_id = t.team_id
+#         WHERE m.week = %s;
+#         """
+#     cursor.execute(query, (week,))
+#     rankings = cursor.fetchall()
 
-    # Query the database for rankings for the specified week
-    query = """
-        SELECT t.team_name, m.score, m.league, m.week
-        FROM matchup_rankings.matchups m
-        JOIN matchup_rankings.teams t ON m.team_id = t.team_id
-        WHERE m.week = %s;
-        """
-    cursor.execute(query, (week,))
-    rankings = cursor.fetchall()
+#     cursor.close()
+#     conn.close()
 
-    cursor.close()
-    conn.close()
-
-    # Convert query results to a list of dictionaries
-    rankings_list = [{'team_id': row[0], 'score': row[1], 'league': row[2], 'week': row[3]} for row in rankings]
+#     # Convert query results to a list of dictionaries
+#     rankings_list = [{'team_id': row[0], 'score': row[1], 'league': row[2], 'week': row[3]} for row in rankings]
     
-    return jsonify(rankings_list)
-
-if __name__ == '__main__':
-    app.run(debug=True)
+#     return jsonify(rankings_list)
