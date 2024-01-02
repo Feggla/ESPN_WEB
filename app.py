@@ -9,7 +9,6 @@ from rankings import check_rankings
 from data import update_db_rankings
 from testing import get_rankings
 from matchweek import assign_matchweek
-from flask_apscheduler import APScheduler
 from depen import get_db_connection
 
 
@@ -318,8 +317,6 @@ if not os.path.exists('result_list_round_4.xlsx'):
 
 app = Flask(__name__)
 app.secret_key = "AKL95Pegasus"
-scheduler = APScheduler()
-scheduler.init_app(app)
 proper_matchup = []
 
 @app.route("/", methods=['GET', 'POST'])
@@ -404,11 +401,10 @@ def api_rankings():
     
     return jsonify(rankings_list)
     
-@scheduler.task('interval', id='do_job_1', seconds=60*30, misfire_grace_time=900)
-def job1():
-    print("Job running")
-    update(current_matchweek, leagues)
+# @scheduler.task('interval', id='do_job_1', seconds=60*30, misfire_grace_time=900)
+# def job1():
+#     print("Job running")
+#     update(current_matchweek, leagues)
 
 if __name__ == '__main__':
-    scheduler.start()
     app.run(debug=True, port=3000)
