@@ -3,7 +3,7 @@ import pandas as pd
 import math
 
 def fetch_rankings_from_api(week):
-    url = 'http://localhost:3000/api_rankings'  # Replace with your actual API URL
+    url = 'https://knockout-comp.onrender.com/api_rankings'  # Replace with your actual API URL
     params = {'week': int(week)}
     response = requests.get(url, params=params)
     if response.status_code == 200:
