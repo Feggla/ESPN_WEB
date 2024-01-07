@@ -11,8 +11,6 @@ from data import update_db_rankings
 from testing import get_rankings, process_rankings
 from matchweek import assign_matchweek
 from depen import get_db_connection
-import psutil
-import logging
 
 
 
@@ -175,12 +173,6 @@ update(current_matchweek, leagues)
 # rank_df['Color'] = rank_df['Matchups Score'].apply(calculate_colors)
 # rank_df["Week"] = current_matchweek
 # rank_data = rank_df.to_dict(orient='records')
-def log_memory_usage():
-    process = psutil.Process()
-    memory_info = process.memory_info()
-    logging.info(f"Memory Usage: RSS = {memory_info.rss}, VMS = {memory_info.vms}")
-    print(f"Memory Usage: RSS = {memory_info.rss}, VMS = {memory_info.vms}")
-
 
 def clean_names(team_list):
     for obj in team_list:
