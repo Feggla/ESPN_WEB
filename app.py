@@ -1,15 +1,18 @@
 from flask import Flask, render_template, url_for, redirect, request, session, jsonify
 from espn_api.basketball import League
 import pandas as pd
+import time
 from Team_web import Teams
 import re
 from dotenv import load_dotenv
 import os
 from rankings import check_rankings
 from data import update_db_rankings
-from testing import get_rankings
+from testing import get_rankings, process_rankings
 from matchweek import assign_matchweek
 from depen import get_db_connection
+import psutil
+import logging
 
 
 
@@ -172,6 +175,11 @@ update(current_matchweek, leagues)
 # rank_df['Color'] = rank_df['Matchups Score'].apply(calculate_colors)
 # rank_df["Week"] = current_matchweek
 # rank_data = rank_df.to_dict(orient='records')
+def log_memory_usage():
+    process = psutil.Process()
+    memory_info = process.memory_info()
+    logging.info(f"Memory Usage: RSS = {memory_info.rss}, VMS = {memory_info.vms}")
+    print(f"Memory Usage: RSS = {memory_info.rss}, VMS = {memory_info.vms}")
 
 
 def clean_names(team_list):
@@ -366,23 +374,8 @@ def rankings_page():
     except (ValueError, TypeError):
         selected_week = default_week  
     weeks = [str(i) for i in range(1, current_matchweek+1)]
-    try: 
-        rankings_data = get_rankings(selected_week)
-    except KeyError:
-        rankings_data = get_rankings(selected_week-1)
-        return render_template('new_rankings.html', data=rankings_data, weeks=weeks, matchweek=selected_week)
-    return render_template('new_rankings.html', data=rankings_data, weeks=weeks, matchweek=selected_week)
-
-@app.route('/api_rankings', methods=['GET'])
-def api_rankings():
-    week = request.args.get('week')  # Get 'week' from query parameter
-
-    if not week:
-        return jsonify({'error': 'Week parameter is required'}), 400
-
     conn = get_db_connection()
     cursor = conn.cursor()
-
     # Query the database for rankings for the specified week
     query = """
         SELECT t.team_name, m.score, m.league, m.week
@@ -390,16 +383,43 @@ def api_rankings():
         JOIN matchup_rankings.teams t ON m.team_id = t.team_id
         WHERE m.week = %s;
         """
-    cursor.execute(query, (week,))
+    cursor.execute(query, (selected_week,))
     rankings = cursor.fetchall()
-
     cursor.close()
     conn.close()
 
     # Convert query results to a list of dictionaries
     rankings_list = [{'team_id': row[0], 'score': row[1], 'league': row[2], 'week': row[3]} for row in rankings]
     
-    return jsonify(rankings_list)
+    rankings_data =  jsonify(rankings_list)
+    rankings_data = rankings_data.json()
+    rankings_data = process_rankings(rankings_data)
+    # rankings_data = get_rankings(selected_week-1)
+    return render_template('new_rankings.html', data=rankings_data, weeks=weeks, matchweek=selected_week)
+
+# @app.route('/api_rankings', methods=['GET'])
+# def api_rankings():
+#     week = request.args.get('week')  # Get 'week' from query parameter
+#     if not week:
+#         return jsonify({'error': 'Week parameter is required'}), 400
+#     conn = get_db_connection()
+#     cursor = conn.cursor()
+#     # Query the database for rankings for the specified week
+#     query = """
+#         SELECT t.team_name, m.score, m.league, m.week
+#         FROM matchup_rankings.matchups m
+#         JOIN matchup_rankings.teams t ON m.team_id = t.team_id
+#         WHERE m.week = %s;
+#         """
+#     cursor.execute(query, (week,))
+#     rankings = cursor.fetchall()
+#     cursor.close()
+#     conn.close()
+
+#     # Convert query results to a list of dictionaries
+#     rankings_list = [{'team_id': row[0], 'score': row[1], 'league': row[2], 'week': row[3]} for row in rankings]
+    
+#     return jsonify(rankings_list)
     
 # @scheduler.task('interval', id='do_job_1', seconds=60*30, misfire_grace_time=900)
 # def job1():

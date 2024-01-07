@@ -2,14 +2,14 @@ import requests
 import pandas as pd
 import math
 
-def fetch_rankings_from_api(week):
-    url = 'https://knockout-comp.onrender.com/api_rankings'  # Replace with your actual API URL
-    params = {'week': int(week)}
-    response = requests.get(url, params=params)
-    if response.status_code == 200:
-        return response.json()
-    else:
-        raise Exception(f"API request failed with status code {response.status_code}")
+# def fetch_rankings_from_api(week):
+#     url = 'https://knockout-comp.onrender.com/api_rankings'  # Replace with your actual API URL
+#     params = {'week': int(week)}
+#     response = requests.get(url, params=params)
+#     if response.status_code == 200:
+#         return response.json()
+#     else:
+#         raise Exception(f"API request failed with status code {response.status_code}")
 
 def calculate_colors(score, max_score, min_score):
     if math.isnan(score) or math.isnan(max_score) or math.isnan(min_score) or max_score == min_score:
@@ -51,8 +51,7 @@ def process_rankings(api_data):
 #     sorted_rankings = rank_df.sort_values(by='Matchups Score', ascending=False)
 #     return sorted_rankings
 
-def get_rankings(week):
-    data = fetch_rankings_from_api(week)
-    print(data)
+def get_rankings(data):
+    # data = fetch_rankings_from_api(week)
     sorted_rankings_df = process_rankings(data)
     return sorted_rankings_df
