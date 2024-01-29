@@ -85,7 +85,7 @@ leagues = {
 }
 overall_list = []
 current_matchweek = assign_matchweek()
-# current_matchweek = 11
+# current_matchweek = 13Team Wallace
 
 def pull(matchup_period, leagues):
     overall_list.clear()
@@ -183,7 +183,7 @@ clean_names(clean_list)
 outliers = []
 matchup_dic = {}
 
-df = pd.read_excel("./Knockout_Round_6.xlsx", sheet_name='Sheet1', engine='openpyxl', header=None)
+df = pd.read_excel("./Knockout_Round_7.xlsx", sheet_name='Sheet1', engine='openpyxl', header=None)
 pairings = df[1].dropna().tolist()
 league_letters = df[0].dropna().tolist()
 pairs = [(pairings[i], pairings[i+1]) for i in range(0, len(pairings), 2)]
@@ -312,8 +312,8 @@ for result in result_list:
 
 df = pd.DataFrame(restructured_list)
 df.columns = ['Team1', 'Team2', 'Drawn', 'Winning Team', 'Losing Team']
-if not os.path.exists('result_list_round_5.xlsx'):
-    df.to_excel('result_list_round_5.xlsx', index=False, engine='openpyxl')
+if not os.path.exists('result_list_round_6.xlsx'):
+    df.to_excel('result_list_round_6.xlsx', index=False, engine='openpyxl')
 
 
 app = Flask(__name__)
