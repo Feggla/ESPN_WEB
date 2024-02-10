@@ -85,7 +85,7 @@ leagues = {
 }
 overall_list = []
 current_matchweek = assign_matchweek()
-# current_matchweek = 13Team Wallace
+# current_matchweek = 15
 
 def pull(matchup_period, leagues):
     overall_list.clear()
@@ -183,7 +183,7 @@ clean_names(clean_list)
 outliers = []
 matchup_dic = {}
 
-df = pd.read_excel("./Knockout_Round_7.xlsx", sheet_name='Sheet1', engine='openpyxl', header=None)
+df = pd.read_excel("./Knockout_Round_8.xlsx", sheet_name='Sheet1', engine='openpyxl', header=None)
 pairings = df[1].dropna().tolist()
 league_letters = df[0].dropna().tolist()
 pairs = [(pairings[i], pairings[i+1]) for i in range(0, len(pairings), 2)]
@@ -268,7 +268,7 @@ for matchups in obj_list:
         winner = matchups[1].name
         loser = matchups[0].name
     if matchup[matchups[0].name] == matchup[matchups[1].name]:
-        check_scores("threes")
+        check_scores("ft")
         if matchup[matchups[0].name] > matchup[matchups[1].name]:
             winner = matchups[0].name
             loser = matchups[1].name
@@ -312,8 +312,8 @@ for result in result_list:
 
 df = pd.DataFrame(restructured_list)
 df.columns = ['Team1', 'Team2', 'Drawn', 'Winning Team', 'Losing Team']
-if not os.path.exists('result_list_round_6.xlsx'):
-    df.to_excel('result_list_round_6.xlsx', index=False, engine='openpyxl')
+if not os.path.exists('result_list_round_7.xlsx'):
+    df.to_excel('result_list_round_7.xlsx', index=False, engine='openpyxl')
 
 
 app = Flask(__name__)
@@ -390,29 +390,29 @@ def rankings_page():
     # rankings_data = get_rankings(selected_week-1)
     return render_template('new_rankings.html', data=rankings_data, weeks=weeks, matchweek=selected_week)
 
-# @app.route('/api_rankings', methods=['GET'])
-# def api_rankings():
-#     week = request.args.get('week')  # Get 'week' from query parameter
-#     if not week:
-#         return jsonify({'error': 'Week parameter is required'}), 400
-#     conn = get_db_connection()
-#     cursor = conn.cursor()
-#     # Query the database for rankings for the specified week
-#     query = """
-#         SELECT t.team_name, m.score, m.league, m.week
-#         FROM matchup_rankings.matchups m
-#         JOIN matchup_rankings.teams t ON m.team_id = t.team_id
-#         WHERE m.week = %s;
-#         """
-#     cursor.execute(query, (week,))
-#     rankings = cursor.fetchall()
-#     cursor.close()
-#     conn.close()
+@app.route('/api_rankings', methods=['GET'])
+def api_rankings():
+    week = request.args.get('week')  # Get 'week' from query parameter
+    if not week:
+        return jsonify({'error': 'Week parameter is required'}), 400
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    # Query the database for rankings for the specified week
+    query = """
+        SELECT t.team_name, m.score, m.league, m.week
+        FROM matchup_rankings.matchups m
+        JOIN matchup_rankings.teams t ON m.team_id = t.team_id
+        WHERE m.week = %s;
+        """
+    cursor.execute(query, (week,))
+    rankings = cursor.fetchall()
+    cursor.close()
+    conn.close()
 
-#     # Convert query results to a list of dictionaries
-#     rankings_list = [{'team_id': row[0], 'score': row[1], 'league': row[2], 'week': row[3]} for row in rankings]
+    # Convert query results to a list of dictionaries
+    rankings_list = [{'team_id': row[0], 'score': row[1], 'league': row[2], 'week': row[3]} for row in rankings]
     
-#     return jsonify(rankings_list)
+    return jsonify(rankings_list)
     
 # @scheduler.task('interval', id='do_job_1', seconds=60*30, misfire_grace_time=900)
 # def job1():
