@@ -22,6 +22,7 @@ def calculate_colors(score, max_score, min_score):
 
 def process_rankings(api_data):
     # Create DataFrame from API data, ensuring column names match the data keys
+    print(type(api_data))
     rank_df = pd.DataFrame(api_data)
     rank_df.rename(columns={'team_id': 'Team', 'score': 'Matchups Score', 'league': 'League'}, inplace=True)
 

@@ -50,7 +50,9 @@ class Teams:
         self.threes = int(self.score[self.player].home_team_cats["3PTM"]['score'])
         self.three_percent = self.score[self.player].home_team_cats['3PT%']['score']
         self.td = int(self.score[self.player].home_team_cats['38']['score'])
-        self.dic[self.scoreboard[self.player].home_team] = {
+        team_name = str(self.scoreboard[self.player].home_team)
+        clean_team_name = team_name.replace("Team(", "").replace(")", "").strip()
+        self.dic[clean_team_name] = {
             "PTS": self.score[self.player].home_team_cats["PTS"],
             "BLK": self.score[self.player].home_team_cats["BLK"],
             "STL": self.score[self.player].home_team_cats["STL"],
@@ -59,7 +61,9 @@ class Teams:
             "TO": self.score[self.player].home_team_cats["TO"],
             "FG%": self.score[self.player].home_team_cats["FG%"],
             "FT%": self.score[self.player].home_team_cats["FT%"],
-            "3PTM": self.score[self.player].home_team_cats["3PTM"]
+            "3PTM": self.score[self.player].home_team_cats["3PTM"], 
+            "3%": self.score[self.player].home_team_cats["3PT%"],
+            "TD": self.score[self.player].home_team_cats["38"]
         }
 
     def stats_away(self):
@@ -75,7 +79,9 @@ class Teams:
         self.threes = int(self.score[self.player].away_team_cats["3PTM"]['score'])
         self.three_percent = self.score[self.player].away_team_cats['3PT%']['score']
         self.td = int(self.score[self.player].away_team_cats['38']['score'])
-        self.dic[self.scoreboard[self.player].away_team] = {
+        team_name = str(self.scoreboard[self.player].away_team)
+        clean_team_name = team_name.replace("Team(", "").replace(")", "").strip()
+        self.dic[clean_team_name] = {
             "PTS": self.score[self.player].away_team_cats["PTS"],
             "BLK": self.score[self.player].away_team_cats["BLK"],
             "STL": self.score[self.player].away_team_cats["STL"],
@@ -84,5 +90,7 @@ class Teams:
             "TO": self.score[self.player].away_team_cats["TO"],
             "FG%": self.score[self.player].away_team_cats["FG%"],
             "FT%": self.score[self.player].away_team_cats["FT%"],
-            "3PTM": self.score[self.player].away_team_cats["3PTM"]
+            "3PTM": self.score[self.player].away_team_cats["3PTM"], 
+            "3%": self.score[self.player].away_team_cats["3PT%"],
+            "TD": self.score[self.player].away_team_cats["38"]
         }
