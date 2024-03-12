@@ -86,8 +86,8 @@ leagues = {
     }
 }
 overall_list = []
-current_matchweek = assign_matchweek()
-# current_matchweek = 17
+# current_matchweek = assign_matchweek()
+current_matchweek = 19
 
 def pull(matchup_period, leagues):
     overall_list.clear()
@@ -116,28 +116,28 @@ def pull(matchup_period, leagues):
 
 new_matchups = []
 
-# def add_to_rankings(clean_list):
-#     rankings = check_rankings(clean_list)
-#     for team, scores in rankings.items():
-#         rankings[team] = [scores[0] + 0.5 * scores[1], scores[2]]
-#     sorted_rankings = dict(sorted(rankings.items(), key=lambda item: item[1][0], reverse=True))
-#     data = [(team, *scores) for team, scores in sorted_rankings.items()]
-#     rank_df = pd.DataFrame(data, columns=['Team', 'Matchups Score', 'League'])
-#     min_score = float(rank_df['Matchups Score'].min())
-#     max_score = float(rank_df['Matchups Score'].max())
-#     def calculate_colors(score):
-#             if max_score == min_score:
-#                 return 'rgb(255, 255, 255)'
-#             red = 255 - int((score - min_score) / (max_score - min_score) * 255)
-#             green = int((score - min_score) / (max_score - min_score) * 200)
-#             return f'rgb({red},{green},0)'
+def add_to_rankings(clean_list):
+    rankings = check_rankings(clean_list)
+    for team, scores in rankings.items():
+        rankings[team] = [scores[0] + 0.5 * scores[1], scores[2]]
+    sorted_rankings = dict(sorted(rankings.items(), key=lambda item: item[1][0], reverse=True))
+    data = [(team, *scores) for team, scores in sorted_rankings.items()]
+    rank_df = pd.DataFrame(data, columns=['Team', 'Matchups Score', 'League'])
+    min_score = float(rank_df['Matchups Score'].min())
+    max_score = float(rank_df['Matchups Score'].max())
+    def calculate_colors(score):
+            if max_score == min_score:
+                return 'rgb(255, 255, 255)'
+            red = 255 - int((score - min_score) / (max_score - min_score) * 255)
+            green = int((score - min_score) / (max_score - min_score) * 200)
+            return f'rgb({red},{green},0)'
 
-#     rank_df['Color'] = rank_df['Matchups Score'].apply(calculate_colors)
-#     rank_df["Week"] = current_matchweek
+    rank_df['Color'] = rank_df['Matchups Score'].apply(calculate_colors)
+    rank_df["Week"] = current_matchweek
 
-#     rank_data = rank_df.to_dict(orient='records')
-#     rank_df.to_csv("week_1_data.csv")
-    # update_db_rankings(rank_df)
+    # rank_data = rank_df.to_dict(orient='records')
+    rank_df.to_csv("week_1_data.csv")
+    update_db_rankings(rank_df)
 
 def update(matchweek, league):
     global clean_list
@@ -152,7 +152,7 @@ def update(matchweek, league):
         clean_list.append(team)
 
     clean_list = sorted(clean_list, key=lambda team: team.name)
-    # add_to_rankings(clean_list)
+    add_to_rankings(clean_list)
 
 
 update(current_matchweek, leagues)
