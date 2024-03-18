@@ -87,7 +87,7 @@ leagues = {
 }
 overall_list = []
 # current_matchweek = assign_matchweek()
-current_matchweek = 19
+# current_matchweek = 18
 
 def pull(matchup_period, leagues):
     overall_list.clear()
@@ -116,7 +116,7 @@ def pull(matchup_period, leagues):
 
 new_matchups = []
 
-def add_to_rankings(clean_list):
+def add_to_rankings(clean_list, current_matchweek):
     rankings = check_rankings(clean_list)
     for team, scores in rankings.items():
         rankings[team] = [scores[0] + 0.5 * scores[1], scores[2]]
@@ -152,10 +152,10 @@ def update(matchweek, league):
         clean_list.append(team)
 
     clean_list = sorted(clean_list, key=lambda team: team.name)
-    add_to_rankings(clean_list)
+    add_to_rankings(clean_list, matchweek)
 
-
-update(current_matchweek, leagues)
+for week in range(1,21):
+    update(week, leagues)
 
 # rankings = check_rankings(clean_list)
 # for team, scores in rankings.items():
